@@ -139,10 +139,35 @@ transition:all 0.5s ease-in;}
 [class*='ico-unit']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;}
 [class*='ico-unit']:before{content:'';clear:both;position:absolute;top:0;left:0;background:url(../img/sprites_dpub.svg) no-repeat;}
 
-[class*='ico-unit01-']{width:20px;height:20px;}
-.ico-unit01-cus{}
-.ico-unit01-cus:before{background-position:0 0;}
-.ico-unit01-cusW:before{background-position:-50px 0;}
+[class*='ico-unit01-']{width:22px;height:22px;}
+[class*='ico-unit01-']:before{width:100%;height:100%;}
+.ico-unit01-use{}/* 회원관리 */
+.ico-unit01-use:before{background-position:0 0;}
+.ico-unit01-useW:before{background-position:-50px 0;}
+.ico-unit01-ads{}/* 광고관리 */
+.ico-unit01-ads:before{background-position:0 -50px;}
+.ico-unit01-adsW:before{background-position:-50px -50px;}
+.ico-unit01-mon{}/* 정산관리 */
+.ico-unit01-mon:before{background-position:0 -100px;}
+.ico-unit01-monW:before{background-position:-50px -100px;}
+.ico-unit01-alr{}/* 알림내역 */
+.ico-unit01-alr:before{background-position:0 -150px;}
+.ico-unit01-alrW:before{background-position:-50px -150px;}
+.ico-unit01-gps{}/* GPS 이력 */
+.ico-unit01-gps:before{background-position:0 -200px;}
+.ico-unit01-gpsW:before{background-position:-50px -200px;}
+.ico-unit01-cus{}/* 고객센터 */
+.ico-unit01-cus:before{background-position:0 -250px;}
+.ico-unit01-cusW:before{background-position:-50px -250px;}
+.ico-unit01-sld{}/* 슬라이더 관리 */
+.ico-unit01-sld:before{background-position:0 -300px;}
+.ico-unit01-sldW:before{background-position:-50px -300px;}
+.ico-unit01-tim{}/* 관리자 사용 이력 */
+.ico-unit01-tim:before{background-position:0 -350px;}
+.ico-unit01-timW:before{background-position:-50px -350px;}
+.ico-unit01-set{}/* 계정 관리 */
+.ico-unit01-set:before{background-position:0 -400px;}
+.ico-unit01-setW:before{background-position:-50px -400px;}
 
 /* =============== ####list-unit ======================== */
 .list-unit001 li{position:relative;padding-left:16px;font-size:16px;color:#666;font-weight:500;letter-spacing:-0.4px;}
