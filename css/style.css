@@ -4,7 +4,7 @@
 commnet : dpub.css
 *************************************************/
 
-@import url('css/swiper-3.4.2.min.css');
+@import url('swiper-3.4.2.min.css');
 
 /* =============== ######공통 (common) ======================== */
 html,body{height:auto;}
