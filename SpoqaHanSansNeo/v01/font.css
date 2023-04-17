@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*************************************************
+ * commnet : Spoqa Han Sans Neo
+ * original - Spoqa Han Sans Neo
+ -- https://spoqa.github.io/spoqa-han-sans/#webfont
+ -- https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css
+ * 2021-11-17 : 2021 배드민턴 특집페이지 적용 (테스트 버전)
+ -- fallback 적용
+*************************************************/
+
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	font-weight: 700;
+	font-display:fallback;
+	src:local('Spoqa Han Sans Neo Bold');
+	src:url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Bold.woff2) format('woff2'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Bold.woff) format('woff'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Bold.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	font-weight: 500;
+	font-display:fallback;
+	src:local('Spoqa Han Sans Neo Medium');
+	src:url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Medium.woff2) format('woff2'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Medium.woff) format('woff'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Medium.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	font-weight: 400; /* normal */
+	font-display:fallback;
+	src:local('Spoqa Han Sans Neo Regular');
+	src:url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Regular.woff2) format('woff2'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Regular.woff) format('woff'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	font-weight: 300;
+	font-display:fallback;
+	src:local('Spoqa Han Sans Neo Light');
+	src:url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Light.woff2) format('woff2'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Light.woff) format('woff'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Light.otf) format('opentype');
+}
+
+/* @font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	font-weight: 100;
+	font-display:fallback;
+	src:local('Spoqa Han Sans Neo Thin');
+	src:url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Thin.woff2) format('woff2'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Thin.woff) format('woff'),
+		url(//r.yna.co.kr/global/font/SpoqaHanSansNeo/v01/SpoqaHanSansNeo-Thin.otf) format('opentype');
+} */

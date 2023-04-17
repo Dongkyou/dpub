@@ -1,0 +1,290 @@
+@charset "utf-8";
+/*************************************************
+프로젝트명 :
+commnet : service.css
+*************************************************/
+
+@import url('//r.yna.co.kr/m-kr/home/v03/css/swiper-3.4.2.min.css');
+
+/* =============== ######공통 (common) ======================== */
+html,body{height:auto;}
+body{font-weight:400;font-family:'Spoqa Han Sans Neo','Malgun Gothic','맑은 고딕',Gulim,'굴림',AppleSDGothicNeo-Regular,sans-serif;letter-spacing:-0.3px;line-height:1;color:#000;}
+h1,h2,h3,h4,h5,h6{font-weight:400;}
+strong{font-weight:400;}
+a{display:inline-block;vertical-align:top;}
+
+@media only screen and (min-width:980px){
+	body{min-width:1100px;}
+	a:hover{text-decoration:underline;}
+	a:active,a:hover{outline:0;}
+}
+
+.ir-txt{display:inline-block;text-indent:-9999px;font-size:0;}
+
+.open-layer{overflow:hidden;}
+
+/* text color */
+.color01{color:#100060 !important;}
+.color02{font-weight:500;color:#1e86f9 !important;}
+.color03{color:#4026ee !important;}
+
+/* =============== ####PC/M 공통 ======================== */
+.slogan-tit{}
+.slogan-tit .ir-txt{display:inline-block;margin:0 0 100px;width:700px;height:132px;background:url(../img/sprites_paidservice.png?v=20230406_0940) 0 -100px no-repeat;
+animation:obj01 0.6s ease both;
+-webkit-animation:obj01 0.6s ease both;
+-moz-animation:obj01 0.6s ease both;
+-ms-animation:obj01 0.6s ease both;
+-o-animation:obj01 0.6s ease both;}
+.slogan-tit .txt{display:inline-block;font-weight:700;font-size:72px;line-height:1;color:#fff;}
+
+/* =============== ####logo-unit ======================== */
+.logo-yna01{display:inline-block;width:350px;height:50px;background:url(../img/sprites_paidservice.png?v=20230406_0940) no-repeat 0 0;}
+.logo-yna01 .ir-txt{width:100%;height:100%;}
+
+/* =============== ######레이아웃 (layout) ======================== */
+.wrap{font-size:0;}
+
+.wrap-header01{position:relative;}
+.wrap-header01:before{content:'';clear:both;position:absolute;z-index:-1;top:0;left:0;width:100%;height:900px;background:#1e86f9 url(../img/bg_visual01.png?v=20230331_1000) center top no-repeat;}
+.wrap-header01 .inner{position:relative;text-align:center;}
+.wrap-header01 .inner:after{content:'';clear:both;position:absolute;top:480px;left:0;width:1400px;height:800px;background:url(../img/img_product01.png?v=20230404_1130) no-repeat;}
+
+.container01{}
+.container01 .inner{}
+
+/* 콘텐츠 표출 waypoint(delay) */
+.scroll-zone{margin-top:100px;padding-top:40px;opacity:0;
+-webkit-transition:all 0.5s ease-in;
+-moz-transition:all 0.5s ease-in;
+-ms-transition:all 0.5s ease-in;
+transition:all 0.5s ease-in;}
+.scroll-zone.active{margin-top:0;opacity:1;}
+
+/* 애니메이션 키프레임 설정 */
+@keyframes obj01{0%{opacity:0;} 100%{opacity:1;margin-bottom:28px;}}
+@-webkit-keyframes obj01{0%{opacity:0;} 100%{opacity:1;margin-bottom:28px;}}
+@-moz-keyframes obj01{0%{opacity:0;} 100%{opacity:1;margin-bottom:28px;}}
+@-ms-keyframes obj01{0%{opacity:0;} 100%{opacity:1;margin-bottom:28px;}}
+
+@keyframes obj02{0%{opacity:0;} 100%{opacity:1;bottom:0;}}
+@-webkit-keyframes obj02{0%{opacity:0;} 100%{opacity:1;bottom:0;}}
+@-moz-keyframes obj02{0%{opacity:0;} 100%{opacity:1;bottom:0;}}
+@-ms-keyframes obj02{0%{opacity:0;} 100%{opacity:1;bottom:0;}}
+
+@media only screen and (min-width:980px){
+	.wrap-header01{height:1261px;}
+	.wrap-header01 .inner{width:1200px;margin:0 auto;padding-bottom:800px;}
+	.wrap-header01 .logo-yna01{margin:100px 0 25px;}
+	.container01 .inner{width:1200px;margin:0 auto;padding-bottom:150px;}
+}
+
+/* =============== ####header-unit ======================== */
+.header-unit001{z-index:200;position:sticky;top:0;background-color:#fff;border-bottom:1px solid #f2f4f8;}
+.header-unit001 .inner{position:relative;box-sizing:border-box;}
+.header-unit001 .logo-yna01{position:absolute;top:27px;left:0;}
+.header-unit001 .txt{display:inline-block;font-size:24px;font-weight:bold;letter-spacing:-0.6px;}
+
+/* 고정 신청푸터 */
+.foot-box01{opacity:0;position:fixed;z-index:10;transition:0.6s ease;}
+.foot-box01.active{opacity:1;animation:obj02 0.8s ease both;
+-webkit-animation:obj02 0.8s ease both;
+-moz-animation:obj02 0.8s ease both;
+-ms-animation:obj02 0.8s ease both;
+-o-animation:obj02 0.8s ease both;}
+.foot-box01 .txt{display:inline-block;margin-left:60px;font-size:24px;line-height:100px;color:#fff;}
+.foot-box01 .btn-unit01{}
+.foot-box01:before,
+.foot-box01:after{content:'';clear:both;position:absolute;z-index:0;}
+.foot-box01:before{z-index:-1;width:100%;height:100px;background:#4026ee;border-radius:40px 40px 0 0;}
+.foot-box01:after{z-index:1;top:0;right:0;width:227px;height:214px;background:url(../img/sprites_paidservice.png?v=20230406_0940) 0 -550px no-repeat;}
+
+@media only screen and (min-width:980px){
+	.header-unit001 .inner{width:1280px;height:104px;margin:0 auto;padding:35px 0 37px 220px;}
+	.foot-box01{bottom:-50px;left:50%;margin-left:-600px;width:1200px;padding-top:113px;}
+}
+
+/* =============== ####box-unit ======================== */
+[class*='box-unit']{position:relative;text-align:center;}
+/* ---- box-unit01 ---- */
+.box-unit01{position:relative;}
+.box-unit01>.tit{position:relative;display:inline-block;font-weight:700;font-size:60px;}
+.box-unit01>.tit:after{content:'';clear:both;position:absolute;z-index:-1;bottom:0;left:0;width:100%;height:23px;background-color:#bdf100}
+.box-unit01 .list-unit01{display:grid;grid-template-columns:repeat(2,1fr);gap:90px 100px;margin:72px 0 0;text-align:left;}
+.box-unit01 .list-unit01 [class*='unit0']{}
+.box-unit01 .list-unit01 [class*='unit0'] .title-box{position:relative;}
+.box-unit01 .list-unit01 [class*='unit0'] .ico-img{display:inline-block;width:120px;height:120px;background:url(../img/sprites_paidservice.png?v=20230406_0940) 0 -250px no-repeat;vertical-align:middle;}
+.box-unit01 .list-unit01 [class*='unit0'] .tit{position:relative;display:inline-block;padding-left:10px;height:120px;line-height:120px;font-weight:700;font-size:40px;vertical-align:middle;}
+.box-unit01 .sub-list01{margin:36px 0 0;}
+.box-unit01 .sub-list01 li{position:relative;padding-left:16px;font-size:20px;line-height:25px;}
+.box-unit01 .sub-list01 li:before{clear:both;content:"";position:absolute;z-index:1;top:16px;left:0;width:5px;height:5px;background:#000;}
+.box-unit01 .sub-list01 li+li{margin:20px 0 0;}
+
+.box-unit01 .list-unit01 .unit01 .ico-img{background-position-x:0;}
+.box-unit01 .list-unit01 .unit02 .ico-img{background-position-x:-150px;}
+.box-unit01 .list-unit01 .unit03 .ico-img{background-position-x:-300px;}
+.box-unit01 .list-unit01 .unit04 .ico-img{background-position-x:-450px;}
+
+.box-unit02{}
+.box-unit02 .img-con{display:block;background:url(../img/img_product02.png) 0 0 no-repeat;}
+
+@media only screen and (min-width:980px){
+	.box-unit02 .img-con{width:1200px;height:810px;}
+}
+
+
+/* =============== ####btn-unit ======================== */
+/* ---- btn-unit01 ---- */
+[class*='btn-unit']{overflow:hidden;display:inline-block;position:relative;z-index:0;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;white-space:nowrap;cursor:pointer;}
+.btn-unit01{box-sizing:inherit;}
+.btn-unit01 .ir-txt{position:relative;width:292px;height:32px;margin:34px 0 0 20px;box-sizing:inherit;padding-right:50px;background:url(../img/sprites_paidservice.png?v=20230406_0940) 0 -400px no-repeat;}
+.btn-unit01 .ir-txt:before{content:'';clear:both;position:absolute;top:0;right:0;width:30px;height:30px;background:url(../img/sprites_paidservice.png?v=20230406_0940) -600px -250px no-repeat;}
+
+/* btn-unit02 */
+.btn-unit02{display:inline-block;width:280px;height:60px;border-radius:30px;background:#4026ee;}
+.btn-unit02 .txt{font-size:18px;color:#fff;}
+
+/* btn-unit03 - 모바일전용 레이어닫기버튼*/
+.btn-unit03{display:inline-block;width:70px;height:70px;border-radius:50%;background:#fff;text-align:center;box-shadow:2px 2px 3px 2px rgba(0, 0, 0, 0.3);}
+.btn-unit03 .ir-txt{display:inline-block;width:20px;height:20px;background:url(../img/sprites_paidservice.png?v=20230406_0940) -396px -353px/700px auto no-repeat;}
+
+/* =============== ####list-unit ======================== */
+.list-unit001 li{position:relative;padding-left:16px;font-size:16px;color:#666;font-weight:500;letter-spacing:-0.4px;}
+.list-unit001 li:before{content:'';display:inline-block;position:absolute;top:10px;left:0;width:4px;height:4px;background-color:#999;}
+.list-unit001 li + li{margin-top:10px;}
+
+/* 시험서비스 신청 */
+#popupForm{display:none;position:fixed;top:0;left:0;z-index:99;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);}
+#popupForm .btn-unit03{position:absolute;}
+@media only screen and (min-width:980px) {
+	#popupForm .btn-unit03{top:0;right:-80px;}
+	#popupForm .btn-unit03 .ir-txt{width:30px;height:30px;}
+}
+
+.layer-unit01{position:absolute;z-index:20;top:50%;left:50%;width:800px;height:900px;margin:-450px 0 0 -400px;padding:50px;box-sizing:border-box;background:#fff;border-radius:30px;box-shadow:20px 10px 15px 30px rgba(0, 0, 0, 0.3);}
+.layer-unit01 .title-box{padding:0 0 25px;border-bottom:2px solid #000;text-align:center;}
+.layer-unit01 .title-box>.tit{font-weight:700;font-size:40px;line-height:1.2;}
+
+.layer-unit01 .info-box{margin:20px 0 0;text-align:center;}
+.layer-unit01 .info-box .tel{position:relative;display:inline-block;padding-left:30px;font-size:16px;line-height:1.4;}
+.layer-unit01 .info-box .tel:before{clear:both;content:"";position:absolute;z-index:1;top:0;left:0;width:26px;height:20px;background:url(../img/sprites_paidservice.png?v=20230406_0940) -650px -250px;}
+
+.layer-unit01 .form-zone{margin:-16px 0 0;}
+.layer-unit01 .input-check{text-align:right;}
+.layer-unit01 .input-check+p{margin-top:30px;}
+.layer-unit01 .input-check .txt{position:relative;padding-left:10px;font-size:14px;line-height:1.2;}
+.layer-unit01 .input-check .txt:before{clear:both;content:"";display:inline-block;position:absolute;z-index:1;top:4px;left:0;width:6px;height:6px;border-radius:50%;background:#4026ee;}
+.layer-unit01 .form{font-size:14px;}
+.layer-unit01 .form>p{padding-left:95px;font-size:0;}
+.layer-unit01 .form>p+p{margin-top:15px;}
+.layer-unit01 .form p>label{position:relative;display:inline-block;width:84px;padding-right:10px;box-sizing:border-box;font-size:18px;text-align:right;vertical-align:middle;}
+.layer-unit01 .form p>label:before{clear:both;content:"";display:inline-block;position:absolute;z-index:1;top:0;right:0;width:6px;height:6px;border-radius:50%;background:#4026ee;}
+.layer-unit01 .form input[type=text],
+.layer-unit01 .form input[type=tel],
+.layer-unit01 .form input[type=email]{padding-left:20px;width:380px;height:55px;box-sizing:border-box;border-radius:8px;border:1px solid #ced4da;font-size:18px;vertical-align:middle;}
+.layer-unit01 .form label+input{margin-left:20px;}
+.layer-unit01 .form input::placeholder{color:#ced4e1;}
+.layer-unit01 .form .keyword input{width:120px;}
+.layer-unit01 .form .keyword input+input{margin-left:10px;}
+.layer-unit01 .form p.email>label:before,
+.layer-unit01 .form p.keyword>label:before{display:none;}
+.layer-unit01 .privacy-box01{margin:25px 0 0;text-align:center;}
+.layer-unit01 .privacy-box01 .txt{color:#666;line-height:20px;}
+.layer-unit01 .label-check01{display:inline-block;margin:16px 0;}
+.layer-unit01 .label-check01 .checkbox{display:inline-block;width:128px;}
+.layer-unit01 .label-check01 .checkbox input{display:none;}
+.layer-unit01 .label-check01 .checkbox label{position:relative;padding-left:32px;font-size:18px;line-height:1.6;vertical-align:middle;}
+.layer-unit01 .label-check01 .checkbox label:before{clear:both;content:"";position:absolute;z-index:1;top:0;left:0;display:inline-block;border-radius:50%;width:26px;height:26px;border:1px solid #cfd5db;}
+.layer-unit01 .label-check01 .checkbox input:checked+label:after{clear:both;content:"";position:absolute;z-index:1;top:4px;left:4px;display:inline-block;border-radius:50%;width:20px;height:20px;background:#4026ee;}
+.layer-unit01 .form-btn-wrap{text-align:center;}
+.layer-unit01 .form-btn-wrap .btn-unit02{}
+
+/* =============== ######반응형 분기 (max-width:980px) ======================== */
+@media only screen and (max-width:980px){
+
+	/*--------- 공통 ---------*/
+	.logo-yna01{width:174px;height:26px;background-size:400px auto;}
+
+	/*--------- 레이아웃 ---------*/
+	.wrap-header01 .inner{width:100%;padding:77px 0 68%;}
+	.wrap-header01:before{width:100%;height:450px;background-size:cover;}
+	.wrap-header01 .inner:after{top:300px;left:0;width:100%;height:0;padding-bottom:67%;background-position:28% center;background-size:cover;}
+	.wrap-header01 .logo-yna01{display:block;margin:0 auto 24px;}
+
+	.slogan-tit .ir-txt{display:block;margin:0 0 22px;width:355px;height:66px;background-size:400px auto;background-position:0 -50px;}
+	.slogan-tit .txt{display:block;font-size:36px;}
+
+	.container01 .inner{width:100%;padding-bottom:100px;}
+
+	.foot-box01{width:100%;height:75px;padding-top:30px;}
+	.foot-box01 .txt{display:none;}
+	.foot-box01:after{width:114px;height:105px;background-size:400px auto;background-position:0 -275px;}
+	.foot-box01 .btn-unit01{bottom:0px;left:4%;margin:0;}
+
+	/*--------- 콘텐츠 ---------*/
+	/* 버튼 */
+	/* btn-unit01 */
+	.btn-unit01{}
+	.btn-unit01 .ir-txt{width:194px;height:23px;padding-right:35px;background-size:400px auto;background-position:0 -225px;}
+	.btn-unit01 .ir-txt:before{width:22.5px;height:22.5px;background-size:400px auto;background-position:-300px -150px;}
+
+	/* btn-unit02 */
+	.btn-unit02{}
+	.btn-unit02 .txt{}
+
+	.btn-unit03 .ir-txt{width:20px;height:20px;background:url(../img/sprites_paidservice.png?v=20230406_0940) -225px -200px/400px auto no-repeat;}
+
+	.box-unit01>.tit{display:inline-block;font-size:40px;}
+	.box-unit01>.tit:after{height:12px;}
+
+	.box-unit01 .list-unit01{width:calc(100% - 40px);margin:40px auto 0;grid-template-columns:repeat(1,1fr);gap:0 0;}
+
+	.box-unit01 .list-unit01 [class*='unit0']{padding-bottom:35px;border-bottom:1px dashed #e5e5e5;}
+	.box-unit01 .list-unit01 [class*='unit0']+[class*='unit0']{margin-top:35px;}
+	.box-unit01 .list-unit01 [class*='unit0'] .ico-img{width:60px;height:60px;background-size:400px auto;background-position-y:-125px;}
+	.box-unit01 .list-unit01 [class*='unit0'] .tit{height:inherit;font-size:26px;line-height:1.4;letter-spacing:-1.5px;}
+	.box-unit01 .list-unit01 [class*='unit0']:last-child{padding-bottom:0;border-bottom:0;}
+
+	.box-unit01 .list-unit01 .unit01 .ico-img{background-position-x:0;}
+	.box-unit01 .list-unit01 .unit02 .ico-img{background-position-x:-75px;}
+	.box-unit01 .list-unit01 .unit03 .ico-img{background-position-x:-150px;}
+	.box-unit01 .list-unit01 .unit04 .ico-img{background-position-x:-225px;}
+
+	.box-unit01 .sub-list01{margin:20px 0 0}
+	.box-unit01 .sub-list01 li{font-size:16px;line-height:20px;}
+	.box-unit01 .sub-list01 li:before{top:5px;}
+	.box-unit01 .sub-list01 li+li{margin:12px 0 0;}
+
+	.box-unit02 .img-con{padding-bottom:75%;background-size:cover;background-position:center;}
+
+	/* 신청 레이어팝업 */
+	#popupForm .btn-unit03{left:50%;margin:20px 0 0 -25px;width:50px;height:50px;}
+
+	.layer-unit01{overflow-y:scroll;position:inherit;top:0;left:0;width:100%;height:100%;margin:30px 0 0;padding:20px 20px 120px;}
+	.layer-unit01 .title-box{padding:10px 0 25px;}
+	.layer-unit01 .title-box>.tit{font-size:24px;}
+
+	.layer-unit01 .input-check .txt{padding-left:5px;}
+	.layer-unit01 .input-check .txt:before{width:3px;height:3px;}
+
+	.layer-unit01 .info-box{margin:15px 0 0;text-align:left;}
+	.layer-unit01 .info-box .tel{padding-left:20px;font-size:14px;}
+	.layer-unit01 .info-box .tel:before{top:2px;width:16px;height:12px;background-size:400px auto;background-position:-325px -150px;}
+	.layer-unit01 .form{padding:0;}
+	.layer-unit01 .input-check+p{margin-top:15px;}
+	.layer-unit01 .form>p{padding-left: 0;}
+	.layer-unit01 .form>p+p{margin-top:10px;}
+	.layer-unit01 .form p>label{font-size:16px;}
+	.layer-unit01 .form p>label:before{}
+	.layer-unit01 .form input[type=text],
+	.layer-unit01 .form input[type=tel],
+	.layer-unit01 .form input[type=email]{margin-left:10px;padding-left:15px;width:190px;height:48px;font-size:16px;}
+	.layer-unit01 .form .keyword input{width:60px;height:48px;}
+	.layer-unit01 .form input::placeholder{font-size:12px;}
+	.layer-unit01 .privacy-box01 .txt{font-size:11px;line-height:15px;}
+
+	.layer-unit01 .label-check01 .checkbox label{font-size:16px;}
+	.layer-unit01 .form-btn-wrap{margin-top:20px;}
+	.layer-unit01 .form-btn-wrap .btn-unit02{margin-left:0;width:100%;}
+
+}
