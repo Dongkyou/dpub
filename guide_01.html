@@ -1,11 +1,670 @@
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Guide01</title>
+<!doctype html>
+<html lang="ko" class="ko">
+<head itemscope>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+<title>디펍 | 콘텐츠 가이드01</title>
+
+<!-- favicon -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 리소스 링크 -->
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="icon" type="image/x-icon" href="">
+<link rel="stylesheet preload" as="style" type="text/css" href="SpoqaHanSansNeo/v01/font.css">
+
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	.guide-visual.guide-bg-red{background-color:#761b2b;}
+</style>
+
 </head>
-<body>
-	<h1>Guide01</h1>
+
+<body class="page-guide">
+	<h1 class="guide-h1">
+		디펍 퍼블리싱 가이드
+	</h1>
+	<h2 class="guide-h2">
+		 폰트설정
+	</h2>
+	<!-- #### 폰트설정 #### -->
+	<div class="guide-desc">
+		<dl class="guide-dl">
+			<dt>PC Body 선언</dt>
+			<dd>font-weight:400;</dd>
+			<dd>font-family:Spoqa Han Sans Neo','Malgun Gothic','맑은 고딕',Gulim,'굴림',AppleSDGothicNeo-Regular;</dd>
+			<dd>letter-spacing:-0.3px;</dd>
+		</dl>
+		<dl class="guide-dl">
+			<dt>font-weight</dt>
+			<dd>Spoqa Han Sans Neo : Light 300, Regular 400, Medium 500, Bold 700</dd>
+		</dl>
+	</div>
+	<!-- #### 폰트설정 #### -->
+
+	<h2 class="guide-h2">
+		 타이틀/텍스트
+	</h2>
+	<!-- #### title-unit$$$$ #### -->
+	<h3 class="guide-h3">
+		 <code>.title-unit$$$$</code>
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col class="ww01">
+				<col class="ww02">
+				<col class="ww03">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>클래스 명</th>
+					<th>기능</th>
+					<th>Anchor Type</th>
+					<th>Span type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>.title-unit001</td>
+					<td>콘텐츠 제목 normal</td>
+					<td>
+						<strong class="title-unit001">
+							<a href="#none" class="tit">최신뉴스</a>
+						</strong>
+					</td>
+					<td>
+						<strong class="title-unit001">
+							<span class="tit">최신뉴스</span>
+						</strong>
+					</td>
+				</tr>
+				<tr>
+					<td>.title-unit001.bold</td>
+					<td>콘텐츠 제목 bold (기본)</td>
+					<td>
+						<strong class="title-unit001 bold">
+							<a href="#none" class="tit">최신뉴스</a>
+						</strong>
+					</td>
+					<td>
+						<strong class="title-unit001 bold">
+							<span class="tit">최신뉴스</span>
+						</strong>
+					</td>
+				</tr>
+			</tbody>
+
+			<tbody>
+				<tr>
+					<td>txt-unit011</td>
+					<td>사이트명 옆 대회 기간</td>
+					<td>-</td>
+					<td>
+						<span class="txt-unit011">11.20. ~12.18.</span>
+						<br>
+						<span class="txt-unit011 bold">11.20. ~12.18.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>txt-unit012</td>
+					<td>사이트명 옆 대회 dday</td>
+					<td>-</td>
+					<td>
+						<span class="txt-unit012">D-30</span>
+						<br>
+						<span class="txt-unit012 bold">D-30</span>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+	<h3 class="guide-h3">
+		 <code>.title-box$$$$</code> 타이틀/텍스트 그룹핑
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col class="ww01">
+				<col class="ww02">
+				<col class="ww03">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>클래스 명</th>
+					<th>기능</th>
+					<th>Anchor Type</th>
+					<th>Span type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.title-box > .title-unit001 + .btn-unit021</code></td>
+					<td>-</td>
+					<td>
+						<div class="title-box">
+							<strong class="title-unit001 bold">
+								<span class="tit">주요뉴스</span>
+							</strong>
+							<a href="#none" class="btn-unit021">
+								<span class="txt">더보기</span>
+							</a>
+						</div>
+					</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td><code>.title-box > .title-unit001 + .txt-unit031</code></td>
+					<td>-</td>
+					<td>
+						<div class="title-box">
+							<strong class="title-unit001 bold">
+								<a href="#none" class="tit" target="_blank" rel="nofollow">메달현황</a>
+							</strong>
+							<p class="txt-unit031">8월 8일·최종</p>
+						</div>
+					</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- #### //title-unit$$$$ #### -->
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		아이콘
+	</h2>
+	<!-- #### ico-****$$$$ #### -->
+	<h3 class="guide-h3">
+		 <code>.ico-unit$$$$-****</code>
+	</h3>
+
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		로고, 사이트명
+	</h2>
+	<!-- #### logo-unit$$$, site-name$$$ #### -->
+	<h3 class="guide-h3">
+		 <code>.logo-unit$$$, .site-name$$$</code>
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col class="ww01">
+				<col class="ww02">
+				<col class="ww03">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>클래스 명</th>
+					<th>기능</th>
+					<th>예시</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>logo-unit001</td>
+					<td>PC 연합뉴스 로고<br><code>.header001</code> 위치</td>
+					<td>
+						<a class="logo-unit001" href="#none">
+							<strong class="ir-txt">국가기간뉴스 통신사 연합뉴스</strong>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>logo-unit002</td>
+					<td>PC 연합뉴스 로고<br><code>.header002</code> 위치</td>
+					<td class="guide-bg-gray03">
+						<a class="logo-unit002" href="#none">
+							<strong class="ir-txt">국가기간뉴스 통신사 연합뉴스</strong>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>logo-unit011</td>
+					<td>PC 연합뉴스 로고<br><code>.footer001</code> 위치</td>
+					<td class="guide-bg-gray03">
+						<a class="logo-unit011" href="#none">
+							<strong class="ir-txt">국가기간뉴스 통신사 연합뉴스</strong>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>site-name001</td>
+					<td>PC 사이트명<br><code>.header001</code> 위치</td>
+					<td>
+						<a class="site-name001" href="#none">
+							<strong class="ir-txt">2020 도쿄올림픽</strong>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>site-name002</td>
+					<td>PC 사이트명<br><code>.header002</code> 위치</td>
+					<td class="guide-bg-gray03">
+						<a class="site-name002" href="#none">
+							<strong class="ir-txt">2020 도쿄올림픽</strong>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>site-name011</td>
+					<td>PC 사이트명<br><code>.footer</code> 위치</td>
+					<td class="guide-bg-gray03">
+						<a class="site-name011" href="#none">
+							<strong class="ir-txt">2020 도쿄올림픽</strong>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- #### //logo-unit$$$, site-name$$$ #### -->
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		 버튼
+	</h2>
+	<!-- #### btn-unit$$$$ #### -->
+	<h3 class="guide-h3">
+		 <code>.btn-unit$$$$-****</code>
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col class="ww01">
+				<col class="ww02">
+				<col class="ww03">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>클래스 명</th>
+					<th>기능</th>
+					<th>Button type</th>
+					<th>Anchor Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>btn-unit000-close01</td>
+					<td>포토 리스트로 돌아가기</td>
+					<td class="guide-bg-gray03">
+						<button type="button" class="btn-unit000-close01"><span class="ir-txt">포토 리스트로 돌아가기</span></button>
+					</td>
+					<td class="guide-bg-gray03">
+						<a href="#none" class="btn-unit000-close01"><span class="ir-txt">포토 리스트로 돌아가기</span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-whole-menu01</td>
+					<td>전체메뉴 펼치기 (70x60)<br>애니메이션</td>
+					<td class="guide-bg-gray03">
+						<button type="button" class="btn-unit000-menu01 btn-whole-menu01">
+							<span class="line">
+								<span>전체 메뉴</span><span></span><span></span>
+							</span>
+						</button>
+					</td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>btn-unit011-srch01</td>
+					<td>토글, 검색창 열기/닫기<br>애니메이션</td>
+					<td class="guide-bg-gray03">
+						<button type="button" class="btn-unit011-srch01 btn-srch-open">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch01" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close01" tabindex="-1"></i>
+						</button>
+						<button type="button" class="btn-unit011-srch01 btn-srch-open on">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch01" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close01" tabindex="-1"></i>
+						</button>
+					</td>
+					<td class="guide-bg-gray03">
+						<a href="#none"class="btn-unit011-srch01 btn-srch-open">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch01" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close01" tabindex="-1"></i>
+						</a>
+						<a href="#none"class="btn-unit011-srch01 btn-srch-open on">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch01" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close01" tabindex="-1"></i>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-unit011-srch02</td>
+					<td>토글, 검색창 열기/닫기<br>애니메이션</td>
+					<td>
+						<button type="button" class="btn-unit011-srch02 btn-srch-open">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch02" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close02" tabindex="-1"></i>
+						</button>
+						<button type="button" class="btn-unit011-srch02 btn-srch-open on">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch02" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close02" tabindex="-1"></i>
+						</button>
+					</td>
+					<td>
+						<a href="#none"class="btn-unit011-srch02 btn-srch-open">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch02" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close02" tabindex="-1"></i>
+						</a>
+						<a href="#none"class="btn-unit011-srch02 btn-srch-open on">
+							<span class="txt-alt">검색창 열기/닫기</span>
+							<i class="ico01 ico-unit002-srch02" tabindex="-1"></i>
+							<i class="ico02 ico-unit002-close02" tabindex="-1"></i>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-unit011-srch03</td>
+					<td>(임시)검색 실행<br> -- 아이콘 하나만 사용할 수 있다는 사례</td>
+					<td>
+						<button type="button" class="btn-unit011-srch02 btn-srch-go01">
+							<!-- <span class="ir-txt ico-unit002-srch02">검색하기</span> -->
+							<i class="ico-unit002-srch02 ir-txt" tabindex="-1">검색하기</i>
+						</button>
+					</td>
+					<td>
+						<a href="#none"class="btn-unit011-srch02 btn-srch-go01">
+							<!-- <span class="ir-txt ico-unit002-srch02">검색하기</span> -->
+							<i class="ico-unit002-srch02 ir-txt" tabindex="-1">검색하기</i>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>btn-unit012-srch01</td>
+					<td>검색 실행</td>
+					<td class="guide-bg-gray03">
+						<button type="button" class="btn-unit012-srch01 btn-srch-go01">
+							<i class="ico-unit003-srch01 ir-txt" tabindex="-1">검색하기</i>
+						</button>
+					</td>
+					<td class="guide-bg-gray03">
+						<a href="#none"class="btn-unit012-srch01 btn-srch-go01">
+							<i class="ico-unit003-srch01 ir-txt" tabindex="-1">검색하기</i>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-unit012-srch02</td>
+					<td>검색 실행</td>
+					<td>
+						<button type="button" class="btn-unit012-srch02 btn-srch-go01">
+							<i class="ico-unit003-srch02 ir-txt" tabindex="-1">검색하기</i>
+						</button>
+					</td>
+					<td>
+						<a href="#none"class="btn-unit012-srch01 btn-srch-go01">
+							<i class="ico-unit003-srch02 ir-txt" tabindex="-1">검색하기</i>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>btn-unit021</td>
+					<td>텍스트 더보기 버튼</td>
+					<td>
+						<button type="button" class="btn-unit021">
+							<span class="txt">더보기</span>
+						</button>
+					</td>
+					<td>
+						<a href="#none" class="btn-unit021">
+							<span class="txt">더보기</span>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>btn-unit003</td>
+					<td>텍스트 버튼</td>
+					<td class="guide-bg-gray03">
+						<button type="button" class="btn-unit001">
+							<span class="txt">회사소개</span>
+						</button>
+					</td>
+					<td class="guide-bg-gray03">
+						<a href="#none" class="btn-unit001">
+							<span class="txt">회사소개</span>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<td>btn-unit101-prev<br>(+ swiper-button-disabled)</td>
+					<td>이전 방향 버튼</td>
+					<td>
+						<button type="button" class="btn-unit101-prev"><span class="ir-txt">이전</span></button>
+						<button type="button" class="btn-unit101-prev swiper-button-disabled"><span class="ir-txt">이전</span></button>
+
+					</td>
+					<td>
+						<a href="#none" class="btn-unit101-prev"><span class="ir-txt">이전</span></a>
+						<a href="#none" class="btn-unit101-prev swiper-button-disabled"><span class="ir-txt">이전</span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-unit101-next<br>(+ swiper-button-disabled)</td>
+					<td>다음 방향 버튼</td>
+					<td>
+						<button type="button" class="btn-unit101-next"><span class="ir-txt">다음</span></button>
+						<button type="button" class="btn-unit101-next swiper-button-disabled"><span class="ir-txt">다음</span></button>
+					</td>
+					<td>
+						<a href="#none" class="btn-unit101-next"><span class="ir-txt">다음</span></a>
+						<a href="#none" class="btn-unit101-next swiper-button-disabled"><span class="ir-txt">다음</span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>btn-unit101-prev<br>btn-unit101-next</td>
+					<td>(예시)다음 방향 버튼 정렬시</td>
+					<td>
+						<div class="btn-box01">
+							<button type="button" class="btn-unit101-prev"><span class="ir-txt">이전</span></button>
+							<button type="button" class="btn-unit101-next swiper-button-disabled"><span class="ir-txt">다음</span></button>
+						</div>
+					</td>
+					<td>
+						<div class="btn-box01">
+							<a href="#none" class="btn-unit101-prev"><span class="ir-txt">이전</span></a>
+							<a href="#none" class="btn-unit101-next swiper-button-disabled"><span class="ir-txt">다음</span></a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- #### //btn-unit$$$$ #### -->
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		 딤드(DIMMED)/오버레이
+	</h2>
+	<!-- #### dim-unit$$$$ #### -->
+	<h3 class="guide-h3">
+		 <code>.dim-unit$$$$</code>
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col style="width:120px;">
+				<col>
+				<col style="width:542px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>클래스 명</th>
+					<th>기능</th>
+					<th>예시</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>dim-unit101</td>
+					<td>
+						<code>.list-unit005</code>의 배경 딤드
+					</td>
+					<td>
+						<div style="width:356px;height:269px;">
+							<span class="dim-unit101"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>dim-unit111</td>
+					<td>
+						<code>.list-unit004</code>의 배경 딤드<br>
+						html 구조 최소화를 위해 <code>.ico-unit001-play03</code> 사용하지 않음
+					</td>
+					<td>
+						<div style="width:542px;height:304px;">
+							<span class="dim-unit111"></span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- #### //btn-unit$$$$ #### -->
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		검색
+	</h2>
+	<!-- #### search-area #### -->
+	<h3 class="guide-h3">
+		 <code>.search-area</code>
+	</h3>
+	<div class="guide-desc">
+		<dl class="guide-dl">
+			<dt>참고사항</dt>
+			<dd>공통 : 기본 숨김 상태, 클래스 <code>open</code> 추가시 활성화</dd>
+			<dd>메인, 서브 디자인 분기 : 버튼 html 만 다르고 .page-main 로 스타일 분기함</dd>
+		</dl>
+	</div>
+	<h4 class="guide-h4">
+		서브 : <code>.search-area</code> <code>.btn-unit012-srch01 > ico-unit003-srch01</code>
+	</h4>
+	<div class="guide-visual" style="height:500px;">
+		<div id="search" class="search-area open">
+			<form id="totalSearchForm">
+				<fieldset>
+					<legend class="blind">검색</legend>
+					<div class="area">
+						<label for="srchForm">검색어를 입력하세요.</label>
+						<input type="text" id="srchForm" name="query" class="text" style="IME-MODE:active">
+						<button type="button" class="btn-unit012-srch01 btn-srch-go01">
+							<i class="ico-unit003-srch01 ir-txt" tabindex="-1">검색하기</i>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<h4 class="guide-h4">
+		메인 : <code>.search-area</code> <code>.btn-unit012-srch01 > ico-unit003-srch01</code>
+	</h4>
+	<div class="guide-visual page-main" style="height:500px;">
+		<div id="search" class="search-area open">
+			<form id="totalSearchForm">
+				<fieldset>
+					<legend class="blind">검색</legend>
+					<div class="area">
+						<label for="srchForm">검색어를 입력하세요.</label>
+						<input type="text" id="srchForm" name="query" class="text" style="IME-MODE:active">
+						<button type="button" class="btn-unit012-srch02 btn-srch-go01">
+							<i class="ico-unit003-srch02 ir-txt" tabindex="-1">검색하기</i>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- #### //search-area #### -->
+
+	<br><br>
+
+	<h2 class="guide-h2">
+		배경 오브젝트
+	</h2>
+	<!-- #### visual-object #### -->
+	<h3 class="guide-h3">
+		 <code>.visual-object$$</code>
+	</h3>
+	<div class="guide-desc">
+		<table class="guide-table">
+			<colgroup>
+				<col class="ww01">
+				<col class="ww02">
+				<col class="ww03">
+				<col class="ww04">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>.visual-object01</th>
+					<th>.visual-object02</th>
+					<th>.visual-object03</th>
+					<th>.visual-object04</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><div class="visual-object01"></div></td>
+					<td><div class="visual-object02"></div></td>
+					<td><div class="visual-object03"></div></td>
+					<td><div class="visual-object04"></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- #### //visual-object #### -->
+
+	<br><br>
+
+			<!-- 페이징 -->
+		</section>
+	</div>
+	<!-- #### box-unit231 #### -->
+
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+
 </body>
 </html>
