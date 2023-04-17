@@ -1,10 +1,10 @@
 @charset "utf-8";
 /*************************************************
 프로젝트명 :
-commnet : service.css
+commnet : dpub.css
 *************************************************/
 
-@import url('//r.yna.co.kr/m-kr/home/v03/css/swiper-3.4.2.min.css');
+@import url('css/swiper-3.4.2.min.css');
 
 /* =============== ######공통 (common) ======================== */
 html,body{height:auto;}
