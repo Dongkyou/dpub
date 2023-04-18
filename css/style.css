@@ -120,20 +120,6 @@ transition:all 0.5s ease-in;}
 .title-unit02{}
 .title-unit02 .tit{font-size:16px;line-height:100%;color:#000;letter-spacing:-1px;}
 
-/* =============== ####btn-unit ======================== */
-/* ---- btn-unit01 ---- */
-[class*='btn-unit']{overflow:hidden;display:inline-block;position:relative;z-index:0;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;white-space:nowrap;cursor:pointer;}
-.btn-unit01{box-sizing:inherit;}
-.btn-unit01 .ir-txt{position:relative;width:292px;height:32px;margin:34px 0 0 20px;box-sizing:inherit;padding-right:50px;background:url(../img/sprites_dpub.svg) 0 -400px no-repeat;}
-.btn-unit01 .ir-txt:before{content:'';clear:both;position:absolute;top:0;right:0;width:30px;height:30px;background:url(../img/sprites_dpub.svg) -600px -250px no-repeat;}
-
-/* btn-unit02 */
-.btn-unit02{display:inline-block;width:280px;height:60px;border-radius:30px;background:#4026ee;}
-.btn-unit02 .txt{font-size:18px;color:#fff;}
-
-/* btn-unit03 - 모바일전용 레이어닫기버튼*/
-.btn-unit03{display:inline-block;width:70px;height:70px;border-radius:50%;background:#fff;text-align:center;box-shadow:2px 2px 3px 2px rgba(0, 0, 0, 0.3);}
-.btn-unit03 .ir-txt{display:inline-block;width:20px;height:20px;background:url(../img/sprites_dpub.svg) -396px -353px/700px auto no-repeat;}
 
 /* =============== ####ico-unit ======================== */
 [class*='ico-unit']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;}
@@ -169,10 +155,68 @@ transition:all 0.5s ease-in;}
 .ico-unit01-set:before{background-position:0 -400px;}
 .ico-unit01-setW:before{background-position:-50px -400px;}
 
+/* =============== ####logo-unit ======================== */
+[class*='logo-unit']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;background: url(../img/sprites_dpub.svg) no-repeat;}
+
+.logo-unit001{width:187px;height:44px;background-position: -100px -250px;}
+.logo-unit002{width: 150px;height: 35px;background-position: -100px -300px;}
+
+/* =============== ####btn-unit ======================== */
+[class*='btn-unit']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;}
+
+/* ---- btn-unit01 ---- */
+[class*='btn-unit01']{font-size: 14px;font-weight: 500;width: 100px;height: 38px;line-height: 38px;border-radius: 8px;text-align: center;}
+
+.btn-unit01-type01{background: #DC014C;}
+.btn-unit01-type01 .txt{color: #fff;}
+.btn-unit01-type02{background: #4C4C4E;}
+.btn-unit01-type02 .txt{color: #fff;}
+.btn-unit01-type03{background: #E2E2E2;}
+.btn-unit01-type03 .txt{color: #313133;}
+.btn-unit01-type04{background: #fff;border: 1px solid #E2E2E2;}
+.btn-unit01-type04 .txt{color: #313133;}
+
+/* ---- btn-unit02 ---- */
+.btn-unit02 {width: 83px;height: 40px;line-height: 40px;text-align: center;background: #FFF3F7;border-radius: 8px;}
+.btn-unit02 .txt{color: #C20344;font-weight: 500;}
+
+/* ---- btn-unit03 ---- */
+[class*='btn-unit03']{font-size: 13px;font-weight: 500;padding: 3px 13px;border-radius: 6px;}
+
+.btn-unit03-type01{background: #FEF5EF;}
+.btn-unit03-type01 .txt {color: #F36A10;}
+.btn-unit03-type02{background: #fff;border: 1px solid #E2E2E2;}
+.btn-unit03-type02 .txt {color: #313133;}
+
+
+/* ---- btn-unit04 ---- */
+[class*='btn-unit04']{font-size: 12px;font-weight: 500;width: 65px;height: 26px;line-height: 26px;border-radius: 6px;text-align: center;}
+[class*='btn-unit04'] .txt {color: #fff;}
+
+.btn-unit04-type01{background: #C20344;}
+.btn-unit04-type02{background: #4C4C4E;}
+
 /* =============== ####list-unit ======================== */
 .list-unit001 li{position:relative;padding-left:16px;font-size:16px;color:#666;font-weight:500;letter-spacing:-0.4px;}
 .list-unit001 li:before{content:'';display:inline-block;position:absolute;top:10px;left:0;width:4px;height:4px;background-color:#999;}
 .list-unit001 li + li{margin-top:10px;}
+
+/* =============== ####tab-unit ======================== */
+ul.tab-unit01 {display: flex;}
+ul.tab-unit01>li.tab-item {padding: 10px 20px;margin-right: 10px;background: #FFF3F7;border-radius: 8px;color: #C20344;text-align: center;font-size: 14px;line-height: 14px;font-weight: 500;}
+ul.tab-unit01>li.tab-item:last-child {margin-right: 0;}
+ul.tab-unit01 li.active {background:#C20344;color: #fff;}
+
+/* =============== ####tab-unit ======================== */
+ul.page-unit01 {display: flex;justify-content: space-between;width: 282px;}
+ul.page-unit01>li {width: 36px;height: 36px;text-align: center;font-size: 13px;line-height: 36px;font-weight: 500;background: #fff;border: 1px solid #C20344;border-radius: 4px;box-sizing: border-box;}
+ul.page-unit01>li>a{color: #C20344;}
+ul.page-unit01>li.active {background: #C20344;}
+ul.page-unit01>li.active>a {color: #fff;}
+
+[class*='Arr'] {background:url(../img/sprites_dpub.svg) no-repeat;width: 20px;height: 20px;vertical-align: middle;background-position: -100px -52px;}
+ul.page-unit01>li>a.Arr-next{transform: scaleX(-1);}
+ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
 /* 시험서비스 신청 */
 #popupForm{display:none;position:fixed;top:0;left:0;z-index:99;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);}
