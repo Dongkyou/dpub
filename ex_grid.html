@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>/* repeat(auto-fill, minmax(40%, auto)); */
+            [class*='table-unit'] {text-align: center;align-items: center;}
+            .table-unit01-title, .table-unit01-cont {display: grid;grid-template-columns: repeat(10, 1fr);}
+            .table-unit01-title {font-size: 13px;font-weight: 500;color: #707072;background: #F9F9FB;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
+            .table-unit01-cont {font-size: 14px;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
+            .color-x {color: #CE052E;} /* 승인여부-X, 변경이력-미확인 일때 적용 */
+            .blacklist {background: #FFF3F7;} /* 불량회원일때 적용*/
+            .m-txt {display: none;} /*Mobile 전용 텍스트*/
+
+
+            @media only screen and (max-width: 768px) {
+                .m-txt {display: block;} /*Mobile 전용 텍스트*/
+                .pc-txt {display: none;} /*PC 전용 텍스트*/
+                .else, .table-item::before {display: none;}
+                [class*='table-unit'] {text-align: left;}
+                .table-unit01-title {display: none;}
+                .table-unit01-cont {grid-template-columns: 100px;grid-auto-columns: minmax(50px, auto);margin-bottom: 5px;border: 1px solid #E2E2E2;}
+                .table-item {padding: 7px 0;position: relative;padding-left: 8px;}
+                .table-item::before {content:'';display:inline-block;position:absolute;width: 3px;height: 3px;background-color: #CE052E;top:15px;left:0;border-radius: 50%;}
+                .table-item:nth-child(1)::before, .table-item:nth-child(4)::before, .table-item:nth-child(9)::before, .table-item:nth-child(10)::before {display: none;}
+                .table-item:nth-child(1), .table-item:nth-child(4), .table-item:nth-child(9), .table-item:nth-child(10) {padding-left: 0;}
+                .table-item:nth-child(1) {align-self: start;text-align: center;}
+                .table-item:nth-child(2) {order: 4;grid-column: 4/6;}
+                .table-item:nth-child(3) {order: 2;}
+                .table-item:nth-child(4) {order: 3;}
+                .table-item:nth-child(5) {grid-column: 2/4;order: 5;}
+                .table-item:nth-child(6) {grid-column: 2/4;order: 7;}
+                .table-item:nth-child(7) {grid-column: 4/6;order: 6;}
+                .table-item:nth-child(8) {grid-column: 4/6;order: 8;}
+                .table-item:nth-child(9) {grid-column: 2/4;order: 9;text-align: center;}
+                .table-item:nth-child(10) {grid-column: 4/6;order: 10;text-align: center;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-unit01-container">
+            <div class="table-unit01-title">
+                <div class="table-item">checkbox</div>
+                <div class="table-item">승인여부</div>
+                <div class="table-item">아이디</div>
+                <div class="table-item">이름</div>
+                <div class="table-item">전화번호</div>
+                <div class="table-item">차량톤수</div>
+                <div class="table-item">가입일</div>
+                <div class="table-item">변경이력</div>
+                <div class="table-item">광고매칭이력</div>
+                <div class="table-item">메모 </div>
+            </div>
+            <div class="table-unit01-cont">
+                <div class="table-item">checkbox</div>
+                <div class="table-item color-x"><span class="pc-txt">X</span><span class="m-txt">미승인</span></div>
+                <div class="table-item">chaju01</div>
+                <div class="table-item"><span class="pc-txt">홍길동</span><span class="m-txt">(홍길동)</span></div>
+                <div class="table-item">010-1234-1234</div>
+                <div class="table-item">1톤</div>
+                <div class="table-item"><span class="pc-txt">2023-04-19</span><span class="m-txt">가입일 2023-04-19</span></div>
+                <div class="table-item else"></div>
+                <div class="table-item">버튼자리</div>
+                <div class="table-item">버튼자리2</div>
+            </div>
+            <div class="table-unit01-cont blacklist">
+                <div class="table-item">checkbox</div>
+                <div class="table-item color-x"><span class="pc-txt">X</span><span class="m-txt">미승인</span></div>
+                <div class="table-item">chaju01</div>
+                <div class="table-item"><span class="pc-txt">홍길동</span><span class="m-txt">(홍길동)</span></div>
+                <div class="table-item">010-1234-1234</div>
+                <div class="table-item">1톤</div>
+                <div class="table-item"><span class="pc-txt">2023-04-19</span><span class="m-txt">가입일 2023-04-19</span></div>
+                <div class="table-item color-x"><span class="pc-txt">미확인</span><span class="m-txt">변경이력 미확인</span></div>
+                <div class="table-item">버튼자리</div>
+                <div class="table-item">버튼자리2</div>
+            </div>
+            <div class="table-unit01-cont">
+                <div class="table-item">checkbox</div>
+                <div class="table-item"><span class="pc-txt">O</span><span class="m-txt">승인</span></div>
+                <div class="table-item">chaju01</div>
+                <div class="table-item"><span class="pc-txt">홍길동</span><span class="m-txt">(홍길동)</span></div>
+                <div class="table-item">010-1234-1234</div>
+                <div class="table-item">1톤</div>
+                <div class="table-item"><span class="pc-txt">2023-04-19</span><span class="m-txt">가입일 2023-04-19</span></div>
+                <div class="table-item color-x"><span class="pc-txt">미확인</span><span class="m-txt">변경이력 미확인</span></div>
+                <div class="table-item">버튼자리</div>
+                <div class="table-item">버튼자리2</div>
+            </div>
+            <div class="table-unit01-cont">
+                <div class="table-item">checkbox</div>
+                <div class="table-item"><span class="pc-txt">O</span><span class="m-txt">승인</span></div>
+                <div class="table-item">chaju01</div>
+                <div class="table-item"><span class="pc-txt">홍길동</span><span class="m-txt">(홍길동)</span></div>
+                <div class="table-item">010-1234-1234</div>
+                <div class="table-item">1톤</div>
+                <div class="table-item"><span class="pc-txt">2023-04-19</span><span class="m-txt">가입일 2023-04-19</span></div>
+                <div class="table-item else"></div>
+                <div class="table-item">버튼자리</div>
+                <div class="table-item">버튼자리2</div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
