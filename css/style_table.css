@@ -1,0 +1,86 @@
+
+@charset "utf-8";
+/*************************************************
+프로젝트명 : dpub
+commnet : style_m.css
+*************************************************/
+
+
+/* =============== ####table-unit ======================== */
+
+/* ---- 공통 ---- */
+[class*='table-unit']{text-align: center;align-items: center;}
+.table-container>div, .popup-table-container>div{display: grid;}
+.table-container>div:first-child, .popup-table-container>div:first-child{font-size: 13px;font-weight: 500;color: #707072;background: #F9F9FB;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
+.table-container>div:nth-child(n+2), .popup-table-container>div:nth-child(n+2){font-size: 14px;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
+
+.color-x{color: #CE052E;} /* 승인여부-X, 변경이력-미확인 일때 적용 */
+.blacklist{background: #FFF3F7;} /* 불량회원일때 적용*/
+.m-txt{display: none;} /*Mobile 전용 텍스트*/
+
+
+/* ---- table-unit01 ---- */
+.table-unit01-title, .table-unit01-cont{grid-template-columns: repeat(10, 1fr);}
+
+/* ---- table-unit02, table-unit03 ---- */
+.table-unit02-title, .table-unit02-cont, .table-unit03-title, .table-unit03-cont{grid-template-columns: repeat(12, 1fr);}
+
+/* ---- table-unit04 ---- */
+.table-unit04-title, .table-unit04-cont{grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit05 ---- */
+.table-unit05-title, .table-unit05-cont{grid-template-columns: repeat(9, 1fr);}
+.table-unit05-cont>.table-item:last-child {display: none;}
+
+/* ---- table-unit06 ---- */
+.table-unit06-title, .table-unit06-cont{grid-template-columns: repeat(7, 1fr);}
+
+/* ---- table-unit07 ---- */
+.table-unit07-title, .table-unit07-cont{grid-template-columns: repeat(9, 1fr);}
+
+/* ---- table-unit08 ---- */
+.table-unit08-title, .table-unit08-cont{grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit09 ---- */
+.table-unit09-title, .table-unit09-cont{grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr 1fr;}
+
+/* ---- table-unit10 ---- */
+.table-unit10-title, .table-unit10-cont{grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit11 ---- */
+.table-unit11-title, .table-unit11-cont{grid-template-columns: 0.5fr 1fr 1fr 2fr 1fr;}
+
+/* ---- table-unit12 ---- */
+.table-unit12-title, .table-unit12-cont{grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr 1fr;}
+
+/* ---- table-unit13 ---- */
+.table-unit13-title, .table-unit13-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit14 ---- */
+
+/* ---- table-unit15 ---- */
+.table-unit15-title, .table-unit15-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit16 ---- */
+.table-unit16-title, .table-unit16-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit17 ---- */
+.table-unit17-title, .table-unit17-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+/* ---- table-unit18 ---- */
+.table-unit18-title, .table-unit18-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+
+
+
+/* =============== ####popup-table-unit ======================== */
+
+
+/* ---- popup-table-unit01 ---- */
+.popup-table-unit01-title, .popup-table-unit01-cont{grid-template-columns: repeat(5, 1fr);}
+
+/* ---- popup-table-unit02 ---- */
+.popup-table-unit02-title, .popup-table-unit02-cont{grid-template-columns: repeat(4, 1fr);}
+
+
+
