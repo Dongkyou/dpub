@@ -14,10 +14,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style_m.css">
 
+	<link rel="stylesheet" href="css/style_table.css">
+	<link rel="stylesheet" href="css/style_m_table.css">
+
 	<title>dpub | layout</title>
 </head>
 
-<body>
+<body class="page-num15">
 	<div class="wrap-container">
 		<!-- left menu -->
 		<div class="wrap-left-menu "><!-- M모드 active -->
@@ -48,23 +51,35 @@
 		</div>
 		<!--// left menu -->
 
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
 		<div class="wrap-content">
 			<div class="title-box">
 				<strong class="title-unit01">
 					<a href="#none" class="tit">회원관리</a>
 				</strong>
 			</div>
-			<div class="tab-box">
-				<ul class="tab-unit01">
-					<li class="tab-item active"><a href="">차주</a></li>
-					<li class="tab-item"><a href="">광고주</a></li>
-					<li class="tab-item"><a href="">광고대행사</a></li>
-					<li class="tab-item"><a href="">랩핑사</a></li>
-					<li class="tab-item"><a href="">제휴 카센터</a></li>
-				</ul>
-			</div>
 
+			<!-- content -->
 			<div class="content">
+				<div class="tab-box">
+					<ul class="tab-unit01">
+						<li class="tab-item active"><a href="">차주</a></li>
+						<li class="tab-item"><a href="">광고주</a></li>
+						<li class="tab-item"><a href="">광고대행사</a></li>
+						<li class="tab-item"><a href="">랩핑사</a></li>
+						<li class="tab-item"><a href="">제휴 카센터</a></li>
+					</ul>
+				</div>
+
 				<div class="title-box">
 					<strong class="title-unit02">
 						<span class="tit">차주 회원 목록</span>
@@ -75,10 +90,184 @@
 						<option value="">전체</option>
 					</select>
 					<div class="input-search01">
-						<input type="text">
+						<input type="text" placeholder="이름, 아이디, 전화번호, 톤수로 검색">
+						<button type="button" class="btn-unit-search01">
+							<span class="ir-txt">검색</span>
+						</button>
 					</div>
 				</div>
+
+				<!-- table -->
+				<div class="table-container">
+					<div class="table-unit04-title">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="checkAll">
+								<label for="checkAll"></label>
+							</em>
+						</div>
+						<div class="table-item">광고번호</div>
+						<div class="table-item">광고주</div>
+						<div class="table-item">이미지</div>
+						<div class="table-item">광고명</div>
+						<div class="table-item">광고기간</div>
+						<div class="table-item">응모기간</div>
+						<div class="table-item">우대사항</div>
+						<div class="table-item">응모인원</div>
+						<div class="table-item">매칭현황</div>
+						<div class="table-item">광고상태</div>
+						<div class="table-item">관리</div>
+					</div>
+					<div class="table-unit04-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check01" checked><!--checked 예시-->
+								<label for="check01"></label>
+							</em>
+						</div>
+						<div class="table-item">DA-4</div>
+						<div class="table-item">디펍기획(client01)</div>
+						<div class="table-item">
+							<span class="ad-img">광고이미지</span>
+						</div>
+						<div class="table-item">디펍광고</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-01-01 ~ 2023-10-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2022-12-15 ~ 2022-12-31</span>
+							<span class="m-txt">응모기간 : 2022-12-15 ~ 2022-12-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">윙바디 차량, 주간운행 차량</span>
+							<span class="m-txt">우대사항 : 윙바디 차량, 주간운행 차량</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">20명</span>
+							<span class="m-txt">응모인원 20명</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">1/10</span>
+							<span class="m-txt">매칭현황 1/10</span>
+						</div>
+						<div class="table-item color-x">진행중</div>
+						<div class="table-item">버튼자리1</div>
+					</div>
+					<div class="table-unit04-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check02">
+								<label for="check02"></label>
+							</em>
+						</div>
+						<div class="table-item">DA-4</div>
+						<div class="table-item">디펍기획(client01)</div>
+						<div class="table-item">
+							<span class="ad-img">광고이미지</span>
+						</div>
+						<div class="table-item">디펍광고</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-01-01 ~ 2023-10-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2022-12-15 ~ 2022-12-31</span>
+							<span class="m-txt">응모기간 : 2022-12-15 ~ 2022-12-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">윙바디 차량, 주간운행 차량</span>
+							<span class="m-txt">우대사항 : 윙바디 차량, 주간운행 차량</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">20명</span>
+							<span class="m-txt">응모인원 20명</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">1/10</span>
+							<span class="m-txt">매칭현황 1/10</span>
+						</div>
+						<div class="table-item">완료</div>
+						<div class="table-item">버튼자리1</div>
+					</div>
+					<div class="table-unit04-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check03">
+								<label for="check03"></label>
+							</em>
+						</div>
+						<div class="table-item">DA-4</div>
+						<div class="table-item">디펍기획(client01)</div>
+						<div class="table-item">
+							<span class="ad-img">광고이미지</span>
+						</div>
+						<div class="table-item">디펍광고</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-01-01 ~ 2023-10-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2022-12-15 ~ 2022-12-31</span>
+							<span class="m-txt">응모기간 : 2022-12-15 ~ 2022-12-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">윙바디 차량, 주간운행 차량</span>
+							<span class="m-txt">우대사항 : 윙바디 차량, 주간운행 차량</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">20명</span>
+							<span class="m-txt">응모인원 20명</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">1/10</span>
+							<span class="m-txt">매칭현황 1/10</span>
+						</div>
+						<div class="table-item">완료</div>
+						<div class="table-item">버튼자리1</div>
+					</div>
+					<div class="table-unit04-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check04">
+								<label for="check04"></label>
+							</em>
+						</div>
+						<div class="table-item">DA-4</div>
+						<div class="table-item">디펍기획(client01)</div>
+						<div class="table-item">
+							<span class="ad-img">광고이미지</span>
+						</div>
+						<div class="table-item">디펍광고</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-01-01 ~ 2023-10-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2022-12-15 ~ 2022-12-31</span>
+							<span class="m-txt">응모기간 : 2022-12-15 ~ 2022-12-31</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">윙바디 차량, 주간운행 차량</span>
+							<span class="m-txt">우대사항 : 윙바디 차량, 주간운행 차량</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">20명</span>
+							<span class="m-txt">응모인원 20명</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">1/10</span>
+							<span class="m-txt">매칭현황 1/10</span>
+						</div>
+						<div class="table-item color-x">진행중</div>
+						<div class="table-item">버튼자리1</div>
+					</div>
+				</div>
+				<!--// table end -->
+
 			</div>
+			<!--//content -->
+
 		</div>
 	</div>
 </body>
