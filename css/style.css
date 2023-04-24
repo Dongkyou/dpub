@@ -22,6 +22,8 @@ a{display:inline-block;vertical-align:top;}
 .ir-txt{display:inline-block;text-indent:-9999px;font-size:0;}
 
 .open-layer{overflow:hidden;}
+.mask-layer{display:none;position:fixed;top:0;left:0;z-index:1;width:100%;height:100%;background:rgba(0,0,0,0.4);}
+.mask-layer.active{display:block;}
 
 /* text color */
 .color01{color:#100060 !important;}

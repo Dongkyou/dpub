@@ -130,6 +130,25 @@ $(function () {
 	});
 });
 
+//(M)전체메뉴 작동
+$(function wholeMenu() {
+
+	$(".btn-unit-wholemenu").click(function () {
+		$('body').toggleClass('left-menu-active')
+		$('.mask-layer').toggleClass('active')
+		$('.wrap-left-menu').toggleClass('active')
+		$(this).toggleClass('active')
+		//$(".mask-layer").fadeIn();
+
+		if ($('.btn-unit-wholemenu').hasClass('acive')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+
+	});
+});
+
 //서비스신청 레이어팝업
 $(function () {
 	var LayerPopup = $('#popupForm');
