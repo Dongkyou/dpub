@@ -18,7 +18,7 @@ transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
 -ms-transition: all 0.2s ease-in-out;}
-.wrap-left-menu.active{opacity:1;visibility:visible;width:180px;}
+.wrap-left-menu.active{opacity:1;visibility:visible;width:280px;}
 
 /* 왼쪽메뉴 닫기 - 모바일전용 */
 .wrap-left-menu .btn-left-close{position:absolute;top:0;right:-30px;width:30px;height:30px;background:#fff;padding:0;outline:none;border:1px solid #313133;border-left:0;}

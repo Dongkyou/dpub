@@ -20,7 +20,7 @@ commnet : style_m.css
 
 
 /* ---- table-unit01 ---- */
-.table-unit01-title, .table-unit01-cont{grid-template-columns: repeat(10, 1fr);}
+.table-unit01-title, .table-unit01-cont{grid-template-columns: 60px 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit02, table-unit03 ---- */
 .table-unit02-title, .table-unit02-cont, .table-unit03-title, .table-unit03-cont{grid-template-columns: repeat(12, 1fr);}
@@ -57,6 +57,7 @@ commnet : style_m.css
 .table-unit13-title, .table-unit13-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit14 ---- */
+.table-unit14-title, .table-unit14-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit15 ---- */
 .table-unit15-title, .table-unit15-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
@@ -82,5 +83,16 @@ commnet : style_m.css
 /* ---- popup-table-unit02 ---- */
 .popup-table-unit02-title, .popup-table-unit02-cont{grid-template-columns: repeat(4, 1fr);}
 
+/* ---- popup-table-unit03 ---- */
+.popup-table-unit03-title, .popup-table-unit03-cont{grid-template-columns: repeat(5, 1fr);}
+
+/* ---- popup-table-unit04 ---- */
+.popup-table-unit04-title, .popup-table-unit04-cont{grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;}
+
+/* ---- popup-table-unit05 ---- */
+.popup-table-unit05-title, .popup-table-unit05-cont{grid-template-columns: 1fr 2fr 1fr 2fr 1fr;}
+
+/* ---- popup-table-unit06 ---- */
+.popup-table-unit06-title, .popup-table-unit06-cont{grid-template-columns: 0.5fr 1fr 1fr 2fr 0.5fr 2fr 1fr;}
 
 

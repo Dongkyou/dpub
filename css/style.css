@@ -46,7 +46,7 @@ animation:obj01 0.6s ease both;
 /* 2023-04-19 진희 작업 */
 .wrap-container {display: flex;align-items: stretch;min-height: 100vh;background: #F9F9FB;}
 .wrap-left-menu{width: 260px;background: #313133;}
-.wrap-left-menu .logo-unit01{display:block;margin:34px auto 0;}
+.wrap-left-menu .logo-unit01{display:block;margin:34px 0 0 36px;}
 .wrap-left-menu .user{margin:50px 0 40px 36px;}
 .wrap-left-menu .user>.txt{font-weight:500;font-size:15px;color:#fff;vertical-align:middle;}
 .wrap-left-menu .btn-unit-logout{margin-left:50px;}
@@ -68,13 +68,13 @@ animation:obj01 0.6s ease both;
 .menu-list>li.menu08{} /* 관리자 사용 이력 */
 .menu-list>li.menu09{} /* 계정 관리 */
 
-.wrap-content{padding:50px 32px 0;box-sizing:border-box;width:100%;height:100%;background:#F9F9FB;}
+.wrap-content{padding:50px 32px 0;box-sizing:border-box;height:100%;background:#F9F9FB;flex-grow: 1;}
 .wrap-content>.title-box{}/* 메뉴제목 */
-.wrap-content>.title-box+.content{margin-top:14px;}
+.wrap-content>.title-box+.content{margin-top:16px;}
 
-.content{padding:18px 20px;box-sizing:border-box;border-radius: 6px;background: #fff;}
-.content .title-box{margin:28px 0 0;} /* 서브제목, 리스트 제목 */
-.content .top-input-box+.table-container{margin:12px 0 0;}
+.content{padding:17px 20px;box-sizing:border-box;border-radius: 6px;background: #fff;}
+.content .title-box{margin:29px 0 0;} /* 서브제목, 리스트 제목 */
+.content .input-button-wrap+.table-container{margin:12px 0 0;}
 
 .container01{}
 .container01 .inner{}
@@ -143,7 +143,7 @@ transition:all 0.5s ease-in;}
 /* =============== ####btn-unit ======================== */
 
 [class*='title-unit0']{}
-[class*='title-unit0'].bold{font-weight:700;}
+[class*='title-unit0'].bold .tit{font-weight:700;}
 
 /* ---- title-unit01 ---- */
 .title-unit01{}
@@ -198,6 +198,8 @@ transition:all 0.5s ease-in;}
 
 /* =============== ####btn-unit ======================== */
 [class*='btn-unit']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;}
+.button-box>a{margin-right: 7px;}
+.button-box>a:last-child{margin-right: 0;}
 
 /* ---- btn-unit01 ---- */
 [class*='btn-unit01']{font-size: 14px;font-weight: 500;width: 100px;height: 38px;line-height: 38px;border-radius: 8px;text-align: center;}
@@ -218,8 +220,8 @@ transition:all 0.5s ease-in;}
 /* ---- btn-unit03 ---- */
 [class*='btn-unit03']{font-size: 13px;font-weight: 500;padding: 3px 13px;border-radius: 6px;}
 
-.btn-unit03-type01{background: #FEF5EF;}
-.btn-unit03-type01 .txt{color: #F36A10;}
+.btn-unit03-type01{background: #FEEBD7;}
+.btn-unit03-type01 .txt{color: #F16204;}
 .btn-unit03-type02{background: #fff;border: 1px solid #E2E2E2;}
 .btn-unit03-type02 .txt{color: #313133;}
 
@@ -234,11 +236,11 @@ transition:all 0.5s ease-in;}
 .btn-unit-logout{width:60px;height:20px;text-align:center;background:#4F4F54;border-radius:11px;vertical-align:middle;}
 .btn-unit-logout .txt{font-size:11px;line-height:20px;color:#ABABB2;}
 
-.btn-unit-search01{width:40px;height:40px;}
-.btn-unit-search01 .ir-txt{position:absolute;top:50%;left:50%;margin:-11px 0 0 -11px;width:50%;height:50%;background:url(../img/sprites_dpub.svg) -100px -200px no-repeat;}
+.btn-unit-search01{width:38px;height:38px;}
+.btn-unit-search01 .ir-txt{position:absolute;top:50%;left:50%;margin:-11px 0 0 -11px;width:100%;height:100%;background:url(../img/sprites_dpub.svg) -100px -200px no-repeat;}
 
 /* =============== ####input-unit ======================== */
-input,select{height:40px;border:1px solid #E9E9E9;box-sizing:border-box;vertical-align:middle;}
+input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-box;vertical-align:middle;}
 
 [class*='input-unit0']{position:relative;display:block;box-sizing:border-box;padding:0;margin:0;border:0;outline:none;appearance:none;font-size:0;}
 [class*='input-unit0']+[class*='input-unit0']{margin-top:14px;}
@@ -246,13 +248,16 @@ input,select{height:40px;border:1px solid #E9E9E9;box-sizing:border-box;vertical
 [class*='input-unit0'] input{border:1px solid #E9E9E9;box-sizing:border-box;vertical-align:middle;}
 [class*='input-unit0'] label,
 [class*='input-unit0'] select{position:relative;font-size:14px;color:#000;vertical-align:middle;}
-[class*='input-unit0'] label.nec:after{content:'*';clear:both;font-weight:500;font-size:14px;color:#B30039;}
+[class*='input-unit0'] label.nec:after{content:'*';clear:both;font-weight:500;font-size:14px;color:#B30039;padding-left: 5px;}
 
 .input-unit01{}
 .input-unit01 [class*='input0']{}
 .input-unit01 [class*='input0']+[class*='input0']{margin-top:8px;}
 .input-unit01 input{position:relative;width:318px;height:40px;line-height:40px;padding-left:12px;font-size:14px;}
-.input-unit01 select{position:relative;width:318px;height:40px;line-height:40px;padding:0 12px;font-size:14px;}
+
+/*.input-unit01 select{position:relative;width:318px;height:40px;line-height:40px;padding:0 12px;font-size:14px;}*/
+.input-unit01 .select-wrap {position: relative;width: 318px;height: 40px;border-radius: 0;}
+
 .input-unit01 [class*='input0'].half50 input,
 .input-unit01 [class*='input0'].half50 select{width:150px;}
 .input-unit01 [class*='input0'].half50 em{position:relative;display:inline-block;margin:0 6px;height:40px;}
@@ -264,7 +269,7 @@ input,select{height:40px;border:1px solid #E9E9E9;box-sizing:border-box;vertical
 .input-unit01 [class*='input0'].hafl-btn01 input{width:228px;}
 .input-unit01 [class*='input0'].hafl-btn01 input+button{margin-left:8px;}
 
-.input-search01{display:inline-block;margin-left:7px;}
+.input-search01{display:inline-block;margin-left:7px;box-sizing: border-box;}
 .input-search01 input{}
 .input-search01 .btn-search{}
 
@@ -275,7 +280,7 @@ input[type="checkbox"]:checked + label::after{content:'';clear:both;position:abs
 
 .input-check01{display:inline-block;position:relative;}
 .input-check01 input[type="checkbox"]{}
-.input-check01 label{width:20px;height:20px;background:#fff;border-radius:4px;border:1px solid #D5D5DC;}
+.input-check01 label{width:20px;height:20px;background:#fff;border-radius:4px;border:1px solid #D5D5DC;box-sizing: border-box;}
 .input-check01 input[type="checkbox"]:checked + label{background:#FFF3F7;border-color:#CE0A49;}
 .input-check01 input[type="checkbox"]:checked + label::after{content:'';clear:both;position:absolute;left:50%;top:50%;margin:-5px 0 0 -7px;width:14px;height:10px;background-position:-100px -150px;}
 
@@ -283,10 +288,12 @@ input[type="checkbox"]:checked + label::after{content:'';clear:both;position:abs
 .title-box{}
 .title-box+.tab-box{margin:34px 0 0;}
 
-.top-input-box{margin:34px 0 0;}
-.top-input-box select{width:166px;box-sizing:border-box;border-radius:5px;border:1px solid #E9E9E9;font-size:14px;}
+.input-button-wrap {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;margin-top: 10px;}
+
+.top-input-box{}
+/*.top-input-box select{width:166px;box-sizing:border-box;border-radius:5px;border:1px solid #E9E9E9;font-size:14px;padding: 0 13px;}*/
 .top-input-box .input-search01{width:358px;border-radius:5px;border:1px solid #E9E9E9;background:#fff;}
-.top-input-box input{width:85%;box-sizing:border-box;padding:10px 13px;border:0;}
+.top-input-box input{width:86%;box-sizing:border-box;padding:10px 13px;border:0;}
 .top-input-box input::placeholder{color:#D9D9D9;}
 
 @media only screen and (min-width:980px) {
@@ -296,6 +303,13 @@ input[type="checkbox"]:checked + label::after{content:'';clear:both;position:abs
 	.input-unit01 [class*='input0']+[class*='input0'].half70{margin-left:140px;}
 	.input-unit01 .half70 input+input{margin-left:7px;}
 }
+
+
+/* =============== ####select 화살표 변경(230426) ========================*/
+select {width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;appearance: none;background: transparent;border: 0;font-size: 14px;padding: 0 13px;}
+.select-wrap {width: 166px;height: 38px;border-radius: 5px;position: relative;border: 1px solid #e9e9e9;display: inline-block;}
+.select-wrap::before{content: '';position: absolute;top: 54%;right: 13px;background: url(../img/sprites_dpub.svg) -100px -350px no-repeat;width: 10px;height: 6px;margin: -5px 0 0 -3px;vertical-align: middle;}
+
 
 
 /* =============== ####list-unit ======================== */
@@ -310,24 +324,19 @@ ul.tab-unit01>li.tab-item:last-child {margin-right: 0;}
 ul.tab-unit01 li.active {background:#C20344;color: #fff;}
 
 /* =============== ####page-unit ======================== */
-ul.page-unit01{display: flex;justify-content: space-between;width: 282px;}
-ul.page-unit01>li{width: 36px;height: 36px;text-align: center;font-size: 13px;line-height: 36px;font-weight: 500;background: #fff;border: 1px solid #C20344;border-radius: 4px;box-sizing: border-box;}
-ul.page-unit01>li>a{color: #C20344;}
+ul.page-unit01{display: flex;justify-content: center;margin-top: 26px;}
+ul.page-unit01>li{width: 36px;height: 36px;text-align: center;font-size: 13px;line-height: 36px;font-weight: 500;background: #fff;border: 1px solid #C20344;border-radius: 4px;box-sizing: border-box;margin-right: 5px;}
+ul.page-unit01>li:last-child {margin-right: 0;}
+ul.page-unit01>li>a{width: 100%;height:100%;color: #C20344;}
 ul.page-unit01>li.active{background: #C20344;}
 ul.page-unit01>li.active>a{color: #fff;}
 
-[class*='Arr']{background:url(../img/sprites_dpub.svg) no-repeat;width: 20px;height: 20px;vertical-align: middle;background-position: -100px -52px;}
+[class*='Arr']{position:relative;}
+[class*='Arr']:before{content:'';position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px; background:url(../img/sprites_dpub.svg) no-repeat;width: 20px;height: 20px;vertical-align: middle;background-position: -100px -50px;}
 ul.page-unit01>li>a.Arr-next{transform: scaleX(-1);}
 ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
 /* =============== ####table-unit ======================== */
-[class*='table-unit'] {text-align: center;align-items: center;}
-.table-unit01-title, .table-unit01-cont {display: grid;grid-template-columns: repeat(10, 1fr);}
-.table-unit01-title {font-size: 13px;font-weight: 500;color: #707072;background: #F9F9FB;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
-.table-unit01-cont {font-size: 14px;padding: 10px 0;border-bottom: 1px solid #E2E2E2;}
-.color-x {color: #CE052E;} /* 승인여부-X, 변경이력-미확인 일때 적용 */
-.blacklist {background: #FFF3F7;} /* 불량회원일때 적용*/
-.m-txt {display: none;} /*Mobile 전용 텍스트*/
 
 
 /* =============== ######반응형 분기 (max-width:980px) ======================== */

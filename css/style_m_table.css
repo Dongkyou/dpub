@@ -15,11 +15,11 @@ commnet : style_m.css
 
 [class*='table-unit']{text-align: left;align-items: start;}
 .table-container>div:first-child, .popup-table-container>div:first-child{display: none;}
-.table-container>div:nth-child(n+2), .popup-table-container>div:nth-child(n+2) {padding: 18px;}
+.table-container>div:nth-child(n+2), .popup-table-container>div:nth-child(n+2) {padding: 10px;}
 
 
-.table-item{padding: 7px 0;position: relative;padding-left: 8px;}
-.table-item::before{content:'';display:inline-block;position:absolute;width: 3px;height: 3px;background-color: #CE052E;top:15px;left:0;border-radius: 50%;}
+.table-item{padding: 5px 0;position: relative;padding-left: 8px;}
+.table-item::before{content:'';display:inline-block;position:absolute;width: 3px;height: 3px;background-color: #CE052E;top:11px;left:0;border-radius: 50%;}
 
 /*보기편하기 위한 스타일
 .table-item{margin: 3px;padding: 2px;border: 3px solid currentColor;border-radius: 3px;font-weight: bold;background: #26ab1c;transition: 0.4s;}*/
@@ -28,14 +28,14 @@ commnet : style_m.css
 
 /* ---- table-unit01 ---- */
 .table-unit01-cont{
-    grid-template-areas:
-        "check id-name approve"
-        "check phone day"
-        "check car-weight editday"
-        "check button1 button2";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name approve"
+		"check phone day"
+		"check car-weight editday"
+		"check button1 button2";
+	grid-template-columns: 0.23fr 1fr 1fr;grid-template-rows: repeat(3, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
-.table-unit01-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
+.table-unit01-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit01-cont>.table-item:nth-child(2){grid-area: approve;}
 .table-unit01-cont>.table-item:nth-child(3){grid-area: id-name;}
 .table-unit01-cont>.table-item:nth-child(4){display: none;}
@@ -43,7 +43,7 @@ commnet : style_m.css
 .table-unit01-cont>.table-item:nth-child(6){grid-area: car-weight;}
 .table-unit01-cont>.table-item:nth-child(7){grid-area: day;}
 .table-unit01-cont>.table-item:nth-child(8){grid-area: editday;}
-.table-unit01-cont>.table-item:nth-child(9){grid-area: button1;text-align: center;}
+.table-unit01-cont>.table-item:nth-child(9){grid-area: button1;text-align: center;padding: 6px 0 6px 0;}
 .table-unit01-cont>.table-item:nth-child(10){grid-area: button2;text-align: center;}
 
 .table-unit01-cont>.table-item:nth-child(1)::before, .table-unit01-cont>.table-item:nth-child(4)::before, .table-unit01-cont>.table-item:nth-child(9)::before, .table-unit01-cont>.table-item:nth-child(10)::before{display: none;}
@@ -51,12 +51,12 @@ commnet : style_m.css
 
 /* ---- table-unit02 ---- */
 .table-unit02-cont{
-    grid-template-areas:
-        "check id-name approve"
-        "check phone day"
-        "check company-number editday"
-        "check button-set button-set";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name approve"
+		"check phone day"
+		"check company-number editday"
+		"check button-set button-set";
+	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit02-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit02-cont>.table-item:nth-child(2){grid-area: approve;}
@@ -76,13 +76,13 @@ commnet : style_m.css
 
 /* ---- table-unit03 ---- */
 .table-unit03-cont{
-    grid-template-areas:
-        "check id-name approve"
-        "check phone day"
-        "check company-number editday"
-        "check area ."
-        "check button1 button2";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name approve"
+		"check phone day"
+		"check company-number editday"
+		"check area ."
+		"check button1 button2";
+	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit03-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit03-cont>.table-item:nth-child(2){grid-area: approve;}
@@ -102,15 +102,15 @@ commnet : style_m.css
 
 /* ---- table-unit04 ---- */
 .table-unit04-cont{
-    grid-template-areas:
-        "check ad-number . state"
-        "check advertiser . apply-member"
-        "check ad-img ad-title matching"
-        "check ad-term ad-term ad-term"
-        "check apply-term apply-term apply-term"
-        "check favor favor favor"
-        "check button button button";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check ad-number . state"
+		"check advertiser . apply-member"
+		"check ad-img ad-title matching"
+		"check ad-term ad-term ad-term"
+		"check apply-term apply-term apply-term"
+		"check favor favor favor"
+		"check button button button";
+	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit04-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit04-cont>.table-item:nth-child(2){grid-area: ad-number;}
@@ -131,14 +131,14 @@ commnet : style_m.css
 
 /* ---- table-unit05 ---- */
 .table-unit05-cont{
-    grid-template-areas:
-        "check id-name state"
-        "check phone car-type"
-        "check area prove"
-        "check term term"
-        "check car-picture car-picture"
-        "check button button";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name state"
+		"check phone car-type"
+		"check area prove"
+		"check term term"
+		"check car-picture car-picture"
+		"check button button";
+	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit05-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit05-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -158,12 +158,12 @@ commnet : style_m.css
 
 /* ---- table-unit06 ---- */
 .table-unit06-cont{
-    grid-template-areas:
-        "prove-number prove-term"
-        "km1 km2"
-        "prove-picture prove-picture"
-        "prove-day button";
-    grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"prove-number prove-term"
+		"km1 km2"
+		"prove-picture prove-picture"
+		"prove-day button";
+	grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit06-cont>.table-item:nth-child(1){grid-area: prove-number;}
 .table-unit06-cont>.table-item:nth-child(2){grid-area: prove-term;}
@@ -179,12 +179,12 @@ commnet : style_m.css
 
 /* ---- table-unit07 ---- */
 .table-unit07-cont{
-    grid-template-areas:
-        "ad-number advertiser time-state"
-        "ad-img ad-title matching"
-        "ad-img ad-title un-calculate"
-        "ad-term ad-term ad-term";
-    grid-template-columns: 1fr 2fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"ad-number advertiser time-state"
+		"ad-img ad-title matching"
+		"ad-img ad-title un-calculate"
+		"ad-term ad-term ad-term";
+	grid-template-columns: 1fr 2fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit07-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .table-unit07-cont>.table-item:nth-child(2){grid-area: advertiser;}
@@ -202,13 +202,13 @@ commnet : style_m.css
 
 /* ---- table-unit08 ---- */
 .table-unit08-cont{
-    grid-template-areas:
-        "check id-name calculate-number money"
-        "check phone phone phone"
-        "check bank-name-number bank-name-number bank-name-number"
-        "check ad-term ad-term ad-term"
-        "check button1 button2 button3";
-    grid-template-columns: 50px;grid-auto-columns: 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name calculate-number money"
+		"check phone phone phone"
+		"check bank-name-number bank-name-number bank-name-number"
+		"check ad-term ad-term ad-term"
+		"check button1 button2 button3";
+	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit08-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit08-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -229,12 +229,12 @@ commnet : style_m.css
 
 /* ---- table-unit09 ---- */
 .table-unit09-cont{
-    grid-template-areas:
-        "id-name money"
-        "phone phone"
-        "bank-name-number bank-name-number"
-        "calculate calculate";
-    grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"id-name money"
+		"phone phone"
+		"bank-name-number bank-name-number"
+		"calculate calculate";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit09-cont>.table-item:nth-child(1){grid-area: id-name;}
 .table-unit09-cont>.table-item:nth-child(2){display: none;}
@@ -248,11 +248,11 @@ commnet : style_m.css
 
 /* ---- table-unit10 ---- */
 .table-unit10-cont{
-    grid-template-areas:
-        "approve-number day"
-        "ad-name-time money"
-        "company-name-number company-name-number";
-    grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"approve-number day"
+		"ad-name-time money"
+		"company-name-number company-name-number";
+	grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit10-cont>.table-item:nth-child(1){grid-area: approve-number;}
 .table-unit10-cont>.table-item:nth-child(2){grid-area: company-name-number;}
@@ -266,11 +266,11 @@ commnet : style_m.css
 
 /* ---- table-unit11 ---- */
 .table-unit11-cont{
-    grid-template-areas:
-        "id-name day-time"
-        "matching matching"
-        "detail detail";
-    grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"id-name day-time"
+		"matching matching"
+		"detail detail";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit11-cont>.table-item:nth-child(1){display: none;}
 .table-unit11-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -281,12 +281,12 @@ commnet : style_m.css
 
 /* ---- table-unit12 ---- */
 .table-unit12-cont{
-    grid-template-areas:
-        "ad-number advertiser state"
-        "ad-img ad-name ad-member"
-        "ad-img ad-name km"
-        "ad-term ad-term ad-term";
-    grid-template-columns: 0.7fr 1.3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"ad-number advertiser state"
+		"ad-img ad-name ad-member"
+		"ad-img ad-name km"
+		"ad-term ad-term ad-term";
+	grid-template-columns: 0.7fr 1.3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit12-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .table-unit12-cont>.table-item:nth-child(2){grid-area: ad-img;}
@@ -300,12 +300,12 @@ commnet : style_m.css
 
 /* ---- table-unit13 ---- */
 .table-unit13-cont{
-    grid-template-areas:
-        "id-name km"
-        "carnumber-type area"
-        "phone term"
-        "location location";
-    grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"id-name km"
+		"carnumber-type area"
+		"phone term"
+		"location location";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit13-cont>.table-item:nth-child(1){grid-area: id-name;}
 .table-unit13-cont>.table-item:nth-child(2){grid-area: carnumber-type;}
@@ -317,14 +317,32 @@ commnet : style_m.css
 .table-unit13-cont>.table-item:nth-child(8){grid-area: location;}
 
 /* ---- table-unit14 ---- */
+.table-unit14-cont{
+	grid-template-areas:
+		"check title views"
+		"check detail file-icon"
+		"check day-time .";
+	grid-template-columns: 1fr 2fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+}
+.table-unit14-cont>.table-item:nth-child(1){grid-area: check;}
+.table-unit14-cont>.table-item:nth-child(2){display: none;}
+.table-unit14-cont>.table-item:nth-child(3){grid-area: title;font-weight: 500;}
+.table-unit14-cont>.table-item:nth-child(4){grid-area: detail;}
+.table-unit14-cont>.table-item:nth-child(5){grid-area: file-icon;}
+.table-unit14-cont>.table-item:nth-child(6){grid-area: views;}
+.table-unit14-cont>.table-item:nth-child(7){grid-area: day-time;}
+
+.table-unit14-cont>.table-item::before{display: none;}
+.table-unit14-cont>.table-item{padding-left: 0;}
+
 
 /* ---- table-unit15 ---- */
 .table-unit15-cont{
-    grid-template-areas:
-        "check title answer"
-        "check detail detail"
-        "check id-day id-day";
-    grid-template-columns: 50px 1fr 50px;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check title answer"
+		"check detail detail"
+		"check id-day id-day";
+	grid-template-columns: 50px 1fr 50px;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit15-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit15-cont>.table-item:nth-child(2){display: none;}
@@ -339,10 +357,10 @@ commnet : style_m.css
 
 /* ---- table-unit16 ---- */
 .table-unit16-cont{
-    grid-template-areas:
-        "check number-title y-n"
-        "check img day";
-    grid-template-columns: 50px 1fr 0.5fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check number-title y-n"
+		"check img day";
+	grid-template-columns: 50px 1fr 0.5fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit16-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit16-cont>.table-item:nth-child(2){grid-area: number-title;font-weight: 500;}
@@ -356,11 +374,11 @@ commnet : style_m.css
 
 /* ---- table-unit17 ---- */
 .table-unit17-cont{
-    grid-template-areas:
-        "id day-time"
-        "ip ip"
-        "detail page-info";
-    grid-template-columns: 1.5fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"id day-time"
+		"ip ip"
+		"detail page-info";
+	grid-template-columns: 1.5fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit17-cont>.table-item:nth-child(1){display: none;}
 .table-unit17-cont>.table-item:nth-child(2){grid-area: id;}
@@ -374,11 +392,11 @@ commnet : style_m.css
 
 /* ---- table-unit18 ---- */
 .table-unit18-cont{
-    grid-template-areas:
-        "check id-name power"
-        "check phone day"
-        "check depart depart";
-    grid-template-columns: 50px 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"check id-name power"
+		"check phone day"
+		"check depart depart";
+	grid-template-columns: 50px 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit18-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit18-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -396,11 +414,11 @@ commnet : style_m.css
 
 /* ---- popup-table-unit01 ---- */
 .popup-table-unit01-cont{
-    grid-template-areas:
-        "ad-number advertiser state"
-        "ad-number ad-name ad-name"
-        "ad-number ad-term ad-term";
-    grid-template-columns: 1fr 3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"ad-number advertiser state"
+		"ad-number ad-name ad-name"
+		"ad-number ad-term ad-term";
+	grid-template-columns: 1fr 3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .popup-table-unit01-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .popup-table-unit01-cont>.table-item:nth-child(2){grid-area: advertiser;}
@@ -413,10 +431,10 @@ commnet : style_m.css
 
 /* ---- popup-table-unit02 ---- */
 .popup-table-unit02-cont{
-    grid-template-areas:
-        "ad-number ad-name state"
-        "ad-number ad-term ad-term";
-    grid-template-columns: 1fr 3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-areas:
+		"ad-number ad-name state"
+		"ad-number ad-term ad-term";
+	grid-template-columns: 1fr 3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .popup-table-unit02-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .popup-table-unit02-cont>.table-item:nth-child(2){grid-area: ad-name;}
@@ -426,7 +444,76 @@ commnet : style_m.css
 .popup-table-unit02-cont>.table-item:nth-child(1)::before{display: none;}
 .popup-table-unit02-cont>.table-item:nth-child(1){padding-left: 0;}
 
+/* ---- popup-table-unit03 ---- */
+.popup-table-unit03-cont{
+	grid-template-areas:
+		"id-name day"
+		"company phone";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+}
+.popup-table-unit03-cont>.table-item:nth-child(1){grid-area: id-name;}
+.popup-table-unit03-cont>.table-item:nth-child(2){display: none;}
+.popup-table-unit03-cont>.table-item:nth-child(3){grid-area: company;}
+.popup-table-unit03-cont>.table-item:nth-child(4){grid-area: phone;}
+.popup-table-unit03-cont>.table-item:nth-child(5){grid-area: day;}
+
+/* ---- popup-table-unit04 ---- */
+.popup-table-unit04-cont{
+	grid-template-areas:
+		"ad-number ad-name day"
+		"ad-number id-name type-weight"
+		"ad-number picture picture";
+	grid-template-columns: 1fr 3fr 2fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+}
+.popup-table-unit04-cont>.table-item:nth-child(1){grid-area: ad-number;}
+.popup-table-unit04-cont>.table-item:nth-child(2){grid-area: ad-name;}
+.popup-table-unit04-cont>.table-item:nth-child(3){grid-area: id-name;}
+.popup-table-unit04-cont>.table-item:nth-child(4){grid-area: type-weight;}
+.popup-table-unit04-cont>.table-item:nth-child(5){grid-area: picture;}
+.popup-table-unit04-cont>.table-item:nth-child(6){grid-area: day;}
+
+.popup-table-unit04-cont>.table-item:nth-child(1)::before, .popup-table-unit04-cont>.table-item:nth-child(5)::before{display: none;}
+.popup-table-unit04-cont>.table-item:nth-child(1), .popup-table-unit04-cont>.table-item:nth-child(5){padding-left: 0;}
+
+/* ---- popup-table-unit05 ---- */
+.popup-table-unit05-cont{
+	grid-template-areas:
+		"number ."
+		"ad-term ad-term"
+		"picture picture"
+		"button button";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+}
+.popup-table-unit05-cont>.table-item:nth-child(1){grid-area: number;}
+.popup-table-unit05-cont>.table-item:nth-child(2){grid-area: picture;}
+.popup-table-unit05-cont>.table-item:nth-child(3){display: none;}
+.popup-table-unit05-cont>.table-item:nth-child(4){grid-area: ad-term;}
+.popup-table-unit05-cont>.table-item:nth-child(5){grid-area: button;}
+
+.popup-table-unit05-cont>.table-item::before{display: none;}
+.popup-table-unit05-cont>.table-item{padding-left: 0;}
+
+/* ---- popup-table-unit06 ---- */
+.popup-table-unit06-cont{
+	grid-template-areas:
+		"number day"
+		"ad-term ad-term"
+		"money1 state"
+		"money2 money2"
+		"button button";
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+}
+.popup-table-unit06-cont>.table-item:nth-child(1){grid-area: number;}
+.popup-table-unit06-cont>.table-item:nth-child(2){grid-area: money1;}
+.popup-table-unit06-cont>.table-item:nth-child(3){grid-area: money2;}
+.popup-table-unit06-cont>.table-item:nth-child(4){grid-area: day;}
+.popup-table-unit06-cont>.table-item:nth-child(5){grid-area: state;}
+.popup-table-unit06-cont>.table-item:nth-child(6){grid-area: ad-term;}
+.popup-table-unit06-cont>.table-item:nth-child(7){grid-area: button;}
+
+.popup-table-unit06-cont>.table-item::before{display: none;}
+.popup-table-unit06-cont>.table-item{padding-left: 0;}
 
 
 
-            }
+			}

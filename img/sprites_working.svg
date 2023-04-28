@@ -123,6 +123,12 @@
 	</symbol>
 	<!--// [Arrow icon] 002  -->
 
+	<!-- [Arrow icon] 003  -->
+	<symbol id="svgIconArr003">
+	<path id="다각형_7" data-name="다각형 7" d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
+	</symbol>
+	<!--// [Arrow icon] 003  -->
+
 	<!-- [Checkbox icon] 001  -->
 	<symbol id="svgIconCheck001">
 		<path d="M17.2,11.732,12.486,16.45,9.352,13.316a.792.792,0,0,0-1.119,1.119l3.694,3.694a.79.79,0,0,0,1.119,0l5.278-5.278A.791.791,0,1,0,17.2,11.732" transform="translate(-8 -11.501)" fill="#c20344"/>
@@ -156,6 +162,9 @@
 
 
 
+
+
+
 	<!-- [신규]#svgIcon001 -->
 	<use xlink:href="#svgIcon001" x="0" y="0" />
 	<use xlink:href="#svgIcon001W" x="50" y="0" />
@@ -181,6 +190,7 @@
 	<use xlink:href="#svgIconSearch001" x="100" y="200" />
 	<use xlink:href="#svgIconArr001" x="100" y="50" />
 	<use xlink:href="#svgIconArr002" x="150" y="50" />
+	<use xlink:href="#svgIconArr003" x="100" y="350" />
 
 	<use xlink:href="#svgIconCheck001" x="100" y="100" />
 	<use xlink:href="#svgIconCheck002" x="150" y="100" />
