@@ -54,5 +54,12 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;}
 /* 모바일 헤더 전용 */
 .logo-unit02{display:block;margin:0 auto;}
 
+/* 로그인 페이지 */
+.container-login01{position:inherit;top:inherit;left:inherit;padding:40px 0;width:calc(100% - 32px);margin:0 auto;height:inherit;background:none;}
+
+.login-input{margin:30px 35px 0;}
+.login-input input[type="text"]{width:100%;height:40px;}
+.confirm-login button{width:100%;height:40px;}
+
 
 }
