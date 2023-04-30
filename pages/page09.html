@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+<link rel="icon" type="image/x-icon" href="">
+<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
+
+<!-- 리소스 링크 -->
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style_m.css">
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/common.js"></script>
+
+<title>dpub | page09</title>
+</head>
+
+<body class="page-num15">
+	<div class="wrap-container">
+		<!-- left menu -->
+		<div class="wrap-left-menu"><!-- M모드 active -->
+			<div class="logo-unit01">
+				<span class="ir-txt">디펍</span>
+			</div>
+			<div class="user">
+				<span class="txt">관리자</span>
+				<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+			</div>
+			<div class="menu-box">
+				<ul class="menu-list">
+					<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+					<li class="menu02"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+					<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+					<li class="menu04"><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+					<li class="menu05"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+					<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+					<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+					<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+					<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// left menu -->
+
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+
+			<button type="button" class="btn-unit-wholemenu">
+				<span class="line"></span>
+			</button>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
+		<div class="wrap-content">
+			<div class="title-box">
+				<strong class="title-unit01 bold">
+					<a href="#none" class="tit">회원관리</a>
+				</strong>
+			</div>
+
+			<!-- content -->
+			<div class="content">
+				<div class="tab-box">
+					<ul class="tab-unit01">
+						<li class="tab-item"><a href="">차주</a></li>
+						<li class="tab-item active"><a href="">광고주</a></li>
+						<li class="tab-item"><a href="">광고대행사</a></li>
+						<li class="tab-item"><a href="">랩핑사</a></li>
+						<li class="tab-item"><a href="">제휴 카센터</a></li>
+					</ul>
+				</div>
+
+				<div class="title-box">
+					<strong class="title-unit02 bold">
+						<span class="tit">광고주 회원 목록</span>
+					</strong>
+				</div>
+				<div class="input-button-wrap">
+					<div class="top-input-box">
+						<div class="select-wrap">
+							<select name="" id="">
+								<option value="">전체</option>
+							</select>
+						</div>
+						<div class="input-search01">
+							<input type="text" placeholder="이름, 아이디, 전화번호, 회사명으로 검색">
+							<button type="button" class="btn-unit-search01">
+								<span class="ir-txt">검색</span>
+							</button>
+						</div>
+					</div>
+					<div class="button-box">
+						<a href="" class="btn-unit01-type01">
+							<span class="txt">등록</span>
+						</a>
+						<a href="" class="btn-unit01-type02">
+							<span class="txt">삭제</span>
+						</a>
+					</div>
+				</div>
+
+
+
+				<!-- table -->
+				<div class="table-container">
+					<div class="table-unit02-title">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check01">
+								<label for="check01"></label>
+							</em>
+						</div>
+						<div class="table-item">승인여부</div>
+						<div class="table-item">아이디</div>
+						<div class="table-item">이름</div>
+						<div class="table-item">전화번호</div>
+						<div class="table-item">회사명</div>
+						<div class="table-item">사업자등록번호</div>
+						<div class="table-item">가입일</div>
+						<div class="table-item">변경이력</div>
+						<div class="table-item">광고수</div>
+						<div class="table-item">관리계정</div>
+						<div class="table-item">메모</div>
+					</div>
+					<div class="table-unit02-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check02" checked><!--checked 예시-->
+								<label for="check02"></label>
+							</em>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">O</span>
+							<span class="m-txt">승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">client01</span>
+							<span class="m-txt">client01(김고객)</span>
+						</div>
+						<div class="table-item">김고객</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">디펍기획</span>
+							<span class="m-txt">디펍기획(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-04-19</span>
+							<span class="m-txt">가입일 2023-04-19</span>
+						</div>
+						<div class="table-item else"></div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">계정확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">계정확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+					<div class="table-unit02-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check03">
+								<label for="check03"></label>
+							</em>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">X</span>
+							<span class="m-txt">미승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">client01</span>
+							<span class="m-txt">client01(김고객)</span>
+						</div>
+						<div class="table-item">김고객</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">디펍기획</span>
+							<span class="m-txt">디펍기획(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-04-19</span>
+							<span class="m-txt">가입일 2023-04-19</span>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">미확인</span>
+							<span class="m-txt">변경이력 미확인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">계정확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">계정확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+					<div class="table-unit02-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check04">
+								<label for="check04"></label>
+							</em>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">X</span>
+							<span class="m-txt">미승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">client01</span>
+							<span class="m-txt">client01(김고객)</span>
+						</div>
+						<div class="table-item">김고객</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">디펍기획</span>
+							<span class="m-txt">디펍기획(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-04-19</span>
+							<span class="m-txt">가입일 2023-04-19</span>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">미확인</span>
+							<span class="m-txt">변경이력 미확인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">계정확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">계정확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+					<div class="table-unit02-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check05">
+								<label for="check05"></label>
+							</em>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">O</span>
+							<span class="m-txt">승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">client01</span>
+							<span class="m-txt">client01(김고객)</span>
+						</div>
+						<div class="table-item">김고객</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">디펍기획</span>
+							<span class="m-txt">디펍기획(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-04-19</span>
+							<span class="m-txt">가입일 2023-04-19</span>
+						</div>
+						<div class="table-item else"></div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">광고확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">계정확인(2)</span>
+								</button>
+								<button type="button" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">계정확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!--// table end -->
+				<div class="page-box">
+					<ul class="page-unit01">
+						<li><a class="Arr-prev" href=""></a></li>
+						<li><a href="">1</a></li>
+						<li class="active"><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a class="Arr-next" href=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--//content -->
+
+		</div>
+	</div>
+
+	<div class="mask-layer"></div>
+</body>
+
+</html>

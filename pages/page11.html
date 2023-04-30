@@ -1,27 +1,26 @@
+<!doctype html>
 <html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
-	<!-- 리소스 링크 -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="">
-	<link rel="stylesheet preload" as="style" type="text/css" href="SpoqaHanSansNeo/v01/font.css">
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+<link rel="icon" type="image/x-icon" href="">
+<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
 
-	<link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style_m.css">
+<!-- 리소스 링크 -->
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style_m.css">
 
-	<link rel="stylesheet" href="css/style_table.css">
-	<link rel="stylesheet" href="css/style_m_table.css">
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/common.js"></script>
 
-	<script src="js/jquery-1.12.4.js"></script>
-	<script src="js/plugin.js"></script>
-	<script src="js/common.js"></script>
-
-	<title>dpub | layout</title>
+<title>dpub | page11</title>
 </head>
 
 <body class="page-num15">
@@ -76,17 +75,17 @@
 			<div class="content">
 				<div class="tab-box">
 					<ul class="tab-unit01">
-						<li class="tab-item active"><a href="">차주</a></li>
+						<li class="tab-item"><a href="">차주</a></li>
 						<li class="tab-item"><a href="">광고주</a></li>
 						<li class="tab-item"><a href="">광고대행사</a></li>
-						<li class="tab-item"><a href="">랩핑사</a></li>
+						<li class="tab-item active"><a href="">랩핑사</a></li>
 						<li class="tab-item"><a href="">제휴 카센터</a></li>
 					</ul>
 				</div>
 
 				<div class="title-box">
 					<strong class="title-unit02 bold">
-						<span class="tit">차주 회원 목록</span>
+						<span class="tit">랩핑사 회원 목록</span>
 					</strong>
 				</div>
 				<div class="input-button-wrap">
@@ -94,10 +93,12 @@
 						<div class="select-wrap">
 							<select name="" id="">
 								<option value="">전체</option>
+								<option value="">승인</option>
+								<option value="">미승인</option>
 							</select>
 						</div>
 						<div class="input-search01">
-							<input type="text" placeholder="이름, 아이디, 전화번호, 톤수로 검색">
+							<input type="text" placeholder="이름, 아이디, 전화번호, 회사명으로 검색">
 							<button type="button" class="btn-unit-search01">
 								<span class="ir-txt">검색</span>
 							</button>
@@ -110,9 +111,6 @@
 						<a href="" class="btn-unit01-type02">
 							<span class="txt">삭제</span>
 						</a>
-						<a href="" class="btn-unit01-type03">
-							<span class="txt">불량회원 등록</span>
-						</a>
 					</div>
 				</div>
 
@@ -120,98 +118,29 @@
 
 				<!-- table -->
 				<div class="table-container">
-					<div class="table-unit01-title">
+					<div class="table-unit03-title">
 						<div class="table-item">
 							<em class="input-check01">
-								<input type="checkbox" id="check02">
-								<label for="check02"></label>
+								<input type="checkbox" id="check01">
+								<label for="check01"></label>
 							</em>
 						</div>
 						<div class="table-item">승인여부</div>
 						<div class="table-item">아이디</div>
 						<div class="table-item">이름</div>
 						<div class="table-item">전화번호</div>
-						<div class="table-item">차량톤수</div>
+						<div class="table-item">회사명</div>
+						<div class="table-item">사업자등록번호</div>
+						<div class="table-item">지역</div>
 						<div class="table-item">가입일</div>
 						<div class="table-item">변경이력</div>
-						<div class="table-item">광고매칭이력</div>
+						<div class="table-item">랩핑이력</div>
 						<div class="table-item">메모</div>
 					</div>
-					<div class="table-unit01-cont">
+					<div class="table-unit03-cont">
 						<div class="table-item">
 							<em class="input-check01">
-								<input type="checkbox" id="check01" checked><!--checked 예시-->
-								<label for="check01"></label>
-							</em>
-						</div>
-						<div class="table-item color-x">
-							<span class="pc-txt">X</span>
-							<span class="m-txt">미승인</span>
-						</div>
-						<div class="table-item">
-							<span class="pc-txt">chaju01</span>
-							<span class="m-txt">chaju01(홍길동)</span>
-						</div>
-						<div class="table-item">홍길동</div>
-						<div class="table-item">010-1234-1234</div>
-						<div class="table-item">1톤</div>
-						<div class="table-item">
-							<span class="pc-txt">2023-04-19</span>
-							<span class="m-txt">가입일 2023-04-19</span>
-						</div>
-						<div class="table-item else"></div>
-						<div class="table-item">
-							<button type="button" class="btn-unit03-type01">
-								<span class="txt">이력확인(3)</span>
-							</button>
-						</div>
-						<div class="table-item">
-							<button type="button" class="btn-unit03-type02">
-								<span class="txt">메모관리</span>
-							</button>
-						</div>
-					</div>
-					<div class="table-unit01-cont blacklist">
-						<div class="table-item">
-							<em class="input-check01">
-								<input type="checkbox" id="check02">
-								<label for="check02"></label>
-							</em>
-						</div>
-						<div class="table-item color-x">
-							<span class="pc-txt">X</span>
-							<span class="m-txt">미승인</span>
-						</div>
-						<div class="table-item">
-							<span class="pc-txt">chaju01</span>
-							<span class="m-txt">chaju01(홍길동)</span>
-						</div>
-						<div class="table-item">홍길동</div>
-						<div class="table-item">010-1234-1234</div>
-						<div class="table-item">1톤</div>
-						<div class="table-item">
-							<span class="pc-txt">2023-04-19</span>
-							<span class="m-txt">가입일 2023-04-19</span>
-						</div>
-						<div class="table-item color-x">
-							<span class="pc-txt">미확인</span>
-							<span class="m-txt">변경이력 미확인</span>
-						</div>
-						<div class="table-item">
-							<button type="button" class="btn-unit03-type01">
-								<span class="txt">이력확인(3)</span>
-							</button>
-						</div>
-						<div class="table-item">
-							<button type="button" class="btn-unit03-type02">
-								<span class="txt">메모관리</span>
-							</button>
-						</div>
-					</div>
-					<div class="table-unit01-cont">
-						<div class="table-item">
-							<em class="input-check01">
-								<input type="checkbox" id="check02">
+								<input type="checkbox" id="check02" checked><!--checked 예시-->
 								<label for="check02"></label>
 							</em>
 						</div>
@@ -220,15 +149,65 @@
 							<span class="m-txt">승인</span>
 						</div>
 						<div class="table-item">
-							<span class="pc-txt">chaju01</span>
-							<span class="m-txt">chaju01(홍길동)</span>
+							<span class="pc-txt">wrapping01</span>
+							<span class="m-txt">wrapping01(김랩핑)</span>
 						</div>
-						<div class="table-item">홍길동</div>
+						<div class="table-item">김랩핑</div>
 						<div class="table-item">010-1234-1234</div>
-						<div class="table-item">1톤</div>
 						<div class="table-item">
-							<span class="pc-txt">2023-04-19</span>
-							<span class="m-txt">가입일 2023-04-19</span>
+							<span class="pc-txt">삼국지</span>
+							<span class="m-txt">삼국지(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">인천</span>
+							<span class="m-txt">지역 : 인천</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-02-01</span>
+							<span class="m-txt">가입일 2023-02-01</span>
+						</div>
+						<div class="table-item else"></div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">이력확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+					<div class="table-unit03-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check03">
+								<label for="check03"></label>
+							</em>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">X</span>
+							<span class="m-txt">미승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">wrapping01</span>
+							<span class="m-txt">wrapping01(김랩핑)</span>
+						</div>
+						<div class="table-item">김랩핑</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">삼국지</span>
+							<span class="m-txt">삼국지(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">인천</span>
+							<span class="m-txt">지역 : 인천</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-02-01</span>
+							<span class="m-txt">가입일 2023-02-01</span>
 						</div>
 						<div class="table-item color-x">
 							<span class="pc-txt">미확인</span>
@@ -236,44 +215,98 @@
 						</div>
 						<div class="table-item">
 							<button type="button" class="btn-unit03-type01">
-								<span class="txt">이력확인(3)</span>
+								<span class="txt">이력확인(2)</span>
 							</button>
 						</div>
 						<div class="table-item">
-							<button type="button" class="btn-unit03-type02">
+							<button type="button" class="btn-unit03-type01">
 								<span class="txt">메모관리</span>
 							</button>
 						</div>
 					</div>
-					<div class="table-unit01-cont">
+					<div class="table-unit03-cont">
 						<div class="table-item">
 							<em class="input-check01">
-								<input type="checkbox" id="check02">
-								<label for="check02"></label>
+								<input type="checkbox" id="check04">
+								<label for="check04"></label>
+							</em>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">X</span>
+							<span class="m-txt">미승인</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">wrapping01</span>
+							<span class="m-txt">wrapping01(김랩핑)</span>
+						</div>
+						<div class="table-item">김랩핑</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">삼국지</span>
+							<span class="m-txt">삼국지(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">인천</span>
+							<span class="m-txt">지역 : 인천</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-02-01</span>
+							<span class="m-txt">가입일 2023-02-01</span>
+						</div>
+						<div class="table-item color-x">
+							<span class="pc-txt">미확인</span>
+							<span class="m-txt">변경이력 미확인</span>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">이력확인(2)</span>
+							</button>
+						</div>
+						<div class="table-item">
+							<button type="button" class="btn-unit03-type01">
+								<span class="txt">메모관리</span>
+							</button>
+						</div>
+					</div>
+					<div class="table-unit03-cont">
+						<div class="table-item">
+							<em class="input-check01">
+								<input type="checkbox" id="check05">
+								<label for="check05"></label>
 							</em>
 						</div>
 						<div class="table-item">
 							<span class="pc-txt">O</span>
 							<span class="m-txt">승인</span>
 						</div>
-						<div class="table-item"><span class="pc-txt">chaju01</span>
-							<span class="m-txt">chaju01(홍길동)</span>
-						</div>
-						<div class="table-item">홍길동</div>
-						<div class="table-item">010-1234-1234</div>
-						<div class="table-item">1톤</div>
 						<div class="table-item">
-							<span class="pc-txt">2023-04-19</span>
-							<span class="m-txt">가입일 2023-04-19</span>
+							<span class="pc-txt">wrapping01</span>
+							<span class="m-txt">wrapping01(김랩핑)</span>
+						</div>
+						<div class="table-item">김랩핑</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">삼국지</span>
+							<span class="m-txt">삼국지(314-02-02020)</span>
+						</div>
+						<div class="table-item">314-02-02020</div>
+						<div class="table-item">
+							<span class="pc-txt">인천</span>
+							<span class="m-txt">지역 : 인천</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-02-01</span>
+							<span class="m-txt">가입일 2023-02-01</span>
 						</div>
 						<div class="table-item else"></div>
 						<div class="table-item">
 							<button type="button" class="btn-unit03-type01">
-								<span class="txt">이력확인(3)</span>
+								<span class="txt">이력확인(2)</span>
 							</button>
 						</div>
 						<div class="table-item">
-							<button type="button" class="btn-unit03-type02">
+							<button type="button" class="btn-unit03-type01">
 								<span class="txt">메모관리</span>
 							</button>
 						</div>
