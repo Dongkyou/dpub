@@ -1,125 +1,163 @@
 <!doctype html>
-<html lang="ko" class="ko">
-<head itemscope>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<html lang="ko" class="ko">
+	<head itemscope>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
-<title>디펍 | 테이블 가이드</title>
+	<title>디펍 | 테이블 가이드</title>
 
-<!-- favicon -->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 리소스 링크 -->
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_m.css">
 
-<!-- 리소스 링크 -->
-<link rel="stylesheet" href="../css/default.css">
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/style_m.css">
-<link rel="stylesheet" href="../css/style_table.css">
-<link rel="stylesheet" href="../css/style_m_table.css">
-        <style>
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/plugin.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+	<body>
+		<div class="wrap-container">
+			<!-- left menu -->
+			<div class="wrap-left-menu"><!-- M모드 active -->
+				<div class="logo-unit01">
+					<span class="ir-txt">디펍</span>
+				</div>
+				<div class="user">
+					<span class="txt">관리자</span>
+					<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+				</div>
+				<div class="menu-box">
+					<ul class="menu-list">
+						<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+						<li class="menu02"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+						<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+						<li class="menu04"><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+						<li class="menu05"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+						<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+						<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+						<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+						<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--// left menu -->
 
-        </style>
-    </head>
-    <body>
-        <div class="popup-table-container">
-            <div class="popup-table-unit02-title">
-                <div class="table-item">광고번호</div>
-                <div class="table-item">광고명</div>
-                <div class="table-item">광고기간</div>
-                <div class="table-item">광고상태</div>
-            </div>
-            <div class="popup-table-unit02-cont">
-                <div class="table-item">DA-03</div>
-                <div class="table-item">디펍 소개 광고</div>
-                <div class="table-item">2023-01-01 ~ 2023-06-31</div>
-                <div class="table-item color-x">진행중</div>
-            </div>
-            <div class="popup-table-unit02-cont">
-                <div class="table-item">DA-03</div>
-                <div class="table-item">디펍 소개 광고</div>
-                <div class="table-item">2023-01-01 ~ 2023-06-31</div>
-                <div class="table-item color-x">진행중</div>
-            </div>
-            <div class="popup-table-unit02-cont">
-                <div class="table-item">DA-03</div>
-                <div class="table-item">디펍 소개 광고</div>
-                <div class="table-item">2023-01-01 ~ 2023-06-31</div>
-                <div class="table-item color-x">진행중</div>
-            </div>
-            <div class="popup-table-unit02-cont">
-                <div class="table-item">DA-03</div>
-                <div class="table-item">디펍 소개 광고</div>
-                <div class="table-item">2023-01-01 ~ 2023-06-31</div>
-                <div class="table-item color-x">진행중</div>
-            </div>
-        </div>
+			<!-- 모바일 전용 헤더(반응형 표출) -->
+			<div class="wrap-header01">
+				<header>
+					<a href="" class="logo-unit02">
+						<span class="ir-txt">dpub</span>
+					</a>
+				</header>
 
-        <div style="margin-bottom: 30px;"></div>
+				<button type="button" class="btn-unit-wholemenu">
+					<span class="line"></span>
+				</button>
+			</div>
+			<!--// 모바일 전용 헤더(반응형 표출) -->
 
-        <div class="popup-table-container">
-            <div class="popup-table-unit03-title">
-                <div class="table-item">아이디</div>
-                <div class="table-item">이름</div>
-                <div class="table-item">소속</div>
-                <div class="table-item">연락처</div>
-                <div class="table-item">등록일</div>
-            </div>
-            <div class="popup-table-unit03-cont">
-                <div class="table-item">
-                    <span class="pc-txt">vordor</span>
-                    <span class="m-txt">vordor(박연진)</span>
-                </div>
-                <div class="table-item">박연진</div>
-                <div class="table-item">디펍기획</div>
-                <div class="table-item">010-1234-1234</div>
-                <div class="table-item">
-                     <span class="pc-txt">2023-04-01</span>
-                    <span class="m-txt">등록일 2023-04-01</span>
-                </div>
-            </div>
-            <div class="popup-table-unit03-cont">
-                <div class="table-item">
-                    <span class="pc-txt">vordor</span>
-                    <span class="m-txt">vordor(박연진)</span>
-                </div>
-                <div class="table-item">박연진</div>
-                <div class="table-item">디펍기획</div>
-                <div class="table-item">010-1234-1234</div>
-                <div class="table-item">
-                     <span class="pc-txt">2023-04-01</span>
-                    <span class="m-txt">등록일 2023-04-01</span>
-                </div>
-            </div>
-            <div class="popup-table-unit03-cont">
-                <div class="table-item">
-                    <span class="pc-txt">vordor</span>
-                    <span class="m-txt">vordor(박연진)</span>
-                </div>
-                <div class="table-item">박연진</div>
-                <div class="table-item">디펍기획</div>
-                <div class="table-item">010-1234-1234</div>
-                <div class="table-item">
-                     <span class="pc-txt">2023-04-01</span>
-                    <span class="m-txt">등록일 2023-04-01</span>
-                </div>
-            </div>
-            <div class="popup-table-unit03-cont">
-                <div class="table-item">
-                    <span class="pc-txt">vordor</span>
-                    <span class="m-txt">vordor(박연진)</span>
-                </div>
-                <div class="table-item">박연진</div>
-                <div class="table-item">디펍기획</div>
-                <div class="table-item">010-1234-1234</div>
-                <div class="table-item">
-                     <span class="pc-txt">2023-04-01</span>
-                    <span class="m-txt">등록일 2023-04-01</span>
-                </div>
-            </div>
-        </div>
-    </body>
+			<div class="wrap-content"></div>
+			<div class="popup-table-container">
+				<div class="popup-table-unit02-title">
+					<div class="table-item">광고번호</div>
+					<div class="table-item">광고명</div>
+					<div class="table-item">광고기간</div>
+					<div class="table-item">광고상태</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+			</div>
+
+			<div style="margin-bottom: 30px;"></div>
+
+			<div class="popup-table-container">
+				<div class="popup-table-unit03-title">
+					<div class="table-item">아이디</div>
+					<div class="table-item">이름</div>
+					<div class="table-item">소속</div>
+					<div class="table-item">연락처</div>
+					<div class="table-item">등록일</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mask-layer"></div>
+	</body>
 </html>
 
 

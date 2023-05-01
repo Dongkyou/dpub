@@ -74,13 +74,15 @@
 			<!-- content -->
 			<div class="content">
 				<div class="tab-box">
-					<ul class="tab-unit01">
-						<li class="tab-item active"><a href="">차주</a></li>
-						<li class="tab-item"><a href="">광고주</a></li>
-						<li class="tab-item"><a href="">광고대행사</a></li>
-						<li class="tab-item"><a href="">랩핑사</a></li>
-						<li class="tab-item"><a href="">제휴 카센터</a></li>
-					</ul>
+					<div id="subMenu01" class="tab-unit01 swiper-container">
+						<ul class="list swiper-wrapper">
+							<li class="swiper-slide tab-item active"><a href="">차주</a></li>
+							<li class="swiper-slide tab-item"><a href="">광고주</a></li>
+							<li class="swiper-slide tab-item"><a href="">광고대행사</a></li>
+							<li class="swiper-slide tab-item"><a href="">랩핑사</a></li>
+							<li class="swiper-slide tab-item"><a href="">제휴 카센터</a></li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="title-box">
@@ -163,7 +165,7 @@
 						</div>
 						<div class="table-item else"></div>
 						<div class="table-item">
-							<button type="button" class="btn-unit03-type01">
+							<button type="button" id="layer01" class="btn-unit03-type01">
 								<span class="txt">이력확인(3)</span>
 							</button>
 						</div>
@@ -298,6 +300,94 @@
 
 		</div>
 	</div>
+
+	<!-- layer -->
+	<div class="layer-unit01" id="layerPop01">
+		<div class="layer-wrap">
+			<div class="popup-table-container">
+				<div class="popup-table-unit01-title">
+					<div class="table-item">광고번호</div>
+					<div class="table-item">광고주</div>
+					<div class="table-item">광고명</div>
+					<div class="table-item">광고기간</div>
+					<div class="table-item">광고상태</div>
+				</div>
+				<div class="popup-table-unit01-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍애드(client01)</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit01-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍애드(client01)</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit01-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍애드(client01)</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit01-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍애드(client01)</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+			</div>
+
+			<div class="page-box">
+				<ul class="page-unit01">
+					<li><a class="Arr-prev" href=""></a></li>
+					<li><a href="">1</a></li>
+					<li class="active"><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a class="Arr-next" href=""></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<button type="button" class="layer-close">
+			<span class="ir-txt">레이어 닫기</span>
+		</button>
+
+	</div>
+	<!-- layer -->
+
+	<script>
+
+
+		$(function () {
+			var LayerPopup = $('#layerPop01');
+			var LayerClose = $('#layerPop01 .layer-close');
+
+			$('#layer01').click(function () {
+				$(LayerPopup).addClass('active');
+				$('.mask-layer').addClass('active');
+			});
+
+			$(LayerClose).click(function () {
+				$(LayerPopup).removeClass('active');
+				$('.mask-layer').removeClass('active');
+			});
+
+			// 외부영역 클릭 시 팝업 닫기
+			$(LayerPopup).click(function (e) {
+				$('body').removeClass('open-layer');
+				if (!$(LayerWrap).has(e.target).length) $(LayerPopup).fadeOut();
+			});
+
+		});
+
+	</script>
 
 	<div class="mask-layer"></div>
 </body>
