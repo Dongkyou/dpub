@@ -259,7 +259,7 @@ button{border:0;outline:none;padding:0;margin:0;}
 .button-box>a:last-child{margin-right: 0;}
 
 /* ---- btn-unit01 ---- */
-[class*='btn-unit01']{font-size: 14px;font-weight: 500;width: 100px;height: 38px;line-height: 38px;border-radius: 8px;text-align: center;}
+[class*='btn-unit01']{font-size: 14px;font-weight: 500;width: 100px;height: 38px;line-height: 38px;border-radius: 7px;text-align: center;}
 
 .btn-unit01-type01{background: #DC014C;}
 .btn-unit01-type01 .txt{color: #fff;}
@@ -273,11 +273,11 @@ button{border:0;outline:none;padding:0;margin:0;}
 .btn-unit01-type05 .txt{color: #fff;}
 
 /* ---- btn-unit02 ---- */
-.btn-unit02{width: 83px;height: 40px;line-height: 40px;text-align: center;background: #FFF3F7;border-radius: 8px;}
+.btn-unit02{width: 83px;height: 40px;line-height: 40px;text-align: center;background: #FFF3F7;border-radius: 5px;}
 .btn-unit02 .txt{color: #C20344;font-weight:500;font-size:14px;}
 
 /* ---- btn-unit03 ---- */
-[class*='btn-unit03']{font-size: 13px;font-weight: 500;padding: 3px 13px;border-radius: 6px;}
+[class*='btn-unit03']{font-size: 13px;font-weight: 500;padding: 3px 13px;border-radius: 5px;}
 
 .btn-unit03-type01{background: #fff;border: 1px solid #E2E2E2;}
 .btn-unit03-type01 .txt{color: #313133;}
@@ -289,13 +289,21 @@ button{border:0;outline:none;padding:0;margin:0;}
 .btn-unit03-type04 .txt{color: #1F66D2;}
 
 /* ---- btn-unit04 ---- */
-[class*='btn-unit04']{width: 65px;height: 26px;border-radius: 6px;text-align: center;}
+[class*='btn-unit04']{width: 65px;height: 26px;border-radius: 5px;text-align: center;}
 [class*='btn-unit04'] .txt{font-size: 12px;font-weight: 500;line-height: 26px;color: #fff;}
 
 .btn-unit04-type01{background: #C20344;}
 .btn-unit04-type02{background: #4C4C4E;}
 .btn-unit04-type03{background: #FFF3F7;}
 .btn-unit04-type03 .txt{color:#940034;}
+
+/* ---- btn-unit05 ---- */
+[class*='btn-unit05']{width:68px;height:33px;border-radius:5px;text-align: center;}
+[class*='btn-unit05'] .txt{font-size: 14px;font-weight: 500;line-height: 33px;color: #fff;}
+
+.btn-unit05-type01{background: #C20344;}
+.btn-unit05-type02{background: #FFF3F7;}
+.btn-unit05-type02 .txt{color:#940034;}
 
 .btn-unit-logout{width:60px;height:20px;text-align:center;background:#4F4F54;border-radius:11px;vertical-align:middle;}
 .btn-unit-logout .txt{font-size:11px;line-height:20px;color:#ABABB2;}
@@ -339,6 +347,7 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 .input-search01{display:inline-block;margin-left:7px;box-sizing: border-box;}
 .input-search01 input{}
 .input-search01 .btn-search{}
+
 
 /**** checkbox ****/
 input[type="checkbox"]{display:none;}
@@ -418,6 +427,11 @@ input[type="radio"]:checked + label:after{top:50%;left:5px;margin-top:-3px;backg
 .top-input-box input{width:86%;box-sizing:border-box;padding:10px 13px;border:0;}
 .top-input-box input::placeholder{color:#D9D9D9;}
 
+.top-input-box>.input-unit01{display: inline-block;margin-right: 7px;}
+.top-input-box>.input-unit01>.input01>label{min-width: 40px;font-size: 16px;}
+.top-input-box>.input-unit01>.input01>label.nec:after{font-size: 0;}
+.top-input-box .input-unit01 input {border: 1px solid #E9E9E9;box-sizing: border-box;vertical-align: middle;border-radius: 5px;}
+
 @media only screen and (min-width:980px) {
 	[class*='input-unit0'] .info{padding-left:140px;}
 	.input-unit01 label{min-width:140px;}
@@ -445,7 +459,7 @@ select {width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;a
 /* =============== ####tab-unit ======================== */
 .tab-box{margin-bottom: 29px;}
 .tab-unit01 .list{display:flex;font-size:0;}
-.tab-unit01 li.tab-item {padding: 10px 20px;margin-right: 10px;background: #FFF3F7;border-radius: 8px;color: #C20344;text-align: center;font-size: 14px;line-height: 14px;font-weight: 500;}
+.tab-unit01 li.tab-item {padding: 10px 20px;margin-right: 10px;background: #FFF3F7;border-radius: 7px;color: #C20344;text-align: center;font-size: 14px;line-height: 14px;font-weight: 500;}
 .tab-unit01 li.swiper-slide{width:auto;}
 .tab-unit01 li.tab-item:last-child {margin-right: 0;}
 .tab-unit01 li.active {background:#C20344;color: #fff;}
@@ -459,7 +473,7 @@ select {width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;a
 
 /* =============== ####page-unit ======================== */
 ul.page-unit01{display: flex;justify-content: center;margin-top: 26px;}
-ul.page-unit01>li{width: 36px;height: 36px;text-align: center;font-size: 13px;line-height: 36px;font-weight: 500;background: #fff;border: 1px solid #C20344;border-radius: 4px;box-sizing: border-box;margin-right: 5px;}
+ul.page-unit01>li{width: 36px;height: 36px;text-align: center;font-size: 13px;line-height: 36px;font-weight: 500;background: #fff;border: 1px solid #C20344;border-radius: 3px;box-sizing: border-box;margin-right: 5px;}
 ul.page-unit01>li:last-child {margin-right: 0;}
 ul.page-unit01>li>a{width: 100%;height:100%;color: #C20344;}
 ul.page-unit01>li.active{background: #C20344;}
@@ -469,6 +483,11 @@ ul.page-unit01>li.active>a{color: #fff;}
 [class*='Arr']:before{content:'';position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px; background:url(../img/sprites_dpub.svg) no-repeat;width: 20px;height: 20px;vertical-align: middle;background-position: -100px -50px;}
 ul.page-unit01>li>a.Arr-next{transform: scaleX(-1);}
 ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
+
+/* =============== ####img-box ======================== */
+[class*='img-box']{overflow: hidden;display: inline-block;border: 1px solid #D1D1D1;vertical-align: middle;}
+[class*='img-box']>img{max-width: 100%;max-height: 100%;}
+.img-box01{width: 70px;height: 98px;}
 
 /* =============== ####table-unit ======================== */
 /* ---- 공통 ---- */
@@ -489,7 +508,6 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
 /* ---- table-unit04 ---- */
 .table-unit04-title, .table-unit04-cont{grid-template-columns: 60px 0.6fr 2fr 1fr 1.5fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr;}
-.table-unit04-cont>.table-item>.ad-img {}
 
 /* ---- table-unit05 ---- */
 .table-unit05-title, .table-unit05-cont{grid-template-columns: repeat(9, 1fr);}
@@ -509,7 +527,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit09-title, .table-unit09-cont{grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr 1fr;}
 
 /* ---- table-unit10 ---- */
-.table-unit10-title, .table-unit10-cont{grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;}
+.table-unit10-title, .table-unit10-cont{grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 0.7fr;}
 
 /* ---- table-unit11 ---- */
 .table-unit11-title, .table-unit11-cont{grid-template-columns: 0.5fr 1fr 1fr 2fr 1fr;}
@@ -542,7 +560,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
 
 /* ---- popup-table-unit01 ---- */
-.popup-table-unit01-title, .popup-table-unit01-cont{grid-template-columns: repeat(5, 1fr);}
+.popup-table-unit01-title, .popup-table-unit01-cont{grid-template-columns: 0.5fr 1fr 1fr 1.5fr 0.5fr;}
 
 /* ---- popup-table-unit02 ---- */
 .popup-table-unit02-title, .popup-table-unit02-cont{grid-template-columns: repeat(4, 1fr);}
@@ -571,13 +589,20 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 [class*='layer-unit'] .layer-close .ir-txt:before{top:5px;transform: rotate(-45deg);}
 [class*='layer-unit'] .layer-close .ir-txt:after{top:5px;transform: rotate(45deg);}
 
+/* page06 - 광고안내(회원 광고매칭이력) */
 .layer-unit01{width:972px;height:446px;padding:46px;margin:-223px 0 0 -486px;}
+.layer-unit01 .title-box{margin:0 0 38px;text-align:center;}
+.layer-unit01 .title-box .tit{font-weight:700;font-size:16px;}
 
-
-
-
-
-
+/* page06 - 광고안내(메모관리) */
+.layer-unit02{width:280px;height: 361px;padding: 28px;margin:-180px 0 0 -140px;}
+.layer-unit02 .title-box{font-size: 14px;}
+.layer-unit02 .title-box .tit{font-size:20px;font-weight: 500;margin-bottom: 20px;}
+[class*='memo-']>p:first-child{font-size: 13px;color: #A1A1A1;margin-bottom: 6px;}
+.layer-unit02 .title-box .memo-id{margin-bottom: 17px;}
+.layer-unit02 .title-box .memo-text textarea{font-size: 14px;padding: 10px;width: 100%;height: 151px;border: 1px solid #d1d1d1;resize: none;box-sizing: border-box;}
+.layer-unit02 .button-box{margin-top: 12px;text-align: center;}
+.layer-unit02>.button-box>button:first-child{margin-right: 7px;}
 /* =============== ######반응형 분기 (max-width:980px) ======================== */
 @media only screen and (max-width:980px){
 

@@ -52,9 +52,10 @@ transition: all 0.2s ease-in-out;
 
 body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;}
 
-.wrap-content{height:inherit;padding:25px 16px 0;background: #fff;}
+.wrap-content{height:inherit;padding:20px 16px 0;background: #fff;}
 .content{padding: 0;border-radius: 0;background: transparent;}
-.content .input-button-wrap+.table-container{margin:20px 0 0;}
+.content .input-button-wrap+.table-container{margin:8px 0 0;}
+.tab-box {margin-bottom: 18px;}
 
 /* left-menu logo */
 .logo-unit01{width:130px;height:30px;background-position:-86px -259px;background-size:345px auto;}
@@ -81,7 +82,7 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;}
 
 /* tab-unit01 */
 .tab-unit01 .list{/*flex-wrap:wrap;*/}
-.tab-unit01 .list>li{}
+.tab-unit01 li.tab-item {margin-right: 7px;}
 
 /* =============== ####btn-unit ======================== */
 .btn-unit02{height:36px;line-height:36px;}
@@ -135,9 +136,16 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 .top-input-box .input-search01{width:calc(100% - 105px);margin-left:5px;}
 .top-input-box input{width:calc(100% - 40px);}
 
-.button-box{display:block;margin:18px 0 0;width:100%;}
+.top-input-box .w-option{width: 100%;margin-left: 0;}
+.top-input-box>.input-unit01 {display: block;margin-right: 0;}
+.top-input-box>.input-unit01>.half50>input{width:calc(100%/2 - 29px);}
+.button-box{display:block;margin:10px 0 0;width:100%;text-align: right;}
 .button-box>a+a{margin-left:5px;}
 .button-box [class*='btn-unit01-']{width:calc(33% - 2.5px);}
+.button-box>.btn-unit01-type05{width:calc(38% - 2.5px);}
+
+/* =============== ####img-box ======================== */
+.img-box01{width: 50px;height: 70px;}
 
 /* =============== ####table-unit ======================== */
 .m-txt{display: block;} /*Mobile 전용 텍스트*/
@@ -241,7 +249,7 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 		"check apply-term apply-term apply-term"
 		"check favor favor favor"
 		"check button button button";
-	grid-template-columns: 0.3fr 0.5fr 1.5fr 1fr;grid-template-rows: repeat(7, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.3fr 0.4fr 1.3fr 1fr;grid-template-rows: repeat(7, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit04-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit04-cont>.table-item:nth-child(2){grid-area: ad-number;}
@@ -257,9 +265,9 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 .table-unit04-cont>.table-item:nth-child(12){grid-area: button;text-align: center;}
 
 .table-unit04-cont>.table-item:nth-child(1)::before, .table-unit04-cont>.table-item:nth-child(4)::before, .table-unit04-cont>.table-item:nth-child(5)::before, .table-unit04-cont>.table-item:nth-child(12)::before{display: none;}
-.table-unit04-cont>.table-item:nth-child(1), .table-unit04-cont>.table-item:nth-child(4), .table-unit04-cont>.table-item:nth-child(5), .table-unit04-cont>.table-item:nth-child(12){padding-left: 0;}
+.table-unit04-cont>.table-item:nth-child(1), .table-unit04-cont>.table-item:nth-child(4), .table-unit04-cont>.table-item:nth-child(12){padding-left: 0;}
 
-.table-unit04-cont>.table-item:nth-child(12)>.btn-unit03-type03{width: 100%;}
+.table-unit04-cont>.table-item:nth-child(12)>.btn-unit03-type03{width: 100%;padding: 5px 13px;}
 
 /* ---- table-unit05 ---- */
 .table-unit05-cont{
@@ -329,7 +337,7 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 .table-unit07-cont>.table-item:nth-child(9){grid-area: un-calculate;}
 
 .table-unit07-cont>.table-item:nth-child(3)::before, .table-unit07-cont>.table-item:nth-child(4)::before{display: none;}
-.table-unit07-cont>.table-item:nth-child(3), .table-unit07-cont>.table-item:nth-child(4){padding-left: 0;}
+.table-unit07-cont>.table-item:nth-child(3){padding-left: 0;}
 
 
 /* ---- table-unit08 ---- */
@@ -384,7 +392,7 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 		"approve-number day"
 		"ad-name-time money"
 		"company-name-number company-name-number";
-	grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1fr 1fr;grid-template-rows: repeat(3, minmax(35px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit10-cont>.table-item:nth-child(1){grid-area: approve-number;}
 .table-unit10-cont>.table-item:nth-child(2){grid-area: company-name-number;}
@@ -550,7 +558,7 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 		"ad-number advertiser state"
 		"ad-number ad-name ad-name"
 		"ad-number ad-term ad-term";
-	grid-template-columns: 1fr 3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1fr 3fr 1fr;grid-template-rows: repeat(3, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .popup-table-unit01-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .popup-table-unit01-cont>.table-item:nth-child(2){grid-area: advertiser;}
@@ -648,16 +656,11 @@ input {height:38px;border:1px solid #E9E9E9;font-size: 14px;box-sizing:border-bo
 
 /* =============== ####layer-unit ======================== */
 [class*='layer-unit']{top:0;left:0;}
-[class*='layer-unit'] .layer-close{position:absolute;top:20px;right:20px;width:20px;height:20px;background:none;}
-[class*='layer-unit'] .layer-close .ir-txt{position:relative;width:100%;height:100%;height:2px;}
-[class*='layer-unit'] .layer-close .ir-txt:before,
-[class*='layer-unit'] .layer-close .ir-txt:after{content:'';position:absolute;background:#000;display:block;width:100%;height: 100%;transition: all .2s ease-out;}
-[class*='layer-unit'] .layer-close .ir-txt:before{top:5px;transform: rotate(-45deg);}
-[class*='layer-unit'] .layer-close .ir-txt:after{top:5px;transform: rotate(45deg);}
+[class*='layer-unit'].active{overflow:hidden;overflow-y:scroll;height:100%;}
+[class*='layer-unit'] .layer-close{top:15px;}
 
-.layer-unit01{width:100%;height:inherit;padding:26px;margin:0;}
-
-
+.layer-unit01,.layer-unit02{width:100%;height:inherit;padding:40px 16px;margin:0;}
+.layer-unit01 .title-box {margin: 0 0 27px;}
 
 
 }

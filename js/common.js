@@ -444,7 +444,7 @@ $(function wholeMenu() {
 //레이어팝업
 $(function () {
 	var LayerPopup = $('#popupForm');
-	var LayerWrap = $('.layer-unit01');
+	var LayerWrap01 = $('.layer-unit01');
 
 	$("#openPop").click(function () {
 		$('body').addClass('open-layer')
@@ -453,7 +453,7 @@ $(function () {
 	});
 
 	$("#close_button").click(function () {
-		$('body').removeClass('open-layer')
+		$('body').removeClass('open-layer');
 		$(LayerPopup).fadeOut();
 		$(LayerPopup).removeClass('active');
 	});
