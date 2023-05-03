@@ -76,8 +76,8 @@
 				<div class="tab-box">
 					<div id="subMenu01" class="tab-unit01 swiper-container">
 						<ul class="list swiper-wrapper">
-							<li class="swiper-slide tab-item active"><a href="">차주</a></li>
-							<li class="swiper-slide tab-item"><a href="">광고주</a></li>
+							<li class="swiper-slide tab-item "><a href="">차주</a></li>
+							<li class="swiper-slide tab-item active"><a href="">광고주</a></li>
 							<li class="swiper-slide tab-item"><a href="">광고대행사</a></li>
 							<li class="swiper-slide tab-item"><a href="">랩핑사</a></li>
 							<li class="swiper-slide tab-item"><a href="">제휴 카센터</a></li>
@@ -166,29 +166,29 @@
 						<div class="table-item else"></div>
 						<div class="table-item">
 							<span class="pc-txt">
-								<button type="button" class="btn-unit03-type01">
+								<button type="button" id="layer01" class="btn-unit03-type01">
 									<span class="txt">광고확인(2)</span>
 								</button>
 							</span>
 							<span class="m-txt">
-								<button type="button" class="btn-unit03-type01">
+								<button type="button" id="layer01" class="btn-unit03-type01">
 									<span class="txt">광고확인(2)</span>
 								</button>
-								<button type="button" class="btn-unit03-type01">
+								<button type="button" id="layer02" class="btn-unit03-type01">
 									<span class="txt">계정확인(2)</span>
 								</button>
-								<button type="button" class="btn-unit03-type01">
+								<button type="button" id="layer03" class="btn-unit03-type01">
 									<span class="txt">메모관리</span>
 								</button>
 							</span>
 						</div>
 						<div class="table-item">
-							<button type="button" class="btn-unit03-type01">
+							<button type="button" id="layer02" class="btn-unit03-type01">
 								<span class="txt">계정확인(2)</span>
 							</button>
 						</div>
 						<div class="table-item">
-							<button type="button" class="btn-unit03-type01">
+							<button type="button" id="layer03" class="btn-unit03-type01">
 								<span class="txt">메모관리</span>
 							</button>
 						</div>
@@ -386,6 +386,152 @@
 		</div>
 	</div>
 
+
+	<!-- layer 영역 -->
+	<div class="layer-unit01" id="layerPop01"><!-- 광고등록이력 -->
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">chaju01(디펍기획) 회원 광고등록이력</strong>
+			</div>
+			<div class="popup-table-container">
+				<div class="popup-table-unit02-title">
+					<div class="table-item">광고번호</div>
+					<div class="table-item">광고명</div>
+					<div class="table-item">광고기간</div>
+					<div class="table-item">광고상태</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+				<div class="popup-table-unit02-cont">
+					<div class="table-item">DA-03</div>
+					<div class="table-item">디펍 소개 광고</div>
+					<div class="table-item">2023-01-01 ~ 2023-06-31</div>
+					<div class="table-item color-x">진행중</div>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="layer-close btn-close-layer">
+			<span class="ir-txt">레이어 닫기</span>
+		</button>
+	</div>
+
+	<div class="layer-unit01" id="layerPop02"><!-- 회원 관리계정 -->
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">chaju01(디펍기획) 회원 관리계정</strong>
+			</div>
+			<div class="popup-table-container">
+				<div class="popup-table-unit03-title">
+					<div class="table-item">아이디</div>
+					<div class="table-item">이름</div>
+					<div class="table-item">소속</div>
+					<div class="table-item">연락처</div>
+					<div class="table-item">등록일</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+				<div class="popup-table-unit03-cont">
+					<div class="table-item">
+						<span class="pc-txt">vordor</span>
+						<span class="m-txt">vordor(박연진)</span>
+					</div>
+					<div class="table-item">박연진</div>
+					<div class="table-item">디펍기획</div>
+					<div class="table-item">010-1234-1234</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-04-01</span>
+						<span class="m-txt">등록일 2023-04-01</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="layer-close btn-close-layer">
+			<span class="ir-txt">레이어 닫기</span>
+		</button>
+	</div>
+
+	<div class="layer-unit02" id="layerPop03">
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">메모관리</strong>
+				<div class="memo-id">
+					<p>회원아이디</p>
+					<p>Chaju01</p>
+				</div>
+				<div class="memo-text">
+					<p>메모</p>
+					<textarea name="content" id="content" style="width:100%;" rows="10" th:text="${memo.content}" placeholder="내용을 입력해 주세요"></textarea>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="button-box">
+			<button type="button" class="btn-unit05-type01">
+				<span class="txt">저장</span>
+			</button>
+			<button type="button" class="btn-unit05-type02 btn-close-layer">
+				<span class="txt">닫기</span>
+			</button>
+		</div>
+	</div>
+
+	<!--// layer 영역 -->
 	<div class="mask-layer"></div>
 </body>
 

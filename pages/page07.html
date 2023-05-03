@@ -6,7 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
-	<title>디펍 | 테이블 가이드</title>
+	<title>차주관리 수정/삭제 | 디펍</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="">
+	<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
 
 	<!-- 리소스 링크 -->
 	<link rel="stylesheet" href="../css/default.css">
@@ -63,12 +68,28 @@
 		<!-- content -->
 		<div class="wrap-content">
 			<div class="content">
-
+				<div class="tab-box">
+					<div id="subMenu01" class="tab-unit01 swiper-container">
+						<ul class="list swiper-wrapper">
+							<li class="swiper-slide tab-item active"><a href="">차주</a></li>
+							<li class="swiper-slide tab-item"><a href="">광고주</a></li>
+							<li class="swiper-slide tab-item"><a href="">광고대행사</a></li>
+							<li class="swiper-slide tab-item"><a href="">랩핑사</a></li>
+							<li class="swiper-slide tab-item"><a href="">제휴 카센터</a></li>
+						</ul>
+					</div>
+					<div class="page-nav">
+						<ul>
+							<li><a href="">차주회원 목록</a></li>
+							<li><a href="">회원 수정</a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="input-container">
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="id" class="nec">아이디</label>
-							<input id="id" type="text">
+							<input id="id" type="text" value="chaju01">
 							<p class="info">- 아이디는 6자리 이상의 영문 또는 영문, 숫자 조합</p>
 						</div>
 					</div>
@@ -88,31 +109,37 @@
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="name" class="nec">이름</label>
-							<input id="name" type="text">
+							<input id="name" type="text" value="정윤호">
 						</div>
 					</div>
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="num" class="nec">연락처</label>
-							<input id="num" type="text">
+							<input id="num" type="text" value="010-9211-6124">
 						</div>
 					</div>
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="email">이메일</label>
-							<input id="email" type="text">
+							<input id="email" type="text" value="vordor@d-pub.co.kr">
 						</div>
 					</div>
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="fax">팩스번호</label>
-							<input id="fax" type="text">
+							<input id="fax" type="text" value="042-999-9999">
 						</div>
 					</div>
 					<div class="input-unit01">
 						<div class="input01">
 							<label for="conum" class="nec">사업자번호</label>
-							<input id="conum" type="text">
+							<input id="conum" type="text" value="537-88-02195">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01">
+							<label for="coceo" class="nec">대표자명</label>
+							<input id="coceo" type="text" value="홍성환">
 						</div>
 					</div>
 					<div class="input-unit01">
@@ -148,6 +175,21 @@
 						<div class="input01">
 							<label for="carnum" class="nec">차량번호</label>
 							<input id="carnum" type="text">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01 half70">
+							<label for="account" class="nec">차량정보</label>
+							<div class="select-wrap">
+								<select name="" id="">
+									<option value="5톤">5톤</option>
+								</select>
+							</div>
+							<div class="select-wrap">
+								<select name="" id="">
+									<option value="윙바디">윙바디</option>
+								</select>
+							</div>
 						</div>
 					</div>
 					<div class="input-file01">
@@ -201,7 +243,32 @@
 							</ul>
 						</div>
 					</div>
+					<div class="input-unit02">
+						<span class="label">승인 여부</span>
+						<div class="input-check02">
+							<input type="checkbox" name="input-check02" id="checkyesno" checked>
+							<label for="checkyesno">
+								<div class="chekbox-inner"></div>
+								<div class="chekbox-switch"></div>
+							</label>
+						</div>
+					</div>
+
+
+				</div><!--//input container-->
+
+				<div class="button-box-bottom">
+					<button type="button" class="btn-unit01-type01">
+						<span class="txt">등록</span>
+					</button>
+					<button type="button" class="btn-unit01-type02">
+						<span class="txt">삭제</span>
+					</button>
+					<button type="button" class="btn-unit01-type04">
+						<span class="txt">목록보기</span>
+					</button>
 				</div>
+
 
 			</div>
 		</div>

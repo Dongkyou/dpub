@@ -443,25 +443,35 @@ $(function wholeMenu() {
 
 //레이어팝업
 $(function () {
-	var LayerPopup = $('#popupForm');
-	var LayerWrap01 = $('.layer-unit01');
+	var LayerClose = $("[id*='layerPop'] .btn-close-layer");
 
-	$("#openPop").click(function () {
-		$('body').addClass('open-layer')
-		$(LayerPopup).show();
-		//$(".mask-layer").fadeIn();
-	});
+	$("[id*='layer0']").click(function () {
+		$('body').addClass('open-layer');
+		$('.mask-layer').addClass('active');
 
-	$("#close_button").click(function () {
-		$('body').removeClass('open-layer');
-		$(LayerPopup).fadeOut();
-		$(LayerPopup).removeClass('active');
-	});
+		var btnID = $(this).attr('id'); //클릭한 버튼의 ID 값
+		var popupID = btnID.replace('layer0', 'layerPop0')
 
-	// 외부영역 클릭 시 팝업 닫기
-	$(LayerPopup).click(function (e) {
-		$('body').removeClass('open-layer');
-		if (!$(LayerWrap).has(e.target).length) $(LayerPopup).fadeOut();
+		if ($('#' + popupID).length) {
+			$('#' + popupID).addClass('active');
+		}
+
+		//팝업 닫기버튼
+		$(LayerClose).click(function () {
+			$('body').removeClass('open-layer');
+			$('#' + popupID).removeClass('active');
+			$('.mask-layer').removeClass('active');
+		});
+
 	});
 
 });
+
+// 외부영역 클릭 시 팝업 닫기
+/*
+$(LayerPopup).click(function (e) {
+	$('body').removeClass('open-layer');
+	if (!$(LayerWrap).has(e.target).length) $(LayerPopup).fadeOut();
+});
+*/
+

@@ -358,7 +358,7 @@
 			</div>
 		</div>
 
-		<button type="button" class="layer-close">
+		<button type="button" class="layer-close btn-close-layer">
 			<span class="ir-txt">레이어 닫기</span>
 		</button>
 	</div>
@@ -384,58 +384,11 @@
 			<button type="button" class="btn-unit05-type01">
 				<span class="txt">저장</span>
 			</button>
-			<button type="button" class="btn-unit05-type02">
+			<button type="button" class="btn-unit05-type02 btn-close-layer">
 				<span class="txt">닫기</span>
 			</button>
 		</div>
 	</div>
-
-	<script>
-
-
-		$(function () {
-			var LayerPopup01 = $('#layerPop01');
-			var LayerPopup02 = $('#layerPop02');
-			var LayerClose = $('#layerPop01 .layer-close');
-
-			$("[id*='layer0']").click(function () {
-				$('body').addClass('open-layer');
-				$('.mask-layer').addClass('active');
-
-				var btnID = $(this).attr('id'); //클릭한 버튼의 ID 값
-				var popupID = btnID.replace('layer0', 'layerPop0')
-
-				if ($('#' + popupID).length) {
-					$('#' + popupID).addClass('active');
-				}
-
-				/*if ($('#layer01').length > 0) {
-					$(LayerPopup01).addClass('active');
-					//console.log('layer01');
-				} else if ($('#layer02').length > 0) {
-					$(LayerPopup02).addClass('active');
-					//console.log('layer02');
-				}*/
-
-			});
-
-
-
-			$(LayerClose).click(function () {
-				$('body').removeClass('open-layer');
-				$(LayerPopup01).removeClass('active');
-				$('.mask-layer').removeClass('active');
-			});
-
-			// 외부영역 클릭 시 팝업 닫기
-			/*$(LayerPopup01).click(function (e) {
-				$('body').removeClass('open-layer');
-				if (!$(LayerWrap).has(e.target).length) $(LayerPopup01).fadeOut();
-			});*/
-
-		});
-
-	</script>
 
 	<div class="mask-layer"></div>
 </body>

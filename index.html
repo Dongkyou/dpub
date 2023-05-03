@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
 	<!-- 리소스 링크 -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -10,6 +10,7 @@
 	<link rel="stylesheet preload" as="style" type="text/css" href="SpoqaHanSansNeo/v01/font.css">
 
 	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/guide.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style_m.css">
 
@@ -21,29 +22,140 @@
 	<!--https://dongkyou.github.io/dpub/-->
 
 	<style>
-		.index-list{margin:40px 0;padding-left:100px;}
+		.index-list{margin:40px 0;padding:0 0 40px 100px;border-bottom:2px solid #333;}
 		.index-list li{position:relative;font-size:12px;}
 		.index-list li:before{content:'-';clear:both;}
 		.index-list li+li{margin:10px 0 0;}
+
+		.page-inde-wrap{width:1100px;margin:0 auto;}
+		.page-inde-wrap table a{color:#C20344;text-decoration:underline;}
+		.page-inde-wrap table td.green{font-weight:500;background-color:#03a3a3;color:#fff;}
+		.page-inde-wrap table td.red{font-weight:500;background-color:#C20344;color:#fff;}
+		.page-inde-wrap table td.gray{font-weight:500;background-color:#a1a1a1;color:#333;}
+		.guide-table-info{margin:20px 0;font-size:14px;}
+		.guide-table-info>span{display:inline-block;padding:4px 3px;font-size:12px;}
+		.guide-table-info>span+span{margin-left:10px;}
+		.guide-table-info>span.green{background-color:#03a3a3;color:#fff;}
+		.guide-table-info>span.gray{background-color:#a1a1a1;color:#333;}
+		.guide-table-info>span.red{background-color:#C20344;color:#fff;}
 	</style>
 </head>
 <body>
 	<h1>Hello dpub</h1>
 
 	<ul class="index-list">
-		<li><a href="guide_01.html">guide_01.html</a></li>
-		<li><a href="layout.html">layout.html</a></li>
-		<li><a href="work_.html">work_.html</a></li>
+		<li><a href="guide_01.html">컴포넌트 가이드 guide_01.html</a></li>
+		<li><a href="layout.html">기본 layout.html</a></li>
 	</ul>
 
+	<div class="page-inde-wrap">
+		<p class="guide-table-info">
+			- 테이블의 NO, 페이지명은 화면기획서 기준으로 작성.<br><br>
+			<span class="green">완료</span><span class="gray">진행중</span><span class="red">미작업</span>
+		</p>
+		<table class="guide-table">
+			<colgroup>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>NO.</th>
+					<th>페이지명</th>
+					<th>URL</th>
+					<th>작업표시</th>
+					<th>비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>01</td>
+					<td>로그인</td>
+					<td><a href="login.html" target="_blank">login.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>로그인 - 아이디 찾기</td>
+					<td><a href="login_02.html" target="_blank">login_02.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>로그인 - 비밀번호 찾기</td>
+					<td><a href="login_03.html" target="_blank">login_03.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>04</td>
+					<td>회원가입 - 약관동의</td>
+					<td><a href="join.html" target="_blank">join.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>05</td>
+					<td>회원가입 - 입력</td>
+					<td><a href="join_02.html" target="_blank">join_02.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>05</td>
+					<td>회원가입 - 입력</td>
+					<td><a href="join_02.html" target="_blank">join_02.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>06</td>
+					<td>회원관리 > 차주</td>
+					<td><a href="/pages/page06.html" target="_blank">page06.html</a></td>
+					<td class="green">완료</td>
+					<td>리스트 첫번째 클릭시<br>이력,메모 레이어확인</td>
+				</tr>
+				<tr>
+					<td>07</td>
+					<td>회원관리 > 차주상세(수정)</td>
+					<td><a href="/pages/page07.html" target="_blank">page07_01.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>08</td>
+					<td>회원관리 > 차주등록</td>
+					<td><a href="/pages/page08.html" target="_blank">page08_01.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>09</td>
+					<td>회원관리 > 광고주</td>
+					<td><a href="/pages/page09.html" target="_blank">page09.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>회원관리 > 광고대행사</td>
+					<td><a href="/pages/page10.html" target="_blank">page10.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>회원관리 > 랩핑사</td>
+					<td><a href="/pages/page11.html" target="_blank">page11.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<p>업데이트 예정</p>
 	<ul class="index-list">
-		<li><a href="pages/page06_popup_table.html">page06_popup_table.html</a></li>
-		<li><a href="pages/page06.html">page06.html</a></li>
-		<li><a href="pages/page09-10_popup_table.html">page09-10_popup_table.html</a></li>
-		<li><a href="pages/page09.html">page09.html</a></li>
-		<li><a href="pages/page10.html">page10.html</a></li>
-		<li><a href="pages/page11_popup_table.html">page11_popup_table.html</a></li>
-		<li><a href="pages/page11.html">page11.html</a></li>
 		<li><a href="pages/page15.html">page15.html</a></li>
 		<li><a href="pages/page18_table.html">page18_table.html</a></li>
 		<li><a href="pages/page19-20_table.html">page19-20_table.html</a></li>
@@ -59,6 +171,7 @@
 		<li><a href="pages/page37_39_table.html">page37_39_table.html</a></li>
 		<li><a href="pages/page41_table.html">page41_table.html</a></li>
 		<li><a href="pages/page42_table.html">page42_table.html</a></li>
+		<li>사용자 페이지 퍼블리싱</li>
 	</ul>
 </body>
 </html>
