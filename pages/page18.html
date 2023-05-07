@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<title>응모 관리 | 디펍</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="">
+	<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
+
+	<!-- 리소스 링크 -->
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_m.css">
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/plugin.js"></script>
+	<script src="../js/common.js"></script>
+
+</head>
+
+<body class="page-menu02 body-list">
+	<div class="wrap-container">
+		<!-- left menu -->
+		<div class="wrap-left-menu"><!-- M모드 active -->
+			<div class="logo-unit01">
+				<span class="ir-txt">디펍</span>
+			</div>
+			<div class="user">
+				<span class="txt">관리자</span>
+				<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+			</div>
+			<div class="menu-box">
+				<ul class="menu-list">
+					<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+					<li class="menu02 active"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+					<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+					<li class="menu04"><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+					<li class="menu05"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+					<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+					<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+					<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+					<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// left menu -->
+
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+
+			<button type="button" class="btn-unit-wholemenu">
+				<span class="line"></span>
+			</button>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
+		<!-- content -->
+		<div class="wrap-content">
+			<div class="title-box">
+				<strong class="title-unit01 bold">
+					<a href="#none" class="tit">광고관리</a>
+				</strong>
+			</div>
+			<div class="content">
+				<div class="tab-box">
+					<div class="page-nav">
+						<ul>
+							<li><a href="">광고 목록</a></li>
+							<li><a href="">응모 관리</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="event-container">
+					<div class="event-unit01" id="slideCon01">
+						<div class="slide-con swiper-container">
+							<ul class="list swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="img-con">
+										<img src="../img/03cee4659d462d0056cc97118ffab5ca.jpg" alt="">
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img-con">
+										<img src="../img/03cee4659d462d0056cc97118ffab5ca.jpg" alt="">
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img-con">
+										<img src="../img/03cee4659d462d0056cc97118ffab5ca.jpg" alt="">
+									</div>
+								</li>
+							</ul>
+							<button class="prev"></button>
+							<button class="next"></button>
+							<div class="pager-unit01 swiper-pagination">
+								<span class="swiper-pagination-bullet">1</span>
+								<span class="swiper-pagination-bullet">2</span>
+								<span class="swiper-pagination-bullet">3</span>
+								<span class="swiper-pagination-bullet">4</span>
+								<span class="swiper-pagination-bullet">5</span>
+								<span class="swiper-pagination-bullet">6</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="table-container">
+					<div class="table-unit05-title">
+						<div class="table-item">check</div>
+						<div class="table-item">아이디(이름)</div>
+						<div class="table-item">차종</div>
+						<div class="table-item">전화번호</div>
+						<div class="table-item">주 운행지역</div>
+						<div class="table-item">주 운행시간</div>
+						<div class="table-item">차량사진</div>
+						<div class="table-item">상태</div>
+						<div class="table-item">미증빙 건수</div>
+					</div>
+					<div class="table-unit05-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">수도권</span>
+							<span class="m-txt">주 운행지역 : 수도권</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">08:00-19:00</span>
+							<span class="m-txt">주 운행시간 : 08:00-19:00</span>
+						</div>
+						<div class="table-item">
+							<div class="car-picture">차량사진</div>
+						</div>
+						<div class="table-item color-x">광고진행</div>
+						<div class="table-item">
+							<span class="pc-txt">1건</span>
+							<span class="m-txt">미증빙 1건</span>
+						</div>
+						<div class="table-item">버튼자리</div>
+					</div>
+					<div class="table-unit05-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">수도권</span>
+							<span class="m-txt">주 운행지역 : 수도권</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">08:00-19:00</span>
+							<span class="m-txt">주 운행시간 : 08:00-19:00</span>
+						</div>
+						<div class="table-item">
+							<div class="car-picture">차량사진</div>
+						</div>
+						<div class="table-item color-x">광고진행</div>
+						<div class="table-item">
+							<span class="pc-txt">1건</span>
+							<span class="m-txt">미증빙 1건</span>
+						</div>
+						<div class="table-item">버튼자리</div>
+					</div>
+					<div class="table-unit05-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">수도권</span>
+							<span class="m-txt">주 운행지역 : 수도권</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">08:00-19:00</span>
+							<span class="m-txt">주 운행시간 : 08:00-19:00</span>
+						</div>
+						<div class="table-item">
+							<div class="car-picture">차량사진</div>
+						</div>
+						<div class="table-item color-x">광고진행</div>
+						<div class="table-item">
+							<span class="pc-txt">1건</span>
+							<span class="m-txt">미증빙 1건</span>
+						</div>
+						<div class="table-item">버튼자리</div>
+					</div>
+					<div class="table-unit05-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">수도권</span>
+							<span class="m-txt">주 운행지역 : 수도권</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">08:00-19:00</span>
+							<span class="m-txt">주 운행시간 : 08:00-19:00</span>
+						</div>
+						<div class="table-item">
+							<div class="car-picture">차량사진</div>
+						</div>
+						<div class="table-item color-x">광고진행</div>
+						<div class="table-item">
+							<span class="pc-txt">1건</span>
+							<span class="m-txt">미증빙 1건</span>
+						</div>
+						<div class="table-item">버튼자리</div>
+					</div>
+				</div>
+
+
+
+				</div><!--//input container-->
+
+				<div class="button-box-bottom">
+					<button type="button" class="btn-unit01-type01">
+						<span class="txt">저장</span>
+					</button>
+					<button type="button" class="btn-unit01-type04">
+						<span class="txt">목록보기</span>
+					</button>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="mask-layer"></div>
+</body>
+
+</html>

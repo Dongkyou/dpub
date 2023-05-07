@@ -129,6 +129,12 @@
 	</symbol>
 	<!--// [Arrow icon] 003  -->
 
+	<!-- [Arrow icon] 004  -->
+	<symbol id="svgIconArr004">
+		<path d="M11.1,13.423l3.08-3.3a.4.4,0,0,1,.544-.03.355.355,0,0,1,.032.518L11.9,13.667l2.853,3.056a.355.355,0,0,1-.032.518.4.4,0,0,1-.544-.03l-3.08-3.3a.354.354,0,0,1,0-.487" transform="translate(14.85 17.333) rotate(180)" fill="#c20344"/>
+	</symbol>
+	<!--// [Arrow icon] 004  -->
+
 	<!-- [Checkbox icon] 001  -->
 	<symbol id="svgIconCheck001">
 		<path d="M17.2,11.732,12.486,16.45,9.352,13.316a.792.792,0,0,0-1.119,1.119l3.694,3.694a.79.79,0,0,0,1.119,0l5.278-5.278A.791.791,0,1,0,17.2,11.732" transform="translate(-8 -11.501)" fill="#c20344"/>
@@ -165,6 +171,8 @@
 
 
 
+
+
 	<!-- [신규]#svgIcon001 -->
 	<use xlink:href="#svgIcon001" x="0" y="0" />
 	<use xlink:href="#svgIcon001W" x="50" y="0" />
@@ -191,6 +199,8 @@
 	<use xlink:href="#svgIconArr001" x="100" y="50" />
 	<use xlink:href="#svgIconArr002" x="150" y="50" />
 	<use xlink:href="#svgIconArr003" x="100" y="350" />
+	<use xlink:href="#svgIconArr004" x="100" y="400" />
+
 
 	<use xlink:href="#svgIconCheck001" x="100" y="100" />
 	<use xlink:href="#svgIconCheck002" x="150" y="100" />

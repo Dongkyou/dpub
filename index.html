@@ -40,7 +40,7 @@
 		.guide-table-info>span.red{background-color:#C20344;color:#fff;}
 	</style>
 </head>
-<body>
+<body class="page-index">
 	<h1>Hello dpub</h1>
 
 	<ul class="index-list">
@@ -53,6 +53,22 @@
 			- 테이블의 NO, 페이지명은 화면기획서 기준으로 작성.<br><br>
 			<span class="green">완료</span><span class="gray">진행중</span><span class="red">미작업</span>
 		</p>
+		<!-- body class guide -->
+		<div class="guide-desc">
+			<dl class="guide-dl">
+				<dt>body class 선언</dt>
+				<dd>페이지별로 body 에 class규칙 확인</dd>
+				<dd>body class 사용이유 : 메뉴별, 페이지구성별 상위 컨트롤을 위함, css및 js를 특정페이지에 서만 실행 할 수 있도록 하기위함.</dd>
+				<dd>page-menu$$, body-****</dd>
+			</dl>
+			<dl class="guide-dl">
+				<dt>예시</dt>
+				<dd>회원관리 - page-menu01, 광고목록 - body-list</dd>
+				<dd><code>&lt;body class="page-menu01 body-list"&gt;</code></dd>
+			</dl>
+		</div>
+		<!--// body class guide -->
+
 		<table class="guide-table">
 			<colgroup>
 			</colgroup>
@@ -65,6 +81,7 @@
 					<th>비고</th>
 				</tr>
 			</thead>
+
 			<tbody>
 				<tr>
 					<td>01</td>
@@ -143,13 +160,48 @@
 					<td class="green">완료</td>
 					<td>-</td>
 				</tr>
+				<tr>
+					<td>12</td>
+					<td>회원관리 > 광고주 회원 수정</td>
+					<td><a href="pages/page12.html" target="_blank">page12.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>회원관리 > 광고주 회원 등록</td>
+					<td><a href="pages/page13.html" target="_blank">page13.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>광고관리 > 광고목록</td>
+					<td><a href="pages/page15.html" target="_blank">page15.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>광고관리 > 광고등록</td>
+					<td><a href="pages/page16.html" target="_blank">page16.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>광고관리 > 광고수정</td>
+					<td><a href="pages/page17.html" target="_blank">page17.html</a></td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
 
 	<p>업데이트 예정</p>
 	<ul class="index-list">
-		<li><a href="pages/page15.html">page15.html</a></li>
+		<!-- <li><a href="pages/page15.html">page15.html</a></li> -->
 		<li><a href="pages/page18_table.html">page18_table.html</a></li>
 		<li><a href="pages/page19-20_table.html">page19-20_table.html</a></li>
 		<li><a href="pages/page22.html">page22.html</a></li>

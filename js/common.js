@@ -129,6 +129,8 @@ Page = {
 		Page.graphic();
 		Page.video();*/
 
+		Master.slideImg01('#slideCon01 .slide-con');
+
 	},
 	/* ##데스크톱 공통 Page.comW */
 	comW: function () {
@@ -370,6 +372,49 @@ Master = {
 			$dday.addClass("day-ing");
 		}
 	},
+
+	/* Master.slideDefault
+	 * 슬라이드 - 기본 */
+	slideDefault: function (conName) {
+		var slideDefault = new Swiper(conName, {
+			slidesPerView: 'auto'
+		});
+	},
+
+	/* Master.slideImg01
+	 * 슬라이드 - 이미지 */
+	slideImg01: function (conName) {
+		//console.log('slideImg01');
+		var slideImg01 = new Swiper(conName, {
+			slidesPerView: 'auto',
+			prevButton: conName + ' .prev',
+			nextButton: conName + ' .next',
+			paginationClickable: true,
+			pagination: conName + ' .swiper-pagination',
+			paginationBulletRender: function (swiper, index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>\n';
+			},
+			onInit: function (swiper) {
+				$(conName + ' .total').text(swiper.slides.length);
+			}
+		});
+	},
+
+	/* Master.slideImg02
+	 * 슬라이드 - 이미지 */
+	slideImg02: function (conName) {
+		var slideImg02 = new Swiper(conName, {
+			slidesPerView: 'auto',
+			initialSlide: 0,
+			paginationClickable: true,
+			observer: true, observeParents: true,
+			pagination: conName + ' .swiper-pagination',
+			paginationBulletRender: function (swiper, index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>\n';
+			}
+		});
+	},
+
 
 	/* 함수생성 Master.functionName */
 	//functionName : function() {},

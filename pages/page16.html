@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<title>광고 등록 | 디펍</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="">
+	<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
+
+	<!-- 리소스 링크 -->
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_m.css">
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/plugin.js"></script>
+	<script src="../js/common.js"></script>
+
+</head>
+
+<body class="page-menu02 body-input">
+	<div class="wrap-container">
+		<!-- left menu -->
+		<div class="wrap-left-menu"><!-- M모드 active -->
+			<div class="logo-unit01">
+				<span class="ir-txt">디펍</span>
+			</div>
+			<div class="user">
+				<span class="txt">관리자</span>
+				<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+			</div>
+			<div class="menu-box">
+				<ul class="menu-list">
+					<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+					<li class="menu02 active"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+					<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+					<li class="menu04"><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+					<li class="menu05"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+					<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+					<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+					<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+					<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// left menu -->
+
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+
+			<button type="button" class="btn-unit-wholemenu">
+				<span class="line"></span>
+			</button>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
+		<!-- content -->
+		<div class="wrap-content">
+			<div class="title-box">
+				<strong class="title-unit01 bold">
+					<a href="#none" class="tit">광고관리</a>
+				</strong>
+			</div>
+			<div class="content">
+				<div class="tab-box">
+					<div class="page-nav">
+						<ul>
+							<li><a href="">광고 목록</a></li>
+							<li><a href="">광고 등록</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="input-container02">
+					<div class="input-radio01">
+						<div class="input01">
+							<span class="label nec">회원 유형</span>
+							<input type="radio" id="select1" name="part01" checked=""><label for="select1">광고주</label>
+							<input type="radio" id="select2" name="part01"><label for="select2">광고대행사</label>
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01">
+							<label for="ownerSelect01" class="nec">광고주 선택</label>
+							<input id="ownerSelect01" type="text" placeholder="아이디(회사명) 입력">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01 half50">
+							<label for="term01" class="nec">광고 기간</label>
+							<input id="term01" type="text">
+							<em></em>
+							<input id="term01_02" type="text">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01 half50">
+							<label for="term02" class="nec">응모 기간</label>
+							<input id="term02" type="text">
+							<em></em>
+							<input id="term02_02" type="text">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01">
+							<label for="name" class="nec">광고명</label>
+							<input id="name" type="text" placeholder="광고명 입력">
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01">
+							<label for="num" class="nec">광고설명</label>
+							<textarea name="content" id="content" rows="10" th:text="${memo.content}" placeholder="내용을 입력해 주세요"></textarea>
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01 hafl-btn01">
+							<label for="terms01">우대조건</label>
+							<input id="terms01" type="text">
+							<button type="button" class="btn-unit02-type01">
+								<span class="txt">추가</span>
+							</button>
+						</div>
+						<div class="input02 nolabel">
+							<strong class="input-keyword">
+								<span class="word">
+									윙바디
+									<button type="button" class="file-clear">
+										<span class="ir-txt">delete</span>
+									</button>
+								</span>
+							</strong>
+						</div>
+					</div>
+					<div class="input-unit01">
+						<div class="input01">
+							<label for="price" class="nec">광고 금액</label>
+							<input id="price" type="text">
+						</div>
+					</div>
+					<div class="input-table01">
+						<div class="input01">
+							<span class="label">응모 조건</span>
+							<div class="table-box">
+								<div class="table-input-title">
+									<strong class="tit">톤수</strong>
+									<strong class="tit">응모대수</strong>
+									<strong class="tit">배당금</strong>
+								</div>
+								<ul class="list">
+									<li>
+										<div class="line01">
+											<button type="button" class="btn-unit06-minu">
+												<span class="txt">-</span>
+											</button>
+											<div class="item01">
+												<input type="number" placeholder="톤수">
+											</div>
+											<div class="item02">
+												<input type="number" placeholder="대수">
+											</div>
+											<div class="item03">
+												<input type="text" placeholder="금액">
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-box">
+									<button type="button" class="btn-unit06-plus">
+										<span class="txt">+</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="input-file02">
+						<span class="label nec">이미지파일</span>
+						<div class="input01">
+							<div class="file-box">
+								<span class="tip">첨부파일을 마우스로 드래그 또는</span>
+								<button type="button" class="btn-unit04-type03">
+									<span class="txt">파일선택</span>
+								</button>
+							</div>
+							<div class="file-info">
+								<div class="img-con">
+									<img src="" alt="">
+								</div>
+								<div class="txt-con">
+									<span class="tit">사업자등록증.jpg</span>
+									<button type="button" class="file-clear">
+										<span class="ir-txt">delete</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="input-unit02">
+						<span class="label">승인 여부</span>
+						<div class="input-check02">
+							<input type="checkbox" name="input-check02" id="checkyesno" checked>
+							<label for="checkyesno">
+								<div class="chekbox-inner"></div>
+								<div class="chekbox-switch"></div>
+							</label>
+						</div>
+					</div>
+
+
+				</div><!--//input container-->
+
+				<div class="button-box-bottom">
+					<button type="button" class="btn-unit01-type01">
+						<span class="txt">저장</span>
+					</button>
+					<button type="button" class="btn-unit01-type04">
+						<span class="txt">목록보기</span>
+					</button>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="mask-layer"></div>
+</body>
+
+</html>
