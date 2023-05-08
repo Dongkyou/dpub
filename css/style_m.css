@@ -99,6 +99,30 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 .tab-unit01 .list{/*flex-wrap:wrap;*/}
 .tab-unit01 li.tab-item {margin-right: 7px;}
 
+/* =============== ####event-unit ======================== */
+.event-unit01 .slide-con{float:none;position:relative;width:100%;height:inherit;margin:0;padding:0 0 40px;}
+.event-unit01 .slide-con li{float:left;width:inherit;height:inherit;}
+.event-unit01 .img-con{width:100%;height:0;padding-bottom:55%;}
+.event-unit01 .img-con img{width:100%;}
+.event-unit01 .slide-con button{width:40px;height:40px;}
+.event-unit01 .slide-con button:before{content:'';clear:both;position:absolute;top:50%;left:50%;margin:-3.2px 0 0 -2px;width:4px;height:7.5px;background:url(../img/sprites_dpub.svg) -100px -400px no-repeat;}
+.event-unit01 .slide-con button.prev:before{transform:rotate(180deg);}
+.event-unit01 .slide-con button.next:before{}
+.event-unit01 .slide-con button.prev{bottom:0;left:0;}
+.event-unit01 .slide-con button.next{bottom:0;right:0;}
+
+.event-unit01 .slide-con+.info-con{float:none;margin:30px 0 0;}
+.event-unit01 .info-con{}
+.event-unit01 .info-con .list{font-size:0;}
+.event-unit01 .info-con li{position:relative;padding-left:12px;}
+.event-unit01 .info-con li:before{content:'';clear:both;display:inline-block;position:absolute;top:5px;left:0;width:4px;height:4px;border-radius:50%;background:#C20344;}
+.event-unit01 .info-con li+li{margin:16px 0 0;}
+.event-unit01 .info-con .tit,
+.event-unit01 .info-con .txt{display:inline-block;}
+.event-unit01 .info-con .tit{min-width:152px;font-weight:500;font-size:14px;}
+.event-unit01 .info-con .txt{font-size:14px;}
+.event-unit01 .info-con .table-container02{margin:40px 0 0;}
+
 /* =============== ####btn-unit ======================== */
 .btn-unit02{height:36px;line-height:36px;}
 
@@ -213,9 +237,11 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-container>div:first-child, .popup-table-container>div:first-child{display: none;}
 .table-container>div:nth-child(n+2), .popup-table-container>div:nth-child(n+2) {padding: 10px;}
 
+.table-container02{}
+.table-container02 .table-item:before{display:none;}
 
 .table-item{padding: 5px 0;position: relative;padding-left: 8px;line-height: 17px;}
-.table-item::before{content:'';display:inline-block;position:absolute;width: 3px;height: 3px;background-color: #969698;top:12px;left:0;border-radius: 50%;}
+.table-item:before{content:'';display:inline-block;position:absolute;width: 3px;height: 3px;background-color: #969698;top:12px;left:0;border-radius: 50%;}
 
 
 /* ---- table-unit01 ---- */

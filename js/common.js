@@ -128,7 +128,7 @@ Page = {
 		Page.photo();
 		Page.graphic();
 		Page.video();*/
-
+		Master.imgLiquid();
 		Master.slideImg01('#slideCon01 .slide-con');
 
 	},
@@ -176,22 +176,8 @@ Page = {
 	/* ##메인(M) Page.mainM */
 	mainM: function () {
 		if ($main) {
-			console.log('Page.mainM');
-			//CP Dynamic
-			if ($('[data-type="auto"]').length) {
-				var cp = function () {
-					setTimeout(function () {
-						MMW.slideFree01('#carouselStar01');
-						MMW.slideFree01('#carouselSport01');
-						MMW.slideFree01('#carouselVideo01');
-					}, 300);
-				};
-				addCallback(cp);
-			} else {
-				MMW.slideFree01('#carouselStar01');
-				MMW.slideFree01('#carouselSport01');
-				MMW.slideFree01('#carouselVideo01');
-			}
+
+
 
 		}
 	},
@@ -288,6 +274,14 @@ Master = {
 			});
 
 		});
+	},
+
+	imgLiquid: function (conName, valign) {
+		if (conName) {
+			$(conName + ' .img-cover').imgLiquid({ fill: true, verticalAlign: valign });
+		} else {
+			$('.img-cover').imgLiquid({ fill: true, verticalAlign: valign }); //top
+		}
 	},
 
 	/* Master.carouselNav01
