@@ -8,16 +8,17 @@
 	- 내부 style 삭제되지 않을려면 옵션 inline styles, Minify styles 를 활성 해제를 한다.
 	※ 이미지를 반으로 줄였을 때 좌표가 짝수여야 그래픽이 번지지 않는다.
  -->
-<svg viewBox="0 0 400 500" width="400" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform:scale(2);transform-origin: 0 0;"><!-- [가이드] svg 태그에 스타일 태그를 제거한다. -->
+<svg viewBox="0 0 400 600" width="400" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform:scale(2);transform-origin: 0 0;"><!-- [가이드] svg 태그에 스타일 태그를 제거한다. -->
 	<!-- [가이드] 코드 Minify 시 제거 -->
-	<rect x="0" y="0" width="200" height="500" fill="#5399a5" />
-	<rect x="50" y="0" width="50" height="500" fill="#ffa07a" />
-	<rect x="150" y="0" width="50" height="500" fill="#ffa07a" />
+	<rect x="0" y="0" width="200" height="600" fill="#5399a5" />
+	<rect x="50" y="0" width="50" height="600" fill="#ffa07a" />
+	<rect x="150" y="0" width="50" height="600" fill="#ffa07a" />
 	<rect x="0" y="50" width="200" height="50" fill="#ffa07a" />
 	<rect x="0" y="150" width="200" height="50" fill="#ffa07a" />
 	<rect x="0" y="250" width="200" height="50" fill="#ffa07a" />
 	<rect x="0" y="350" width="200" height="50" fill="#ffa07a" />
 	<rect x="0" y="450" width="200" height="50" fill="#ffa07a" />
+	<rect x="0" y="550" width="200" height="50" fill="#ffa07a" />
 
 	<!-- [logo icon] 001 -->
 	<symbol id="svgIcon001">
@@ -76,26 +77,94 @@
 	</symbol>
 	<!--// [logo icon] 002 -->
 
-	<symbol id="svgIcon002W">
-	</symbol>
 
 
-	<!-- [favicon icon] -->
+	<!-- [intro icon] 001 -->
 	<symbol id="svgIcon003">
-		<g id="그룹_840" data-name="그룹 840" transform="translate(-55 -842)">
-			<rect id="사각형_245" data-name="사각형 245" width="128" height="128" transform="translate(55 842)" fill="none"/>
-			<g id="그룹_839" data-name="그룹 839" transform="translate(-129 -97.999)">
-			<path id="패스_2974" data-name="패스 2974" d="M22.092,46.486A23.239,23.239,0,0,1,5.777,7.932,23.233,23.233,0,0,1,38.57,5.83l4.221,3.853a4.173,4.173,0,1,1-5.624,6.166L33,12.048a14.888,14.888,0,0,0-20.952,1.4A14.887,14.887,0,1,0,34.4,33.107l24.7-27.9c.04-.045.081-.088.122-.131C63.387.766,72.317-3.142,79.864,3.761a4.174,4.174,0,0,1-5.633,6.161c-3.845-3.518-7.759-.273-8.963.914l-24.605,27.8a23.268,23.268,0,0,1-18.571,7.853" transform="translate(184 981)" fill="#ec6500"/>
-			<path id="패스_2975" data-name="패스 2975" d="M85.138.026a23.24,23.24,0,0,1,16.315,38.557,23.237,23.237,0,0,1-32.793,2.1l-4.221-3.853a4.174,4.174,0,1,1,5.624-6.168l4.167,3.8a14.894,14.894,0,0,0,20.954-1.4A14.887,14.887,0,1,0,72.828,13.4l-24.7,27.9c-.041.047-.083.09-.122.131-4.164,4.31-13.094,8.22-20.641,1.317A4.175,4.175,0,0,1,33,36.59c3.844,3.518,7.759.273,8.963-.912l24.605-27.8A23.065,23.065,0,0,1,82.521.049,23.988,23.988,0,0,1,85.138.026" transform="translate(204.771 981.001)" fill="#b20034"/>
+		<g id="그룹_847" data-name="그룹 847" clip-path="url(#clip-path)">
+			<path id="패스_3054" data-name="패스 3054" d="M65,32.5A32.5,32.5,0,1,1,32.5,0,32.5,32.5,0,0,1,65,32.5" fill="#ffeab7"/>
+			<line id="선_39" data-name="선 39" y2="5.692" transform="translate(32.813 15.115)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_40" data-name="선 40" x1="3.231" y2="3.538" transform="translate(44.192 19.423)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_41" data-name="선 41" x2="3.231" y2="3.538" transform="translate(18.202 19.423)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3055" data-name="패스 3055" d="M42.5,25.885h-20l-5,8,15,16,15-16Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_42" data-name="선 42" x2="30" transform="translate(17.5 33.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_43" data-name="선 43" x2="4.564" y2="16" transform="translate(27.936 33.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_44" data-name="선 44" x1="5.155" y2="16" transform="translate(32.5 33.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_45" data-name="선 45" x2="5.231" y2="8" transform="translate(22.5 25.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_46" data-name="선 46" x1="4.836" y2="8" transform="translate(27.732 25.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_47" data-name="선 47" x2="5.231" y2="8" transform="translate(32.424 25.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_48" data-name="선 48" x1="4.836" y2="8" transform="translate(37.656 25.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_49" data-name="선 49" x1="2.308" transform="translate(12.5 33.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_50" data-name="선 50" x1="2.308" transform="translate(50.192 33.885)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3056" data-name="패스 3056" d="M33.489,22.971a.682.682,0,1,1-.683-.683.683.683,0,0,1,.683.683" fill="#313133"/>
+		</g>
+
+	</symbol>
+	<!--// [intro icon] 001 -->
+
+
+	<!-- [intro icon] 002 -->
+	<symbol id="svgIcon004">
+		<g id="그룹_853" data-name="그룹 853" transform="translate(1739 -3305)">
+			<circle id="타원_92" data-name="타원 92" cx="32.5" cy="32.5" r="32.5" transform="translate(-1739 3305)" fill="#ffeab7"/>
+			<g id="그룹_849" data-name="그룹 849" transform="translate(-1722 3322.174)" clip-path="url(#clip-path)">
+			<path id="패스_3057" data-name="패스 3057" d="M15.866,2A13.866,13.866,0,1,0,29.732,15.866,13.866,13.866,0,0,0,15.866,2m0,26.192A12.326,12.326,0,1,1,28.192,15.866,12.34,12.34,0,0,1,15.866,28.192" transform="translate(-0.459 -0.447)" fill="#313133"/>
+			<path id="패스_3058" data-name="패스 3058" d="M19.655,10.079V8H18.12v2.05a4.866,4.866,0,0,0-3.051,1.219,3.583,3.583,0,0,0-1.127,2.725,3.588,3.588,0,0,0,1.084,2.818,10.259,10.259,0,0,0,3.4,1.787,4.261,4.261,0,0,1,1.424.84,1.68,1.68,0,0,1,.374,1.181,1.541,1.541,0,0,1-.364,1.073,1.507,1.507,0,0,1-1.171.4,2.116,2.116,0,0,1-1.452-.476,2.035,2.035,0,0,1-.539-1.594h-3.2l-.019.059a3.861,3.861,0,0,0,1.214,3.2,5.525,5.525,0,0,0,3.225,1.248v1.953H19.47V24.535a4.769,4.769,0,0,0,2.954-1.2A3.6,3.6,0,0,0,23.5,20.6a3.757,3.757,0,0,0-1.122-2.885,8.891,8.891,0,0,0-3.366-1.769,5.046,5.046,0,0,1-1.434-.9,1.468,1.468,0,0,1-.354-1.035,1.716,1.716,0,0,1,.33-1.1,1.365,1.365,0,0,1,1.127-.413,1.524,1.524,0,0,1,1.19.467A2.086,2.086,0,0,1,20.3,14.4H23.5l.019-.049a4.013,4.013,0,0,0-1.01-2.9,4.56,4.56,0,0,0-2.856-1.37" transform="translate(-3.097 -1.825)" fill="#313133"/>
 			</g>
+			<g id="그룹_851" data-name="그룹 851" transform="translate(-1694.999 3320.002)">
+			<g id="그룹_850" data-name="그룹 850" clip-path="url(#clip-path-2)">
+				<line id="선_51" data-name="선 51" y2="2.133" transform="translate(3.998 0.65)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_52" data-name="선 52" y2="2.133" transform="translate(3.998 5.214)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_53" data-name="선 53" x1="2.133" transform="translate(5.214 3.998)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_54" data-name="선 54" x1="2.133" transform="translate(0.65 3.998)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			</g>
+			</g>
+			<g id="그룹_852" data-name="그룹 852" transform="translate(-1725.997 3347.002)">
+			<g id="그룹_850-2" data-name="그룹 850" clip-path="url(#clip-path-2)">
+				<line id="선_51-2" data-name="선 51" y2="2.133" transform="translate(3.998 0.65)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_52-2" data-name="선 52" y2="2.133" transform="translate(3.998 5.214)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_53-2" data-name="선 53" x1="2.133" transform="translate(5.214 3.998)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+				<line id="선_54-2" data-name="선 54" x1="2.133" transform="translate(0.65 3.998)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			</g>
+			</g>
+		</g>
+	</symbol>
+	<!--// [intro icon] 002 -->
+
+	<!-- [intro icon] 003-->
+	<symbol id="svgIcon005">
+		<g id="그룹_843" data-name="그룹 843" clip-path="url(#clip-path)">
+			<path id="패스_3046" data-name="패스 3046" d="M65,32.5A32.5,32.5,0,1,1,32.5,0,32.5,32.5,0,0,1,65,32.5" fill="#ffeab7"/>
+			<path id="패스_3047" data-name="패스 3047" d="M32.5,22.512a6.643,6.643,0,0,1,6.643,6.643" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3048" data-name="패스 3048" d="M42.808,29.155A10.308,10.308,0,1,0,27,37.864c0,.046-.014.089-.014.135v4a2.154,2.154,0,0,0,2.154,2.154h7.077A2.154,2.154,0,0,0,38.375,42V38a2.154,2.154,0,0,0-.036-.353A10.293,10.293,0,0,0,42.808,29.155Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3049" data-name="패스 3049" d="M33.041,48.153h-.718a2.872,2.872,0,0,1-2.872-2.872V44.153h6.462v1.128A2.872,2.872,0,0,1,33.041,48.153Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_26" data-name="선 26" x2="11.385" transform="translate(26.99 40.358)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_27" data-name="선 27" x2="2.256" y2="2.154" transform="translate(17.372 23.127)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_28" data-name="선 28" y1="2.154" x2="2.256" transform="translate(17.372 34.512)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_29" data-name="선 29" x2="2.769" transform="translate(16.859 29.897)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_30" data-name="선 30" x1="2.256" y2="2.154" transform="translate(45.372 23.127)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_31" data-name="선 31" x1="2.256" y1="2.154" transform="translate(45.372 34.512)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_32" data-name="선 32" x1="2.769" transform="translate(45.372 29.897)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
   		</g>
 	</symbol>
-	<!--// [favicon icon] -->
+	<!--// [intro icon] 003 -->
 
-	<symbol id="svgIcon003W">
+	<!-- [intro icon] 004 -->
+	<symbol id="svgIcon006">
+		<g id="그룹_845" data-name="그룹 845" clip-path="url(#clip-path)">
+			<path id="패스_3050" data-name="패스 3050" d="M65,32.5A32.5,32.5,0,1,1,32.5,0,32.5,32.5,0,0,1,65,32.5" fill="#ffeab7"/>
+			<path id="패스_3051" data-name="패스 3051" d="M19.872,36.923,15.449,32.5l4.423-4.423a17.857,17.857,0,0,1,25.256,0L49.551,32.5l-4.423,4.423A17.859,17.859,0,0,1,19.872,36.923Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3052" data-name="패스 3052" d="M22.88,32.532a9.62,9.62,0,1,1,9.62,9.62A9.62,9.62,0,0,1,22.88,32.532Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<path id="패스_3053" data-name="패스 3053" d="M29.186,32.532A3.314,3.314,0,1,1,32.5,35.846,3.314,3.314,0,0,1,29.186,32.532Z" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_33" data-name="선 33" y2="3.795" transform="translate(32.5 15.282)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_34" data-name="선 34" x1="2.546" y2="2.814" transform="translate(43.674 18.566)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_35" data-name="선 35" x2="2.546" y2="2.814" transform="translate(18.78 18.566)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_36" data-name="선 36" y1="3.795" transform="translate(32.5 45.923)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_37" data-name="선 37" x1="2.546" y1="2.814" transform="translate(43.674 43.62)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+			<line id="선_38" data-name="선 38" y1="2.814" x2="2.546" transform="translate(18.78 43.62)" fill="none" stroke="#313133" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+		</g>
 	</symbol>
-	<!--// [menu icon] Money 003  -->
-
+	<!--// [intro icon] 004 -->
 
 
 
@@ -108,21 +177,22 @@
 	<!-- [신규]#svgIcon001 -->
 	<use xlink:href="#svgIcon001" x="0" y="0" />
 	<use xlink:href="#svgIcon001W" x="50" y="0" />
-	<use xlink:href="#svgIcon002" x="0" y="50" />
+	<use xlink:href="#svgIcon002" x="0" y="100" />
 	<use xlink:href="#svgIcon002W" x="50" y="50" />
-	<use xlink:href="#svgIcon003" x="0" y="100" />
+	<use xlink:href="#svgIcon003" x="0" y="200" />
 	<use xlink:href="#svgIcon003W" x="50" y="100" />
-	<use xlink:href="#svgIcon004" x="0" y="150" />
+	<use xlink:href="#svgIcon004" x="0" y="300" />
 	<use xlink:href="#svgIcon004W" x="50" y="150" />
-	<use xlink:href="#svgIcon005" x="0" y="200" />
+	<use xlink:href="#svgIcon005" x="0" y="400" />
 	<use xlink:href="#svgIcon005W" x="50" y="200" />
-	<use xlink:href="#svgIcon006" x="0" y="250" />
+	<use xlink:href="#svgIcon006" x="0" y="500" />
 	<use xlink:href="#svgIcon006W" x="50" y="250" />
-	<use xlink:href="#svgIcon007" x="0" y="300" />
+	<use xlink:href="#svgIcon007" x="0" y="600" />
 	<use xlink:href="#svgIcon007W" x="50" y="300" />
 	<use xlink:href="#svgIcon008" x="0" y="350" />
 	<use xlink:href="#svgIcon008W" x="50" y="350" />
 	<use xlink:href="#svgIcon009" x="0" y="400" />
 	<use xlink:href="#svgIcon009W" x="50" y="400" />
+
 
 </svg>
