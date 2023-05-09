@@ -14,8 +14,8 @@ commnet : contents (PC 모드)
 
 	header{position: relative;}
 	.inner{width: calc(100% - 32px);}
-	.header-box{padding: 10px 0;}
-	.logo>a>.ir-txt{width: 158px;height: 37px;}
+	.header-box{padding: 13px 0;}
+	.logo>a>.ir-txt{background-size: 330px;height: 30px;}
 	.nav{display: none;}
 
 	/* 모바일 메뉴 - 햄버거 */
@@ -44,8 +44,8 @@ commnet : contents (PC 모드)
 	/* 메인 슬라이드 */
 	.main-visual {height: 500px;}
 	.mySlides>img{height: 100%;width: auto;}
-	.mySlides>.text>.caption-tit {font-size: 22px;margin-bottom: 16px;}
-	.mySlides>.text{font-size: 13px; position: relative; top: 50px;}
+	.mySlides>.text>.caption-tit {font-size: 24px;margin-bottom: 16px;}
+	.mySlides>.text{position: relative; top: 50px;}
 
 	.dot-box {left: calc(50% - 27px);}
 	.dot{width: 8px;height: 8px;}
@@ -96,7 +96,7 @@ commnet : contents (PC 모드)
 }
 
 @media only screen and (max-width: 414px) {
-	.mySlides>.text>.button-box{width: 276px;position: absolute;bottom: -250px;left: calc(50% - 138px);}
+	.mySlides>.button-box{width: 276px;position: absolute;bottom: 42px;left: calc(50% - 138px);}
 
 }
 

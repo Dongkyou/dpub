@@ -21,7 +21,7 @@ img{vertical-align: middle;}
 .header{position: relative;z-index: 200;background: #fff;}
 .header-box{padding: 10px 0;display: flex;align-items: center;justify-content: space-between;}
 .logo{flex: 1;}
-.logo>a>.ir-txt{box-sizing: border-box;background: url(../images/logo.png) 0 0 no-repeat;width: 158px;height: 37px;}
+.logo>a>.ir-txt{box-sizing: border-box;background: url(../images/sprites_dpub_user.svg) 0 0 no-repeat;width: 158px;height: 37px;}
 
 .nav{flex: 0.7;}
 .nav-menu{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;}
@@ -66,7 +66,7 @@ img{vertical-align: middle;}
 }
 
 .mySlides>.text>.caption-tit {font-size: 36px;font-weight: 700;margin-bottom: 30px;}
-.mySlides>.text>.button-box{width: 150px;}
+.mySlides>.button-box{width: 150px;bottom:-240px;left:12px;position: relative;}
 .dot-box{position: absolute;bottom: 0;left: 50%;}
 
 /* =============== 메인콘텐츠 ======================== */
@@ -198,3 +198,5 @@ footer {border-top: 1px solid #f3f3f3;padding: 50px 0;}
 .foot-box>.foot-cont>ul>li>a{font-weight:500;color: #535353;}
 .foot-box>.foot-cont>ul>li>a:hover {color: #EF7D00;text-decoration: underline;}
 footer address{text-align: center;font-size: 12px;color: #999;}
+
+.foot-box>.foot-cont>.ir-txt {box-sizing: border-box;background: url(../images/sprites_dpub_user.svg) 0 -50px no-repeat;width: 158px;height: 37px;}
