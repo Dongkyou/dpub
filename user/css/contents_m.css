@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*************************************************
+프로젝트명 : 디펍 서비스페이지
+commnet : contents (PC 모드)
+*************************************************/
+
+@media only screen and (max-width: 980px) {
+
+	/* =============== ######공통 (common) ======================== */
+	html,body{width:100%;height:100%;}
+	body{font-family:'Spoqa Han Sans Neo','Helvetica Neue',Helvetica,AppleSDGothicNeo-Regular,sans-serif;letter-spacing:-0.3px;}
+	h1,h2,h3,h4,h5,h6{font-weight:normal;}
+	a{display:inline-block;vertical-align:top;}
+
+	header{position: relative;}
+	.inner{width: calc(100% - 32px);}
+	.header-box{padding: 10px 0;}
+	.logo>a>.ir-txt{width: 158px;height: 37px;}
+	.nav{display: none;}
+
+	/* 모바일 메뉴 - 햄버거 */
+	.mobile-btn {display: inline-block;position: relative;width: 30px;height: 20px;}
+	.ico-mobilebtn{background: #fff;}
+	.ico-mobilebtn, .ico-mobilebtn span{display: inline-block;transition: all .4s;box-sizing: border-box;}
+	.ico-mobilebtn{position: relative;width: 30px;height: 20px;}
+
+	.ico-mobilebtn span{position: absolute;left: 0;width: 100%;height: 3px;background-color: #000;border-radius: 4px;}
+	.ico-mobilebtn span:nth-of-type(1){top: 0;}
+	.ico-mobilebtn span:nth-of-type(2){top: 8px;}
+	.ico-mobilebtn span:nth-of-type(3){bottom: 0;}
+
+	.open .ico-mobilebtn span:nth-of-type(1){-webkit-transform: translateY(8px) rotate (-45deg);transform: translateY(8px) rotate(-45deg);}
+	.open .ico-mobilebtn span:nth-of-type(2){opacity: 0;}
+	.open .ico-mobilebtn span:nth-of-type(3){-webkit-transform: translateY(-8px) rotate(45deg);transform: translateY(-8px) rotate(45deg);}
+
+	/* 모바일 메뉴 */
+	.mobile-menu {display: block;position: absolute;top: 100%;right: 0;width: 100%;z-index: 100;-webkit-transform: translateY(-323%);-moz-transform: translateY(-323%);-ms-transform: translateY(-323%);-o-transform: translateY(-323%);transform: translateY(-323%);-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+	.mobile-menu.open {-webkit-transform: translateY(0);-moz-transform: translateY(0);-o-transform: translateY(0);transform: translateY(0);}
+	.mobile-menu > ul {max-width: 100%;margin: 0 auto;padding: 10px 0;text-align: center;background: #fff;color: #000;}
+	.mobile-menu > ul > li {position: relative;font-size: 2rem;font-weight: 400;border-bottom: 1px solid #e9e9e9;}
+	.mobile-menu > ul > li:last-child {border-bottom: none;}
+	.mobile-menu > ul > li > a {padding: 13px 0;width: 100%;font-size: 17px;}
+
+	/* 메인 슬라이드 */
+	.main-visual {height: 500px;}
+	.mySlides>img{height: 100%;width: auto;}
+	.mySlides>.text>.caption-tit {font-size: 22px;margin-bottom: 16px;}
+	.mySlides>.text{font-size: 13px; position: relative; top: 50px;}
+
+	.dot-box {left: calc(50% - 27px);}
+	.dot{width: 8px;height: 8px;}
+
+	/* 메인 콘텐츠 */
+	.main-content{display: block;padding: 40px 0;}
+	.main-cont01:first-child{margin-bottom: 50px;}
+	.main-cont01>h1 {margin-bottom: 20px;}
+	.main-content>.main-cont01>.title-box02 {margin-bottom: 20px;}
+	.cs{font-size: 15px;}
+	.button-box {margin-top: 20px;}
+
+	/* 풋터 */
+	footer{padding: 30px 0;}
+	.foot-box {display: block;}
+	.foot-box>.foot-cont {margin-bottom: 25px;}
+	.foot-box>.foot-cont>h1 {font-size: 14px;margin-bottom: 7px;}
+	.foot-box>.foot-cont>ul>li {font-size: 12px;}
+
+	/* 서브 비주얼 */
+	.sub-visual {height: 90px;background-size: cover;}
+	.sub-visual>.sub-tit {font-size: 24px;padding-top: 36px;}
+
+	/* 디펍소개 */
+	.contents {padding: 40px 0;}
+	.text-pic {display: block;}
+	.cont-01>h2{font-size: 22px;margin-bottom: 20px;line-height: 1.3;}
+	.text-pic>.c-txt{margin-right: 0;text-align: justify;}
+
+	.cont-01{padding: 40px 0;}
+	.cont-01>p{text-align: justify;}
+	.cont-01>.detail-box>.detail{flex: 1 1 100%;margin-top: 50px;margin-right: 0;}
+	.cont-01>.detail-box>.detail>.d-pic{margin-right: 15px;}
+
+	/* 광고종류 */
+	.cont-02{display: block;padding: 40px 0;position: relative;}
+	.cont-info>h1{font-size: 24px;padding-top:0;margin-bottom: 20px;}
+	.cont-info>ul{margin-bottom: 20px;}
+	.pic:first-child{margin-right: -1px;}
+	.pic>img{padding: 2px;}
+
+	/* 문의하기 */
+	ul.tab-unit03{margin-bottom: 20px;}
+
+	/* 개인정보처리방침 */
+	.privacy-box{padding: 15px;line-height: 24px;font-size: 14px;}
+	.privacy{font-size: 14px;margin-bottom: 40px;}
+	.privacy-tit {margin-bottom: 15px;}
+	.privacy-detail01>li, .privacy-detail02>li{font-size: 14px;}
+
+}
+
+@media only screen and (max-width: 414px) {
+	*{font-size: 15px;}
+	.mySlides>.text>.button-box{width: 276px;position: absolute;bottom: -250px;left: calc(50% - 138px);}
+
+}
+
+@media only screen and (max-width: 280px) {
+}
