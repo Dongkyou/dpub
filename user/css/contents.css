@@ -66,7 +66,7 @@ img{vertical-align: middle;}
 }
 
 .mySlides>.text>.caption-tit {font-size: 36px;font-weight: 700;margin-bottom: 30px;}
-.mySlides>.button-box{width: 150px;bottom:-240px;left:12px;position: relative;}
+.mySlides>a>.button-box{width: 150px;bottom:-240px;left:12px;position: relative;}
 .dot-box{position: absolute;bottom: 0;left: 50%;}
 
 /* =============== 메인콘텐츠 ======================== */
@@ -145,17 +145,19 @@ select{width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;ap
 .point-back01{background: #ffde8f;padding: 0 2px;}
 
 .text-pic{display: flex;flex-wrap: wrap;}
-.text-pic>.c-txt{flex: 1;margin-right: 50px;}
+.text-pic>.c-txt{flex: 1;}
 .text-pic>.c-txt>p{margin-bottom: 20px;}
-.text-pic>.c-pic{flex: 1;}
-.text-pic>.c-pic>img{width: 100%;}
+.text-pic>.c-pic{flex: 0.7;margin-left: 70px;}
+.text-pic>.c-pic>img{width: 100%;border-radius: 15px;}
 
 /* =============== 광고종류 ======================== */
 .cont-box:first-child>.cont-02{padding-top: 0;}
 .cont-02{display: flex;flex-wrap: wrap;padding: 60px 0;}
 .cont-info{flex: 1;z-index: 1;}
 .cont-info>h1{font-size: 28px;font-weight: 700;margin-bottom: 30px;padding-top: 20px;}
-.cont-info>ul>li{font-size: 16px;margin-bottom: 5px;}
+.cont-info>ul>li{font-size: 16px;margin-bottom: 2px;position: relative;}
+.cont-info>ul>li:nth-child(odd){padding-left: 8px;font-weight: 500;color: #8B022E;}
+.cont-info>ul>li:nth-child(odd)::before{content: '';position: absolute;top:10px;left:0;width: 4px;height: 4px;background:#8B022E;border-radius: 50%;}
 .cont-info>ul>li:nth-child(2){margin-bottom: 15px;}
 .cont-info>p{margin-top: 20px;font-weight: 500;}
 .cont-pic{display: flex;flex-wrap: wrap;flex: 2;z-index: 1;}
@@ -165,7 +167,8 @@ select{width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;ap
 .pic>img{width: 100%;padding: 7px;background: #fff;}
 
 .point-color02{color: #B30039;}
-.point-back02{background: #e9e9e9;padding: 0 5px;}
+.point-color03{color: #CE0A49;}
+.point-back02{background: #FFEAB7;padding: 0 5px;}
 
 /* =============== 문의하기 ======================== */
 ul.tab-unit03{display: flex;justify-content:center;margin-bottom: 40px;}
