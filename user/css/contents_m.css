@@ -55,15 +55,12 @@ commnet : contents (PC 모드)
 	.main-cont01:first-child{margin-bottom: 50px;}
 	.main-cont01>h1 {margin-bottom: 20px;}
 	.main-content>.main-cont01>.title-box02 {margin-bottom: 20px;}
-	.cs{font-size: 15px;}
 	.button-box {margin-top: 20px;}
 
 	/* 풋터 */
 	footer{padding: 30px 0;}
 	.foot-box {display: block;}
 	.foot-box>.foot-cont {margin-bottom: 25px;}
-	.foot-box>.foot-cont>h1 {font-size: 14px;margin-bottom: 7px;}
-	.foot-box>.foot-cont>ul>li {font-size: 12px;}
 
 	/* 서브 비주얼 */
 	.sub-visual {height: 90px;background-size: cover;}
@@ -99,7 +96,6 @@ commnet : contents (PC 모드)
 }
 
 @media only screen and (max-width: 414px) {
-	*{font-size: 15px;}
 	.mySlides>.text>.button-box{width: 276px;position: absolute;bottom: -250px;left: calc(50% - 138px);}
 
 }
