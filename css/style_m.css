@@ -412,7 +412,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"km1 km2"
 		"prove-picture prove-picture"
 		"prove-day button";
-	grid-template-columns: 1fr 1.3fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1fr 1fr;grid-template-rows: repeat(4, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit06-cont>.table-item:nth-child(1){grid-area: prove-number;}
 .table-unit06-cont>.table-item:nth-child(2){grid-area: prove-term;}
@@ -420,7 +420,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit06-cont>.table-item:nth-child(4){grid-area: km1;}
 .table-unit06-cont>.table-item:nth-child(5){grid-area: km2;}
 .table-unit06-cont>.table-item:nth-child(6){grid-area: prove-day;}
-.table-unit06-cont>.table-item:nth-child(7){grid-area: button;}
+.table-unit06-cont>.table-item:nth-child(7){grid-area: button;text-align:right;}
 
 .table-unit06-cont>.table-item:nth-child(3)::before, .table-unit06-cont>.table-item:nth-child(7)::before{display: none;}
 .table-unit06-cont>.table-item:nth-child(3), .table-unit06-cont>.table-item:nth-child(7){padding-left: 0;}
