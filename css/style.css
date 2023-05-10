@@ -653,14 +653,15 @@ ul.page-unit01>li.active>a{color: #fff;}
 ul.page-unit01>li>a.Arr-next{transform: scaleX(-1);}
 ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
-/* =============== ####img-unit ======================== */
-[class*='img-unit01']{display: flex;flex-wrap: nowrap;justify-content: center;}
+/* =============== ####img-con ======================== */
+[class*='img-con']{overflow: hidden;display: inline-block;border: 1px solid #D1D1D1;vertical-align: middle;}
+[class*='img-con']>[class*='con']>img{max-width: 100%;max-height: 100%;}
 
-/* =============== ####img-box ======================== */
-[class*='img-box']{overflow: hidden;display: inline-block;border: 1px solid #D1D1D1;vertical-align: middle;}
-[class*='img-box']>img{max-width: 100%;max-height: 100%;}
-.img-box01{width: 70px;height: 98px;}
-.img-box02{width: 70px;height: 70px;}
+.img-con01>[class*='con']{width: 70px;height: 98px;}
+
+.img-con02{display: flex;flex-wrap: nowrap;justify-content: center;}
+.img-con02>[class*='con']{width: 70px;height: 70px;margin-right: 7px;}
+.img-con02>[class*='con']:last-child{margin-right: 0;}
 
 /* =============== ####table-unit ======================== */
 /* ---- 공통 ---- */
@@ -692,7 +693,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit04-title, .table-unit04-cont{grid-template-columns: 60px 0.6fr 2fr 1fr 1.5fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit05 ---- */
-.table-unit05-title, .table-unit05-cont{grid-template-columns: 60px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+.table-unit05-title, .table-unit05-cont{grid-template-columns: 60px 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;}
 .table-unit05-cont>.table-item:last-child {display: none;}
 
 /* ---- table-unit06 ---- */
