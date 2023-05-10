@@ -698,7 +698,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit05-cont>.table-item:last-child {display: none;}
 
 /* ---- table-unit06 ---- */
-.table-unit06-title, .table-unit06-cont{grid-template-columns: repeat(7, 1fr);}
+.table-unit06-title, .table-unit06-cont{grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit07 ---- */
 .table-unit07-title, .table-unit07-cont{grid-template-columns: 0.7fr 1.5fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr;}
