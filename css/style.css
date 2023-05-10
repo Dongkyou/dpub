@@ -128,7 +128,7 @@ transition:all 0.5s ease-in;}
 .container-login01 .logo-unit03+.tit{margin:12px 0 0;font-weight:500;font-size:16px;}
 
 .login-input{margin:42px 75px 0;}
-.login-input input[type="text"]{width:318px;height:46px;padding:0 13px;box-sizing:border-box;border-radius:5px;background:#F7F7FA;font-size:14px;color:#000;}
+.login-input input[type="text"]{width:100%;height:46px;padding:0 13px;box-sizing:border-box;border-radius:5px;background:#F7F7FA;font-size:14px;color:#000;}
 .login-input input[type="text"]::placeholder{color:#A1A1A1;}
 .login-input [class*='input0']+[class*='input0']{margin:7px 0 0;}
 .login-input .check-login{}
@@ -141,7 +141,7 @@ transition:all 0.5s ease-in;}
 [class*='check-'] input[type="checkbox"]+label{padding-left:26px;font-size:14px;line-height:20px;color:#A1A1A1;}
 [class*='check-'] input[type="checkbox"] + label:before{content:'';clear:both;position:absolute;top:0;left:0;width:20px;height:20px;background:#fff;border-radius:50%;border:1px solid #D5D5DC;box-sizing: border-box;}
 [class*='check-'] input[type="checkbox"] + label:after{content:'';clear:both;position:absolute;top:50%;left:5px;margin-top:-3px;width:10px;height:8px;background:url(../img/sprites_dpub.svg) -150px -100px no-repeat;}
-[class*='check-'] input[type="checkbox"]:checked+label{color:#B30039;}
+/* [class*='check-'] input[type="checkbox"]:checked+label{color:#B30039;} */
 [class*='check-'] input[type="checkbox"]:checked + label:before{border-color:#B30039;}
 [class*='check-'] input[type="checkbox"]:checked + label:after{top:50%;left:5px;margin-top:-3px;background-position:-100px -100px;}
 
