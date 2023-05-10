@@ -276,7 +276,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check phone day"
 		"check car-weight editday"
 		"check button1 button2";
-	grid-template-columns: 0.23fr 1fr 1fr;grid-template-rows: repeat(3, minmax(35px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit01-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit01-cont>.table-item:nth-child(2){grid-area: approve;}
@@ -300,7 +300,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check phone day"
 		"check company-number editday"
 		"check button-set button-set";
-	grid-template-columns: 0.23fr 1fr 1fr;grid-template-rows: repeat(3, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit02-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit02-cont>.table-item:nth-child(2){grid-area: approve;}
@@ -329,7 +329,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check company-number editday"
 		"check area ."
 		"check button1 button2";
-	grid-template-columns: 0.23fr 1fr 1fr;grid-template-rows: repeat(3, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit03-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit03-cont>.table-item:nth-child(2){grid-area: approve;}
@@ -357,7 +357,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check apply-term apply-term apply-term"
 		"check favor favor favor"
 		"check button button button";
-	grid-template-columns: 0.3fr 0.4fr 1.3fr 1fr;grid-template-rows: repeat(7, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.3fr 0.4fr 1.3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit04-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit04-cont>.table-item:nth-child(2){grid-area: ad-number;}
@@ -386,7 +386,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check term term"
 		"check car-picture car-picture"
 		"check button button";
-	grid-template-columns: 0.23fr 1.3fr 0.7fr;grid-template-rows: repeat(7, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1.3fr 0.7fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit05-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit05-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -412,7 +412,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"km1 km2"
 		"prove-picture prove-picture"
 		"prove-day button";
-	grid-template-columns: 1fr 1fr;grid-template-rows: repeat(4, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit06-cont>.table-item:nth-child(1){grid-area: prove-number;}
 .table-unit06-cont>.table-item:nth-child(2){grid-area: prove-term;}
@@ -433,7 +433,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"ad-img ad-title matching"
 		"ad-img ad-title un-calculate"
 		"ad-term ad-term ad-term";
-	grid-template-columns: 0.5fr 1.2fr 1fr;grid-template-rows: repeat(4, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.5fr 1.2fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit07-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .table-unit07-cont>.table-item:nth-child(2){grid-area: advertiser;}
@@ -446,7 +446,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit07-cont>.table-item:nth-child(9){grid-area: un-calculate;}
 
 .table-unit07-cont>.table-item:nth-child(3)::before, .table-unit07-cont>.table-item:nth-child(4)::before{display: none;}
-.table-unit07-cont>.table-item:nth-child(3){padding-left: 0;}
+.table-unit07-cont>{padding-left: 0;}
 
 
 /* ---- table-unit08 ---- */
