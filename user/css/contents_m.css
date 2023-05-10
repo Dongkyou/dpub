@@ -106,7 +106,12 @@ commnet : contents (PC 모드)
 
 @media only screen and (max-width: 414px) {
 	.mySlides>a>.button-box{width: 276px;position: absolute;bottom: 42px;left: calc(50% - 138px);}
+	
+}
 
+@media only screen and (max-width: 340px) {
+	.main-content>.main-cont01>.title-box02{display: block;margin-bottom: 15px;}
+	.main-content>.main-cont01>.title-box02>h1{margin-bottom: 20px;}
 }
 
 @media only screen and (max-width: 280px) {
