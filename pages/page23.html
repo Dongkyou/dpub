@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+<link rel="icon" type="image/x-icon" href="">
+<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
+
+<!-- 리소스 링크 -->
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style_m.css">
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/common.js"></script>
+
+<title>정산관리 | page23</title>
+</head>
+
+<body class="page-num15">
+	<div class="wrap-container">
+		<!-- left menu -->
+		<div class="wrap-left-menu"><!-- M모드 active -->
+			<div class="logo-unit01">
+				<span class="ir-txt">디펍</span>
+			</div>
+			<div class="user">
+				<span class="txt">관리자</span>
+				<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+			</div>
+			<div class="menu-box">
+				<ul class="menu-list">
+					<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+					<li class="menu02"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+					<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+					<li class="menu04"><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+					<li class="menu05"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+					<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+					<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+					<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+					<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// left menu -->
+
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+
+			<button type="button" class="btn-unit-wholemenu">
+				<span class="line"></span>
+			</button>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
+		<div class="wrap-content">
+			<div class="title-box">
+				<strong class="title-unit01 bold">
+					<a href="#none" class="tit">정산관리</a>
+				</strong>
+			</div>
+
+			<!-- content -->
+			<div class="content">
+				<div class="tab-box">
+					<div class="tab-unit01">
+						<ul class="list">
+							<li class="tab-item active"><a href="">정산내역</a></li>
+							<li class="tab-item"><a href="">세금계산서 내역</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="event-container">
+					<div class="event-unit03">
+						<div class="event-box01">
+							<div class="img-con img-cover">
+								<img src="../img/03cee4659d462d0056cc97118ffab5ca.jpg" alt="">
+							</div>
+							<div class="txt-con">
+								<strong class="tit">디펍광고</strong>
+								<span class="txt">디펍주식회사(client01)</span>
+							</div>
+							<div class="info-con">
+								<span class="txt01">정산대기 : 3명</span>
+								<span class="txt02">정산대기 금액 : 8,500,000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-button-wrap">
+					<div class="top-input-box">
+						<div class="select-wrap">
+							<select name="" id="">
+								<option value="">전체</option>
+								<option value="">진행중</option>
+								<option value="">완료</option>
+							</select>
+						</div>
+						<div class="input-search01">
+							<input type="text" placeholder="이름, 아이디, 광고명으로 검색">
+							<button type="button" class="btn-unit-search01">
+								<span class="ir-txt">검색</span>
+							</button>
+						</div>
+					</div>
+					<div class="button-box">
+						<button type="button" class="btn-unit01-type01">
+							<span class="txt">정산처리</span>
+						</button>
+						<button type="button" class="btn-unit01-type03">
+							<span class="txt">엑셀다운</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- table -->
+				<div class="table-container">
+					<div class="table-unit08-title">
+						<div class="table-item">checkbox</div>
+						<div class="table-item">아이디(이름)</div>
+						<div class="table-item">정산회차</div>
+						<div class="table-item">광고기간</div>
+						<div class="table-item">연락처</div>
+						<div class="table-item">은행</div>
+						<div class="table-item">예금주</div>
+						<div class="table-item">계좌번호</div>
+						<div class="table-item">금액</div>
+						<div class="table-item">메모</div>
+						<div class="table-item">증빙확인</div>
+						<div class="table-item">세금계산서</div>
+					</div>
+					<div class="table-unit08-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">3</span>
+							<span class="m-txt">(3회차)</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">국민은행</span>
+							<span class="m-txt">국민은행 | 디펍 | 12343202022021</span>
+						</div>
+						<div class="table-item">디펍</div>
+						<div class="table-item">12343202022021</div>
+						<div class="table-item">210,000원</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" id="layer01" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" id="layer01" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>미증빙</p>
+								<button type="button" id="layer02" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>증빙확인</p>
+								<button type="button" id="layer02" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>승인대기</p>
+								<button type="button" id="layer03" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>세금계산서</p>
+								<button type="button" id="layer03" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="table-unit08-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">3</span>
+							<span class="m-txt">(3회차)</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">국민은행</span>
+							<span class="m-txt">국민은행 | 디펍 | 12343202022021</span>
+						</div>
+						<div class="table-item">디펍</div>
+						<div class="table-item">12343202022021</div>
+						<div class="table-item">210,000원</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>미증빙</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>증빙확인</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>승인대기</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>세금계산서</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="table-unit08-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">3</span>
+							<span class="m-txt">(3회차)</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">국민은행</span>
+							<span class="m-txt">국민은행 | 디펍 | 12343202022021</span>
+						</div>
+						<div class="table-item">디펍</div>
+						<div class="table-item">12343202022021</div>
+						<div class="table-item">210,000원</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>미증빙</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>증빙확인</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>승인대기</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>세금계산서</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="table-unit08-cont">
+						<div class="table-item">check</div>
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">3</span>
+							<span class="m-txt">(3회차)</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+							<span class="m-txt">광고기간 : 2023-01-01 ~ 2023-10-31</span>
+						</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">
+							<span class="pc-txt">국민은행</span>
+							<span class="m-txt">국민은행 | 디펍 | 12343202022021</span>
+						</div>
+						<div class="table-item">디펍</div>
+						<div class="table-item">12343202022021</div>
+						<div class="table-item">210,000원</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<button type="button" id="layer02" class="btn-unit03-type01">
+									<span class="txt">메모관리</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>미증빙</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>증빙확인</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+						<div class="table-item">
+							<span class="pc-txt">
+								<p>승인대기</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+							<span class="m-txt">
+								<p>세금계산서</p>
+								<button type="button" class="btn-unit03-type04">
+									<span class="txt">내역확인</span>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--// table end -->
+				<div class="page-box">
+					<ul class="page-unit01">
+						<li><a class="Arr-prev" href=""></a></li>
+						<li><a href="">1</a></li>
+						<li class="active"><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a class="Arr-next" href=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--//content -->
+
+		</div>
+	</div>
+
+	<div class="layer-unit02" id="layerPop01">
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">메모관리</strong>
+				<div class="memo-id">
+					<p>회원아이디</p>
+					<p>Chaju01</p>
+				</div>
+				<div class="memo-text">
+					<p>메모</p>
+					<textarea name="content" id="content" style="width:100%;" rows="10" th:text="${memo.content}" placeholder="내용을 입력해 주세요"></textarea>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="button-box">
+			<button type="button" class="btn-unit05-type01">
+				<span class="txt">저장</span>
+			</button>
+			<button type="button" class="btn-unit05-type02 btn-close-layer">
+				<span class="txt">닫기</span>
+			</button>
+		</div>
+	</div>
+
+	<div class="layer-unit01" id="layerPop02">
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">chaju01(디펍기획) 회원 증빙내역</strong>
+			</div>
+			<div class="popup-table-container">
+				<div class="popup-table-unit05-title">
+					<div class="table-item">증빙회차</div>
+					<div class="table-item">증빙사진</div>
+					<div class="table-item">증빙날짜</div>
+					<div class="table-item">광고기간</div>
+					<div class="table-item">메모</div>
+				</div>
+				<div class="popup-table-unit05-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<div class="img-con02">
+							<div class="con01">
+								<a href="#none" id="layer03"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con02">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con03">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con04">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con05">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+						</div>
+					</div>
+					<div class="table-item">2023-02-04</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" id="layer01" class="btn-unit03-type01">
+							<span class="txt">메모관리</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit05-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<div class="img-con02">
+							<div class="con01">
+								<a href="#none" id="layer03"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con02">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con03">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con04">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con05">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+						</div>
+					</div>
+					<div class="table-item">2023-02-04</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" id="layer01" class="btn-unit03-type01">
+							<span class="txt">메모관리</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit05-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<div class="img-con02">
+							<div class="con01">
+								<a href="#none" id="layer03"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con02">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con03">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con04">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con05">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+						</div>
+					</div>
+					<div class="table-item">2023-02-04</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" id="layer01" class="btn-unit03-type01">
+							<span class="txt">메모관리</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit05-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<div class="img-con02">
+							<div class="con01">
+								<a href="#none" id="layer03"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con02">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con03">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con04">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+							<div class="con05">
+								<a href="#none"><img src="../img/poster.jpg" alt="광고이미지"></a>
+							</div>
+						</div>
+					</div>
+					<div class="table-item">2023-02-04</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" id="layer01" class="btn-unit03-type01">
+							<span class="txt">메모관리</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="layer-close btn-close-layer">
+				<span class="ir-txt">레이어 닫기</span>
+			</button>
+		</div>
+	</div>
+
+	<div class="layer-unit01" id="layerPop03">
+		<div class="layer-wrap">
+			<div class="title-box">
+				<strong class="tit">chaju01(디펍기획) 회원 세금계산서 요청 내역</strong>
+			</div>
+			<div class="popup-table-container">
+				<div class="popup-table-unit06-title">
+					<div class="table-item">정산회차</div>
+					<div class="table-item">공급가액</div>
+					<div class="table-item">부가세</div>
+					<div class="table-item">요청날짜</div>
+					<div class="table-item">요청상태</div>
+					<div class="table-item">광고기간</div>
+					<div class="table-item">관리</div>
+				</div>
+				<div class="popup-table-unit06-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">190,000</span>
+						<span class="m-txt">공급가액 190,000</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">19,000</span>
+						<span class="m-txt">부가세 19,000</span>
+					</div>
+					<div class="table-item">2023-03-03</div>
+					<div class="table-item">
+						<span class="pc-txt">승인</span>
+						<span class="m-txt">요청상태 : 승인</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" class="btn-unit05-type01">
+							<span class="txt">승인</span>
+						</button>
+						<button type="button" class="btn-unit05-type02">
+							<span class="txt">취소</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit06-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">190,000</span>
+						<span class="m-txt">공급가액 190,000</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">19,000</span>
+						<span class="m-txt">부가세 19,000</span>
+					</div>
+					<div class="table-item">2023-03-03</div>
+					<div class="table-item">
+						<span class="pc-txt">승인</span>
+						<span class="m-txt">요청상태 : 승인</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" class="btn-unit05-type01">
+							<span class="txt">승인</span>
+						</button>
+						<button type="button" class="btn-unit05-type02">
+							<span class="txt">취소</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit06-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">190,000</span>
+						<span class="m-txt">공급가액 190,000</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">19,000</span>
+						<span class="m-txt">부가세 19,000</span>
+					</div>
+					<div class="table-item">2023-03-03</div>
+					<div class="table-item">
+						<span class="pc-txt">승인</span>
+						<span class="m-txt">요청상태 : 승인</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" class="btn-unit05-type01">
+							<span class="txt">승인</span>
+						</button>
+						<button type="button" class="btn-unit05-type02">
+							<span class="txt">취소</span>
+						</button>
+					</div>
+				</div>
+				<div class="popup-table-unit06-cont">
+					<div class="table-item">
+						<span class="pc-txt">3</span>
+						<span class="m-txt">3회차</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">190,000</span>
+						<span class="m-txt">공급가액 190,000</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">19,000</span>
+						<span class="m-txt">부가세 19,000</span>
+					</div>
+					<div class="table-item">2023-03-03</div>
+					<div class="table-item">
+						<span class="pc-txt">승인</span>
+						<span class="m-txt">요청상태 : 승인</span>
+					</div>
+					<div class="table-item">
+						<span class="pc-txt">2023-03-01 ~ 2023-03-31</span>
+						<span class="m-txt">광고기간 : 2023-03-01 ~ 2023-03-31</span>
+					</div>
+					<div class="table-item">
+						<button type="button" class="btn-unit05-type01">
+							<span class="txt">승인</span>
+						</button>
+						<button type="button" class="btn-unit05-type02">
+							<span class="txt">취소</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="layer-close btn-close-layer">
+				<span class="ir-txt">레이어 닫기</span>
+			</button>
+		</div>
+	</div>
+
+	<div class="mask-layer"></div>
+
+</body>
+
+</html>

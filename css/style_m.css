@@ -6,6 +6,8 @@ commnet : style_m.css
 
 @media only screen and (max-width:980px) {
 
+body{font-weight:400;font-family:'Spoqa Han Sans Neo','Malgun Gothic','맑은 고딕',Gulim,'굴림',AppleSDGothicNeo-Regular,sans-serif;letter-spacing:-0.3px;line-height:1;color:#000;}
+
 .wrap-container{display:block;}
 
 .wrap-left-menu{opacity:0;visibility:hidden;z-index:100;position:fixed;top:0;height:100%;width:0;
@@ -124,15 +126,18 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 .event-unit01 .info-con .table-container02{margin:40px 0 0;}
 
 /* event-unit02 */
-.event-unit02 [class*='event-box']{box-sizing:border-box;padding:15px 20px;background:#f9f9fb;border:1px solid #e2e2e2;}
+.event-unit02 [class*='event-box']{box-sizing:border-box;padding:10px 15px;background:#f9f9fb;border:1px solid #e2e2e2;}
 .event-unit02 [class*='event-box']+[class*='event-box']{margin-top:10px;}
 .event-unit02 [class*='event-box0'] .txt-con .tit{margin:0 0 10px;}
 .event-unit02 [class*='event-box0'] .txt-con [class*='txt']+[class*='txt']{margin:10px 0 0;}
 .event-unit02 [class*='event-box0'] .txt-con .tit+[class*='txt']{margin-top:20px;}
 .event-unit02 .event-box01,
-.event-unit02 .event-box02{float:none;width:100%;height:200px;}
+.event-unit02 .event-box02{float:none;width:100%;height:120px;}
+
+.event-unit02 .event-box02{height:150px;}
+
 .event-unit02 .event-box01 .img-con,
-.event-unit02 .event-box02 .img-con{overflow:hidden;float:left;width:100px;height:140px;}
+.event-unit02 .event-box02 .img-con{overflow:hidden;float:left;width:50px;height:69px;}
 .event-unit02 .event-box01 .txt-con,
 .event-unit02 .event-box02 .txt-con{float:left;width:124px;margin-left:15px;}
 
@@ -144,6 +149,13 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 
 .event-unit02 .event-box21 .txt-con li{line-height:38px;}
 .event-unit02 .event-box21 .txt-con li+li{margin:5px 0 0;}
+
+/* event-unit03 */
+.event-unit03{width:100%;}
+.event-unit03+.event-unit03{margin-top:10px;}
+.event-unit03.style01{width:100%;}
+.event-unit03 .event-box02{display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;justify-content:start;gap:0;}
+
 
 /* =============== ####btn-unit ======================== */
 .btn-unit02{height:36px;line-height:36px;}
@@ -238,6 +250,12 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .button-box [class*='btn-unit01-']{width:calc(33% - 2.5px);}
 .button-box>.btn-unit01-type05{width:calc(38% - 2.5px);}
 
+.button-box.style01{margin:10px 0;text-align:center;} /* 버튼 꽉차게(100%) */
+.button-box.style01 [class*='btn-unit01-']{width:calc(50% - 4px);}
+
+.input-button-wrap{}
+.input-button-wrap .info-box{width:100%;margin:10px 0;text-align:right;}
+
 /* input-table01 */
 .input-table01 .table-box{display:block;margin-top:12px;width:100%;}
 .input-table01 .table-input-title .tit:nth-child(1){width:calc(30% - 16.3px);}
@@ -249,7 +267,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 
 /* =============== ####img-box ======================== */
 .img-con01>[class*='con']{width: 50px;height: 70px;}
-	
+
 .img-con02{justify-content: space-around;}
 .img-con02>[class*='con']{margin: 0;}
 
@@ -261,6 +279,8 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 [class*='table-unit']{text-align: left;align-items: start;}
 .table-container>div:first-child, .popup-table-container>div:first-child{display: none;}
 .table-container>div:nth-child(n+2), .popup-table-container>div:nth-child(n+2) {padding: 10px;}
+
+.table-container .table-item .input-unit01 [class*='input0'].half50 input{margin:4px 0 0;width:40%;}
 
 .table-container02{}
 .table-container02 .table-item:before{display:none;}
@@ -402,7 +422,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit05-cont>.table-item:nth-child(1)::before, .table-unit05-cont>.table-item:nth-child(7)::before, .table-unit05-cont>.table-item:nth-child(10)::before{display: none;}
 .table-unit05-cont>.table-item:nth-child(1), .table-unit05-cont>.table-item:nth-child(7), .table-unit05-cont>.table-item:nth-child(10){padding-left: 0;}
 
-.table-unit05-cont>.table-item:nth-child(10) {display: block;}	
+.table-unit05-cont>.table-item:nth-child(10) {display: block;}
 .table-unit05-cont>.table-item:nth-child(10)>.btn-unit03-type03{width: 100%;padding: 5px 13px;}
 
 /* ---- table-unit06 ---- */

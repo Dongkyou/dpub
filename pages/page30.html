@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="">
+	<link rel="stylesheet preload" as="style" type="text/css" href="../SpoqaHanSansNeo/v01/font.css">
+
+	<!-- 리소스 링크 -->
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_m.css">
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/plugin.js"></script>
+	<script src="../js/common.js"></script>
+
+	<title>GPS 이력 | page30</title>
+</head>
+
+<body class="page-num15">
+	<div class="wrap-container">
+		<!-- left menu -->
+		<div class="wrap-left-menu"><!-- M모드 active -->
+			<div class="logo-unit01">
+				<span class="ir-txt">디펍</span>
+			</div>
+			<div class="user">
+				<span class="txt">관리자</span>
+				<button type="button" class="btn-unit-logout"><span class="txt">로그아웃</span></button>
+			</div>
+			<div class="menu-box">
+				<ul class="menu-list">
+					<li class="menu01"><a href=""><i class="ico-unit01-use"></i><span class="txt">회원관리</span></a></li>
+					<li class="menu02"><a href=""><i class="ico-unit01-ads"></i><span class="txt">광고관리</span></a></li>
+					<li class="menu03"><a href=""><i class="ico-unit01-mon"></i><span class="txt">정산관리</span></a></li>
+					<li class="menu04 "><a href=""><i class="ico-unit01-alr"></i><span class="txt">알림내역</span></a></li>
+					<li class="menu05 active"><a href=""><i class="ico-unit01-gps"></i><span class="txt">GPS이력</span></a></li>
+					<li class="menu06"><a href=""><i class="ico-unit01-cus"></i><span class="txt">고객센터</span></a></li>
+					<li class="menu07"><a href=""><i class="ico-unit01-sld"></i><span class="txt">슬라이더 관리</span></a></li>
+					<li class="menu08"><a href=""><i class="ico-unit01-tim"></i><span class="txt">관리자 사용 이력</span></a></li>
+					<li class="menu09"><a href=""><i class="ico-unit01-set"></i><span class="txt">계정 관리</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// left menu -->
+
+		<!-- 모바일 전용 헤더(반응형 표출) -->
+		<div class="wrap-header01">
+			<header>
+				<a href="" class="logo-unit02">
+					<span class="ir-txt">dpub</span>
+				</a>
+			</header>
+
+			<button type="button" class="btn-unit-wholemenu">
+				<span class="line"></span>
+			</button>
+		</div>
+		<!--// 모바일 전용 헤더(반응형 표출) -->
+
+		<div class="wrap-content">
+			<div class="title-box">
+				<strong class="title-unit01 bold">
+					<a href="#none" class="tit">GPS 이력</a>
+				</strong>
+			</div>
+
+			<!-- content -->
+			<div class="content">
+				<div class="tab-box">
+					<!--div class="tab-unit01">
+						<ul class="list">
+							<li class="tab-item"><a href="">정산내역</a></li>
+							<li class="tab-item active"><a href="">세금계산서 내역</a></li>
+						</ul>
+					</div-->
+					<div class="page-nav">
+						<ul>
+							<li><a href="">광고 목록</a></li>
+							<li><a href="">차주 목록</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="event-unit03">
+					<div class="event-box01">
+						<div class="img-con img-cover imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;../img/03cee4659d462d0056cc97118ffab5ca.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+							<img src="../img/03cee4659d462d0056cc97118ffab5ca.jpg" alt="">
+						</div>
+						<div class="txt-con">
+							<strong class="tit">디펍광고</strong>
+							<span class="txt">디펍주식회사(client01)</span>
+						</div>
+						<div class="info-con">
+							<span class="txt01">총 인원 수 : 3명</span>
+							<span class="txt02">총 운행 거리 : 170km</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-button-wrap">
+					<div class="top-input-box">
+						<div class="select-wrap">
+							<select name="" id="">
+								<option value="">전체</option>
+								<option value="">진행중</option>
+								<option value="">완료</option>
+							</select>
+						</div>
+						<div class="input-search01 w-option">
+							<input type="text" placeholder="아이디, 차량번호, 톤수, 주 운행지역으로 검색">
+							<button type="button" class="btn-unit-search01">
+								<span class="ir-txt">검색</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- table -->
+				<div class="table-container">
+					<div class="table-unit13-title">
+						<div class="table-item">아이디(이름)</div>
+						<div class="table-item">차량번호</div>
+						<div class="table-item">차종</div>
+						<div class="table-item">연락처</div>
+						<div class="table-item">주 운행지역</div>
+						<div class="table-item">주 운행시간</div>
+						<div class="table-item">총 이동거리</div>
+						<div class="table-item">최종정차위치</div>
+					</div>
+					<div class="table-unit13-cont">
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">32도2050</span>
+							<span class="m-txt">32도2050(윙바디 1톤)</span>
+						</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">수도권</div>
+						<div class="table-item">08:00~19:00</div>
+						<div class="table-item">50km</div>
+						<div class="table-item">
+							<span class="pc-txt">서울 서초구 서초동</span>
+							<span class="m-txt">최종정차위치 : 서울 서초구 서초동</span>
+						</div>
+					</div>
+					<div class="table-unit13-cont">
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">32도2050</span>
+							<span class="m-txt">32도2050(윙바디 1톤)</span>
+						</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">수도권</div>
+						<div class="table-item">08:00~19:00</div>
+						<div class="table-item">50km</div>
+						<div class="table-item">
+							<span class="pc-txt">서울 서초구 서초동</span>
+							<span class="m-txt">최종정차위치 : 서울 서초구 서초동</span>
+						</div>
+					</div>
+					<div class="table-unit13-cont">
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">32도2050</span>
+							<span class="m-txt">32도2050(윙바디 1톤)</span>
+						</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">수도권</div>
+						<div class="table-item">08:00~19:00</div>
+						<div class="table-item">50km</div>
+						<div class="table-item">
+							<span class="pc-txt">서울 서초구 서초동</span>
+							<span class="m-txt">최종정차위치 : 서울 서초구 서초동</span>
+						</div>
+					</div>
+					<div class="table-unit13-cont">
+						<div class="table-item">chaju01(홍길동)</div>
+						<div class="table-item">
+							<span class="pc-txt">32도2050</span>
+							<span class="m-txt">32도2050(윙바디 1톤)</span>
+						</div>
+						<div class="table-item">윙바디(1톤)</div>
+						<div class="table-item">010-1234-1234</div>
+						<div class="table-item">수도권</div>
+						<div class="table-item">08:00~19:00</div>
+						<div class="table-item">50km</div>
+						<div class="table-item">
+							<span class="pc-txt">서울 서초구 서초동</span>
+							<span class="m-txt">최종정차위치 : 서울 서초구 서초동</span>
+						</div>
+					</div>
+				</div>
+				<!--// table end -->
+				<div class="page-box">
+					<ul class="page-unit01">
+						<li><a class="Arr-prev" href=""></a></li>
+						<li><a href="">1</a></li>
+						<li class="active"><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a class="Arr-next" href=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--//content -->
+
+		</div>
+	</div>
+
+	<div class="mask-layer"></div>
+</body>
+
+</html>
