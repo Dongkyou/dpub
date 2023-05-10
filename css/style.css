@@ -653,10 +653,14 @@ ul.page-unit01>li.active>a{color: #fff;}
 ul.page-unit01>li>a.Arr-next{transform: scaleX(-1);}
 ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 
+/* =============== ####img-unit ======================== */
+[class*='img-unit01']{display: flex;flex-wrap: nowrap;justify-content: center;}
+
 /* =============== ####img-box ======================== */
 [class*='img-box']{overflow: hidden;display: inline-block;border: 1px solid #D1D1D1;vertical-align: middle;}
 [class*='img-box']>img{max-width: 100%;max-height: 100%;}
 .img-box01{width: 70px;height: 98px;}
+.img-box02{width: 70px;height: 70px;}
 
 /* =============== ####table-unit ======================== */
 /* ---- 공통 ---- */
