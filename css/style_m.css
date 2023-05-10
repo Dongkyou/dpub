@@ -248,7 +248,10 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .input-table01 [class*='item0']:nth-child(4){width:calc(39.3% - 16.3px);}
 
 /* =============== ####img-box ======================== */
-.img-box01{width: 50px;height: 70px;}
+.img-con01>[class*='con']{width: 50px;height: 70px;}
+	
+.img-con02{justify-content: space-around;}
+.img-con02>[class*='con']{width: 60px;height: 60px;}
 
 /* =============== ####table-unit ======================== */
 .m-txt{display: block;} /*Mobile 전용 텍스트*/
@@ -383,9 +386,9 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check term term"
 		"check car-picture car-picture"
 		"check button button";
-	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1.3fr 0.7fr;grid-template-rows: repeat(7, minmax(30px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
-.table-unit05-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
+.table-unit05-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit05-cont>.table-item:nth-child(2){grid-area: id-name;}
 .table-unit05-cont>.table-item:nth-child(3){grid-area: car-type;}
 .table-unit05-cont>.table-item:nth-child(4){grid-area: phone;}
@@ -399,7 +402,8 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit05-cont>.table-item:nth-child(1)::before, .table-unit05-cont>.table-item:nth-child(7)::before, .table-unit05-cont>.table-item:nth-child(10)::before{display: none;}
 .table-unit05-cont>.table-item:nth-child(1), .table-unit05-cont>.table-item:nth-child(7), .table-unit05-cont>.table-item:nth-child(10){padding-left: 0;}
 
-.table-unit05-cont>.table-item:last-child {display: block;}
+.table-unit05-cont>.table-item:nth-child(10) {display: block;}	
+.table-unit04-cont>.table-item:nth-child(10)>.btn-unit03-type03{width: 100%;padding: 5px 13px;}
 
 /* ---- table-unit06 ---- */
 .table-unit06-cont{
