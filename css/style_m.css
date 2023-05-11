@@ -150,12 +150,20 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 .event-unit02 .event-box21 .txt-con li{line-height:38px;}
 .event-unit02 .event-box21 .txt-con li+li{margin:5px 0 0;}
 
-/* event-unit03 */
+/* event-unit03
 .event-unit03{width:100%;}
 .event-unit03+.event-unit03{margin-top:10px;}
 .event-unit03.style01{width:100%;}
-.event-unit03 .event-box02{display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;justify-content:start;gap:0;}
+.event-unit03 .event-box02{display:grid;grid-template-columns:80px 1fr 1fr 1fr 1fr;justify-content:start;gap:0;}*/
 
+/* event-unit03 */
+.event-unit03{display: block;}
+.event-unit03>.event-box01{display: block;}
+.event-unit03>.event-box01:first-child{margin-right: 0px;margin-bottom: 5px;width: auto;}
+.event-unit03>.event-box01:last-child {width: auto;}
+.event-unit03>.event-box01:first-child>div{margin-bottom: 0;}
+.event-unit03>.event-box01>div{margin-bottom: 15px;}
+.event-unit03>.event-box01>[class*='txt-con']{padding: 0 ;}
 
 /* =============== ####btn-unit ======================== */
 .btn-unit02{height:36px;line-height:36px;}
