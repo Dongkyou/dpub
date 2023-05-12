@@ -44,9 +44,9 @@
 	<h1>Hello dpub</h1>
 
 	<ul class="index-list">
-		<li><a href="guide_01.html">컴포넌트 가이드 guide_01.html</a></li>
-		<li><a href="layout.html">기본 layout.html</a></li>
-		<li><a href="user/index.html">사용자 페이지</a></li>
+		<li><a href="guide_01.html" target="_blank">컴포넌트 가이드 guide_01.html</a></li>
+		<li><a href="layout.html" target="_blank">기본 layout.html</a></li>
+		<li><a href="user/index.html" target="_blank">디펍 사용자 페이지</a></li>
 	</ul>
 
 	<div class="page-inde-wrap">
@@ -69,6 +69,39 @@
 			</dl>
 		</div>
 		<!--// body class guide -->
+
+		<!-- table class guide -->
+		<div class="guide-desc">
+			<dl class="guide-dl">
+				<dt>table-unit0$-title, table-unit0$-cont로 구성</dt>
+				<dd>.table-container로 시작(상위 div class)</dd>
+				<dd>테이블별로 컬럼크기 및 버튼, 인풋체크박스 여부, 이미지삽입 등의 규칙이 일부 포함되어있음</dd>
+				<dd>페이지별 다양한 규칙을 활용하여 테이블 구성 가능</dd>
+			</dl>
+		</div>
+		<!--// table class guide -->
+
+		<!-- input layout구성  -->
+		<div class="guide-desc">
+			<dl class="guide-dl">
+				<dt>입력타입(input) 레이아웃 구성시 참고사항</dt>
+				<dd>.input-container로 시작(상위 div class)</dd>
+				<dd>입력창이 길어질 경우 화면이 오른쪽으로 비어보이는 현상방지를 위해 끊어서 2파트로 차게 보이게 구성가능</dd>
+				<dd>.inner > .input-container+.input-container 이런식의 구성으로 좌우 2단구성 레이아웃 형태 가능</dd>
+				<dd>2단 구성 input 페이지 참조 <a href="/pages/page07.html" target="_blank">/pages/page07.html</a></dd>
+			</dl>
+		</div>
+		<!--// input layout구성  -->
+
+		<!-- input layout구성  -->
+		<div class="guide-desc">
+			<dl class="guide-dl">
+				<dt>기타 추가되어야할 사항 및 미비사항 확인</dt>
+				<dd>달력, 기간입력 등이 필요한 화면에서 calander 라이브러리 활용하여 스크립트 작업 및 ui작업 필요</dd>
+				<dd>메모관리 등의 레이어팝업 사용시 기존에 짜여진 레이어팝업 js를 모듈화 하여 페이지별, 기능별 팝업 정리 필요</dd>
+			</dl>
+		</div>
+		<!--// input layout구성  -->
 
 		<table class="guide-table">
 			<colgroup>
@@ -263,14 +296,21 @@
 					<td>30</td>
 					<td>GPS 이력 > 광고 차주목록</td>
 					<td><a href="pages/page30.html" target="_blank">page30.html</a></td>
-					<td class="gray">진행중</td>
+					<td class="green">완료</td>
 					<td>-</td>
 				</tr>
 				<tr>
 					<td>31</td>
 					<td>GPS 이력 > 차주목록</td>
 					<td><a href="pages/page30.html" target="_blank">page30.html</a></td>
-					<td class="gray">진행중</td>
+					<td class="green">완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td>고객센터</td>
+					<td><a href="pages/page3.html" target="_blank">page33.html</a></td>
+					<td class="green">완료</td>
 					<td>-</td>
 				</tr>
 			</tbody>
@@ -280,22 +320,9 @@
 
 	<p>업데이트 예정</p>
 	<ul class="index-list">
-		<!-- <li><a href="pages/page15.html">page15.html</a></li> -->
-		<!-- <li><a href="pages/page18_table.html">page18_table.html</a></li> -->
-		<li><a href="pages/page19-20_table.html">page19-20_table.html</a></li>
-		<li><a href="pages/page22.html">page22.html</a></li>
-		<li><a href="pages/page23_table.html">page23_table.html</a></li>
-		<li><a href="pages/page24_table.html">page24_table.html</a></li>
-		<li><a href="pages/page25_table.html">page25_table.html</a></li>
-		<li><a href="pages/page28_table.html">page28_table.html</a></li>
-		<li><a href="pages/page29_table.html">page29_table.html</a></li>
-		<li><a href="pages/page30_table.html">page30_table.html</a></li>
-		<li><a href="pages/page33_table.html">page33_table.html</a></li>
-		<li><a href="pages/page35_table.html">page35_table.html</a></li>
-		<li><a href="pages/page37_39_table.html">page37_39_table.html</a></li>
-		<li><a href="pages/page41_table.html">page41_table.html</a></li>
-		<li><a href="pages/page42_table.html">page42_table.html</a></li>
-		<li>사용자 페이지 퍼블리싱</li>
+		<li>33번 이후 테이블 및 인풋페이지는 기존페이지 테이블과 인풋 가이드를 활용하여<br>
+		구성이 가능하여 화면생성 생략함.</li>
+
 	</ul>
 </body>
 </html>

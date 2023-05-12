@@ -131,6 +131,7 @@ Page = {
 		Master.imgLiquid();
 		Master.slideImg01('#slideCon01 .slide-con');
 
+
 	},
 	/* ##데스크톱 공통 Page.comW */
 	comW: function () {
@@ -141,9 +142,11 @@ Page = {
 	comM: function () {
 
 		//Master.wholeMenu();
+		Master.slideDefault('.event-unit04 .event-box01');
 
 		if ($('#subMenu01').length > 0) {
 			Master.carouselTab01('#subMenu01');
+
 		}
 	},
 

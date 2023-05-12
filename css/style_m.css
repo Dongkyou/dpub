@@ -165,6 +165,9 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 .event-unit03>.event-box01>div{margin-bottom: 15px;}
 .event-unit03>.event-box01>[class*='txt-con']{padding: 0 ;}
 
+/* event-unit04 */
+.event-unit04 .event-box01{width:100%;}
+
 /* =============== ####btn-unit ======================== */
 .btn-unit02{height:36px;line-height:36px;}
 
