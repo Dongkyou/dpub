@@ -675,7 +675,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .img-con01>[class*='con']{width: 70px;height: 98px;display: inline-block;}
 
 .img-con02{display: flex;flex-wrap: nowrap;justify-content: center;}
-.img-con02>[class*='con']{width: 70px;height: 70px;margin-right: 7px;}
+.img-con02>[class*='con']{overflow:hidden;width: 70px;height: 70px;margin-right: 7px;}
 .img-con02>[class*='con']:last-child{margin-right: 0;}
 
 
