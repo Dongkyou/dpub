@@ -487,7 +487,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check bank-name-number bank-name-number bank-name-number"
 		"check ad-term ad-term ad-term"
 		"check button1 button2 button3";
-	grid-template-columns: 50px;grid-auto-columns: 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.23fr 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit08-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
 .table-unit08-cont>.table-item:nth-child(2){grid-area: id-name;}
@@ -531,7 +531,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"approve-number day"
 		"ad-name-time money"
 		"company-name-number company-name-number";
-	grid-template-columns: 1fr 1fr;grid-template-rows: repeat(3, minmax(35px, auto));margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit10-cont>.table-item:nth-child(1){grid-area: approve-number;}
 .table-unit10-cont>.table-item:nth-child(2){grid-area: company-name-number;}
