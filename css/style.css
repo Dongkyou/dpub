@@ -723,7 +723,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit07-title, .table-unit07-cont{grid-template-columns: 0.7fr 1.5fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit08 ---- */
-.table-unit08-title, .table-unit08-cont{grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;}
+.table-unit08-title, .table-unit08-cont{grid-template-columns: 60px 1fr 0.7fr 1.5fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit09 ---- */
 .table-unit09-title, .table-unit09-cont{grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr 1fr;}
