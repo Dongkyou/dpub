@@ -783,7 +783,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"money1 state"
 		"money2 money2"
 		"button button";
-	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 2fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .popup-table-unit06-cont>.table-item:nth-child(1){grid-area: number;}
 .popup-table-unit06-cont>.table-item:nth-child(2){grid-area: money1;}
@@ -791,7 +791,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .popup-table-unit06-cont>.table-item:nth-child(4){grid-area: day;}
 .popup-table-unit06-cont>.table-item:nth-child(5){grid-area: state;}
 .popup-table-unit06-cont>.table-item:nth-child(6){grid-area: ad-term;}
-.popup-table-unit06-cont>.table-item:nth-child(7){grid-area: button;}
+.popup-table-unit06-cont>.table-item:nth-child(7){grid-area: button;text-align:center;}
 
 .popup-table-unit06-cont>.table-item::before{display: none;}
 .popup-table-unit06-cont>.table-item{padding-left: 0;}
