@@ -477,7 +477,6 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit07-cont>.table-item:nth-child(9){grid-area: un-calculate;}
 
 .table-unit07-cont>.table-item:nth-child(3)::before, .table-unit07-cont>.table-item:nth-child(4)::before{display: none;}
-.table-unit07-cont>{padding-left: 0;}
 
 
 /* ---- table-unit08 ---- */
@@ -566,7 +565,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"ad-img ad-name ad-member"
 		"ad-img ad-name km"
 		"ad-term ad-term ad-term";
-	grid-template-columns: 0.7fr 1.3fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.5fr 1.2fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit12-cont>.table-item:nth-child(1){grid-area: ad-number;}
 .table-unit12-cont>.table-item:nth-child(2){grid-area: ad-img;}
@@ -576,6 +575,8 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 .table-unit12-cont>.table-item:nth-child(6){grid-area: ad-member;}
 .table-unit12-cont>.table-item:nth-child(7){grid-area: km;}
 .table-unit12-cont>.table-item:nth-child(8){grid-area: state;}
+	
+.table-unit12-cont>.table-item:nth-child(2)::before{display: none;}
 
 
 /* ---- table-unit13 ---- */
@@ -585,7 +586,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"carnumber-type area"
 		"phone term"
 		"location location";
-	grid-template-columns: 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 1.5fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit13-cont>.table-item:nth-child(1){grid-area: id-name;}
 .table-unit13-cont>.table-item:nth-child(2){grid-area: carnumber-type;}
