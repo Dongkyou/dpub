@@ -216,11 +216,11 @@ transition:all 0.5s ease-in;}
 
 /* ---- title-unit01 ---- */
 .title-unit01{}
-.title-unit01 .tit{font-weight:500;font-size:24px;line-height:100%;color:#000;letter-spacing:-.5px;}
+.title-unit01 .tit{font-weight:400;font-size:24px;line-height:100%;color:#000;letter-spacing:-.5px;}
 
 /* ---- title-unit02 ---- */
 .title-unit02{}
-.title-unit02 .tit{font-weight:500;font-size:16px;line-height:100%;color:#000;letter-spacing:-.5px;}
+.title-unit02 .tit{font-weight:400;font-size:16px;line-height:100%;color:#000;letter-spacing:-.5px;}
 
 
 /* =============== ####ico-unit ======================== */
