@@ -54,7 +54,7 @@ transition: all 0.2s ease-in-out;
 
 body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:100;}
 
-.wrap-content{height:inherit;padding:20px 16px 0;background: #fff;}
+.wrap-content{height:inherit;padding:20px 16px 40px 16px;background: #fff;}
 .content{padding: 0;border-radius: 0;background: transparent;}
 .content .input-button-wrap+.table-container{margin:8px 0 0;}
 
@@ -62,6 +62,7 @@ body.left-menu-active .wrap-header01 .btn-unit-wholemenu{position:fixed;z-index:
 .content .inner .input-container+.input-container{margin-left:0;}
 
 .tab-box {margin-bottom: 18px;}
+.page-nav {margin: 0;}
 
 /* left-menu logo */
 .logo-unit01{width:130px;height:30px;background-position:-86px -259px;background-size:345px auto;}
