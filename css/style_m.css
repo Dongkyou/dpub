@@ -616,6 +616,8 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 
 .table-unit14-cont>.table-item::before{display: none;}
 .table-unit14-cont>.table-item{padding-left: 0;}
+	
+.table-unit14-cont>.table-item:nth-child(5)>.m-txt{background:url(../img/sprites_dpub.svg) -150px -150px no-repeat;width:19px;height:17px;}
 
 
 /* ---- table-unit15 ---- */
