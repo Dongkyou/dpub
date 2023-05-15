@@ -487,9 +487,9 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check bank-name-number bank-name-number bank-name-number"
 		"check ad-term ad-term ad-term"
 		"check button1 button2 button3";
-	grid-template-columns: 0.23fr 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.3fr 1fr 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
-.table-unit08-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
+.table-unit08-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit08-cont>.table-item:nth-child(2){grid-area: id-name;}
 .table-unit08-cont>.table-item:nth-child(3){grid-area: calculate-number;}
 .table-unit08-cont>.table-item:nth-child(4){grid-area: ad-term;}
@@ -679,7 +679,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check depart depart";
 	grid-template-columns: 50px 1fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
-.table-unit18-cont>.table-item:nth-child(1){grid-area: check;text-align: center;}
+.table-unit18-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit18-cont>.table-item:nth-child(2){grid-area: id-name;}
 .table-unit18-cont>.table-item:nth-child(3){display: none;}
 .table-unit18-cont>.table-item:nth-child(4){grid-area: phone;}
