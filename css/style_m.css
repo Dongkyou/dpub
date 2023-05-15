@@ -604,7 +604,7 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 		"check title views"
 		"check detail file-icon"
 		"check day-time .";
-	grid-template-columns: 1fr 2fr 1fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
+	grid-template-columns: 0.3fr 2fr 0.8fr;margin-bottom: 5px;border: 1px solid #E2E2E2;
 }
 .table-unit14-cont>.table-item:nth-child(1){grid-area: check;}
 .table-unit14-cont>.table-item:nth-child(2){display: none;}
