@@ -211,8 +211,8 @@ transition:all 0.5s ease-in;}
 
 /* =============== ####btn-unit ======================== */
 
-[class*='title-unit0']{}
-[class*='title-unit0'].bold .tit{font-weight:700;}
+.title-unit01.bold .tit{font-weight:700;}
+.title-unit02.bold .tit{font-weight:500;}
 
 /* ---- title-unit01 ---- */
 .title-unit01{}
