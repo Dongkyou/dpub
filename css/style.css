@@ -742,7 +742,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit13-title, .table-unit13-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 /* ---- table-unit14 ---- */
-.table-unit14-title, .table-unit14-cont{grid-template-columns: 40px 40px 2fr 2fr 1fr 40px 1fr;}
+.table-unit14-title, .table-unit14-cont{grid-template-columns: 60px 1fr 2fr 2fr 1fr 1fr 1fr;}
 
 /* ---- table-unit15 ---- */
 .table-unit15-title, .table-unit15-cont{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
