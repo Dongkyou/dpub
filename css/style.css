@@ -778,7 +778,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .popup-table-unit04-title, .popup-table-unit04-cont{grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;}
 
 /* ---- popup-table-unit05 ---- */
-.popup-table-unit05-title, .popup-table-unit05-cont{grid-template-columns: 1fr 2fr 1fr 2fr 1fr;}
+.popup-table-unit05-title, .popup-table-unit05-cont{grid-template-columns: 1fr 4.5fr 1fr 2fr 1fr;}
 
 /* ---- popup-table-unit06 ---- */
 .popup-table-unit06-title, .popup-table-unit06-cont{grid-template-columns: 0.5fr 1fr 1fr 2fr 0.5fr 2fr 1fr;}
