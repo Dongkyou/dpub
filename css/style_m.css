@@ -795,6 +795,8 @@ input[type="radio"]:checked+label:after{left:2px;margin-top:-3px;}
 
 .popup-table-unit06-cont>.table-item::before{display: none;}
 .popup-table-unit06-cont>.table-item{padding-left: 0;}
+	
+.popup-table-unit06-cont>.table-item:nth-child(7)>.btn-unit05-type01{width: 45%;}
 
 /* =============== ####layer-unit ======================== */
 [class*='layer-unit']{top:0;left:0;}
