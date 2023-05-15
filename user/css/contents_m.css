@@ -49,6 +49,8 @@ commnet : contents (PC 모드)
 
 	.dot-box {left: calc(50% - 27px);}
 	.dot{width: 8px;height: 8px;}
+	
+	.mySlides>a>.button-box{bottom: -50px;}
 
 	/* 메인 콘텐츠 */
 	.main-content{display: block;padding: 40px 0 50px 0;}
