@@ -349,6 +349,8 @@ button{border:0;outline:none;padding:0;margin:0;}
 
 .btn-unit06-plus{background:#B30039;}
 .btn-unit06-minu{background:#313133;}
+.btn-unit06-arr01{background:#313133;}
+.btn-unit06-arr02{background:#666;}
 
 /* ---- logout/search ----*/
 .btn-unit-logout{width:60px;height:20px;text-align:center;background:#4F4F54;border-radius:11px;vertical-align:middle;}
@@ -386,6 +388,7 @@ input{height:40px;border:1px solid #E9E9E9;font-size:14px;box-sizing:border-box;
 .input-unit01 [class*='input0'] input:focus+.input-list01{display:block;}
 .input-unit01 [class*='input0']+[class*='input0']{margin-top:8px;}
 .input-unit01 input[type="text"],
+.input-unit01 input[type="password"],
 .input-unit01 .input-keyword{position:relative;width:318px;height:40px;line-height:40px;padding-left:12px;font-size:14px;}
 .input-unit01 .input-keyword{height:auto;font-size:0;padding:5px 0 0 5px;}
 .input-unit01 textarea{position:relative;width:318px;font-size:14px;}
@@ -423,6 +426,26 @@ input{height:40px;border:1px solid #E9E9E9;font-size:14px;box-sizing:border-box;
 
 /* input-unit03 - 응모조건 추가 */
 
+/* input-unit04 - 드래그앤드롭 D&D(Drag & Drop) */
+.input-unit04{height:300px;} /* height값 고정 */
+.input-unit04 .input-top{padding:10px 20px;}
+.input-unit04 [class*='area']{overflow:hidden;display:inline-block;box-sizing:border-box;padding-bottom:50px;width:40%;height:100%;border:1px solid #E2E2E2;vertical-align:top;}
+.input-unit04 [class*='area'] .list{overflow:hidden;}
+.input-unit04 [class*='area'] .list>li{padding:10px 20px;border-top:1px solid #E2E2E2;}
+
+.input-unit04 .area01{}
+.input-unit04 .area02{}
+.input-unit04 .input-check01{vertical-align:middle;}
+.input-unit04 .file-info{display:inline-block;vertical-align:middle;}
+.input-unit04 .input-check01+.file-info{margin-left:10px;}
+
+@media only screen and (min-width:980px) {
+	.input-unit04 .mid-btn01{position:relative;display:inline-block;box-sizing:border-box;width:70px;height:100%;padding:0 10px;vertical-align:top;}
+	.input-unit04 .mid-btn01 .btn-box{position:absolute;top:50%;left:50%;margin:-32px 0 0 -17px;}
+	.input-unit04 .mid-btn01 button{display:block;}
+	.input-unit04 .mid-btn01 button+button{margin-top:6px;}
+}
+
 /**** checkbox ****/
 input[type="checkbox"]{display:none;}
 input[type="checkbox"] + label{position:relative;display:inline-block;}
@@ -431,6 +454,7 @@ input[type="checkbox"]:checked + label::after{content:'';clear:both;position:abs
 .input-check01{display:inline-block;position:relative;}
 .input-check01 input[type="checkbox"]{}
 .input-check01 label{width:20px;height:20px;background:#fff;border-radius:4px;border:1px solid #D5D5DC;box-sizing: border-box;}
+.input-check01 label+.txt{display:inline-block;margin-left:5px;font-size:13px;line-height:20px;}
 .input-check01 input[type="checkbox"]:checked + label{background:#FFF3F7;border-color:#CE0A49;}
 .input-check01 input[type="checkbox"]:checked + label::after{content:'';clear:both;position:absolute;left:50%;top:50%;margin:-5px 0 0 -7px;width:14px;height:10px;background-position:-100px -150px;}
 
@@ -471,6 +495,13 @@ input[type="radio"]:checked + label:after{top:50%;left:5px;margin-top:-3px;backg
 [class*='input-file']{font-size:0;}
 [class*='input-file'] .label{position:relative;display:inline-block;min-width:140px;font-size:14px;color:#000;vertical-align:middle;}
 [class*='input-file'] .label.nec:after{content:'*';clear:both;font-weight:500;font-size:14px;color:#B30039;padding-left: 5px;}
+
+.file-info{}
+.file-info .img-con{overflow:hidden;display:inline-block;width:65px;height:65px;border:1px solid #D1D1D1;vertical-align:middle;}
+.file-info .img-con img{max-width:100%;max-height:100%;}
+.file-info .txt-con{display:inline-block;vertical-align:middle;}
+.file-info .txt-con .tit{font-size:12px;line-height:20px;}
+.file-info [class*='btn-unit04-']{float:right;margin:20px 0;}
 
 .input-file01{}
 .input-file01 .input01{display:inline-block;}
