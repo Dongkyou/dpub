@@ -2,7 +2,6 @@
 /*************************************************
 프로젝트명 : dpub
 commnet : style.css
-운영반영 버전(작업버전 style_ori.css)
 *************************************************/
 
 @import url('swiper-3.4.2.min.css');
@@ -396,6 +395,9 @@ input{height:40px;border:1px solid #E9E9E9;font-size:14px;box-sizing:border-box;
 .input-unit01 .table-container{display:inline-block;width:318px;vertical-align:top;}
 .input-unit01 .table-container{}
 
+.input-unit01 textarea,
+.input-unit01 .textarea{margin-top:15px;}
+
 /* input-keyword */
 .input-keyword{}
 .input-keyword .word{height:100%;padding:0 5px;margin:0 0 4px 4px;background:#E2E2E2;border-radius:4px;box-sizing:border-box;font-size:14px;}
@@ -446,6 +448,10 @@ input{height:40px;border:1px solid #E9E9E9;font-size:14px;box-sizing:border-box;
 	.input-unit04 .mid-btn01 button{display:block;}
 	.input-unit04 .mid-btn01 button+button{margin-top:6px;}
 }
+
+
+.pager-unit01{}
+.pager-unit01 .swiper-pagination-bullet{display:inline-block;font-size:0;text-indent:-999px;}
 
 /**** checkbox ****/
 input[type="checkbox"]{display:none;}
@@ -699,6 +705,8 @@ select {width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;a
 .event-unit03 .event-box01>[class*='txt-con']{padding: 0 20px;flex: 1;}
 .event-unit03 .event-box01 [class*='txt-con'] p{margin-bottom: 7px;font-size: 14px;line-height: 1.2;}
 .event-unit03 .event-box01 [class*='txt-con'] p.tit {font-size: 16px;font-weight: 500;margin-bottom: 13px;}
+.event-unit03 .event-box01 .info-con{display:block;margin-top:15px;}
+
 
 
 /* event-unit04 */
@@ -786,8 +794,8 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 /* ---- table-unit10 ---- */
 .table-unit10-title, .table-unit10-cont{grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 0.7fr;}
 
-/* ---- table-unit11 ---- */ /* 알림내역 */
-.table-unit11-title, .table-unit11-cont{grid-template-columns: 0.5fr 0.5fr 1fr 2fr 1fr;}
+/* ---- table-unit11 ---- */
+.table-unit11-title, .table-unit11-cont{grid-template-columns: 0.5fr 1fr 1fr 2fr 1fr;}
 
 /* ---- table-unit12 ---- */
 .table-unit12-title, .table-unit12-cont{grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr 1fr;}
