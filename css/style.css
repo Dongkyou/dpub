@@ -787,7 +787,7 @@ ul.page-unit01>li.active>[class*='Arr']{background-position: -150px -52px;}
 .table-unit10-title, .table-unit10-cont{grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 0.7fr;}
 
 /* ---- table-unit11 ---- */ /* 알림내역 */
-.table-unit11-title, .table-unit11-cont{grid-template-columns: 0.5fr 0.5fr 1fr 2fr 1fr;}
+.table-unit11-title, .table-unit11-cont{grid-template-columns: 0.3fr 0.5fr 0.5fr 2fr 0.5fr;}
 
 /* ---- table-unit12 ---- */
 .table-unit12-title, .table-unit12-cont{grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr 1fr;}

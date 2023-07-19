@@ -28,6 +28,7 @@ img{vertical-align: middle;}
 .nav-menu>li>a{font-size: 18px;font-weight: 500;color: #000;letter-spacing: -0.55px;text-decoration: none;position: relative;}
 .nav-menu>li>a::after{width: 0;height: 5px;background-color: #EF7D00;left: 50%;content: '';display: block;position: absolute;bottom: -16px;}
 .nav-menu>li>a:hover::after{width: 100%;left: 0;transition: all .3s;}
+.nav+[class*='btn-style01']{margin-left:40px;}
 
 .mobile-menu, .mobile-btn{display: none;}
 
@@ -115,6 +116,13 @@ select{width: 100%;height: 100%;vertical-align: middle;box-sizing: border-box;ap
 .button-box{margin-top: 35px;}
 .button-box button {width: 100%;height: 46px;box-sizing: border-box;border-radius: 5px;background: #EF7D00;font-size: 14px;font-weight: 500;color: #fff;}
 
+button{border:0;outline:none;padding:0;margin:0;}
+[class*='btn-style']{overflow:hidden;display:inline-block;position:relative;box-sizing:border-box;border:none;background-color:transparent;color:inherit;font:inherit;line-height:normal;vertical-align:top;cursor:pointer;}
+
+/* btn-style01 */
+[class*='btn-style01']{font-size: 14px;font-weight: 500;width: 100px;height: 38px;line-height: 38px;border-radius:7px;text-align: center;}
+.btn-style01-type01{background: #4C4C4E;}
+.btn-style01-type01 .txt{color: #fff;}
 
 /* =============== 서브비주얼 ======================== */
 /*.sub-visual {height: 180px;background: #2a2968 url(../images/sub-bg.jpg) center bottom no-repeat;}*/
